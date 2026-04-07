@@ -1,0 +1,2 @@
+2026-03-25 21:46:19,495 [INFO] Run started. Model: gemini-2.5-flash-lite, N_RUNS: 2
+2026-03-25 21:46:19,497 [INFO] Pricing: $0.1/1M input tokens | $0.4/1M output tokens

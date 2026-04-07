@@ -1,0 +1,11 @@
+2026-03-26 10:34:52,539 [INFO] Run started. Model: gemini-2.5-flash, N_RUNS: 1
+2026-03-26 10:34:52,539 [INFO] Pricing: $0.3/1M input tokens | $2.5/1M output tokens
+2026-03-26 10:34:52,539 [INFO] Loaded 974 problems from ../MBPP/mbpp_formatted.jsonl
+2026-03-26 10:34:52,751 [INFO] Loaded 101 cached scores from checkpoint.
+2026-03-26 10:34:52,760 [WARNING] [idx=101-run1] LLM call failed (attempt 1): GenerativeModel.generate_content() got an unexpected keyword argument 'thinking_config'
+2026-03-26 10:34:53,760 [WARNING] [idx=101-run1] LLM call failed (attempt 2): GenerativeModel.generate_content() got an unexpected keyword argument 'thinking_config'
+2026-03-26 10:34:55,765 [WARNING] [idx=101-run1] LLM call failed (attempt 3): GenerativeModel.generate_content() got an unexpected keyword argument 'thinking_config'
+2026-03-26 10:34:59,766 [WARNING] [idx=101-run1] All retries failed, using fallback score of 2
+2026-03-26 10:34:59,868 [WARNING] [idx=102-run1] LLM call failed (attempt 1): GenerativeModel.generate_content() got an unexpected keyword argument 'thinking_config'
+2026-03-26 10:35:00,872 [WARNING] [idx=102-run1] LLM call failed (attempt 2): GenerativeModel.generate_content() got an unexpected keyword argument 'thinking_config'
+2026-03-26 10:35:02,874 [WARNING] [idx=102-run1] LLM call failed (attempt 3): GenerativeModel.generate_content() got an unexpected keyword argument 'thinking_config'

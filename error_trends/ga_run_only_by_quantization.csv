@@ -1,0 +1,4 @@
+quantization,total,assertion_failure,function_name_case_mismatch,function_name_mismatch,import_error,nameerror_other,other_runtime_error,signature_or_type_error,syntax_error,timeout
+fp16,69,61,,1,,,3,4,,
+q4_K_M,10052,8105,49,139,1,1,190,560,997,10
+q8_0,1755,1483,11,27,,,24,110,99,1

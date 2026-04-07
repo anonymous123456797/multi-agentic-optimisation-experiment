@@ -1,0 +1,3 @@
+2026-03-26 11:03:51,510 [INFO] Run started. Model: gemini-2.5-flash, N_RUNS: 2
+2026-03-26 11:03:51,510 [INFO] Pricing: $0.3/1M input tokens | $2.5/1M output tokens
+2026-03-26 11:03:51,510 [INFO] Ensemble weights — LLM: 0.7, Complexity: 0.2, Branches: 0.1

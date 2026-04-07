@@ -1,0 +1,175 @@
+2026-03-26 10:15:24,858 [INFO] Run started. Model: gemini-2.5-flash, N_RUNS: 1
+2026-03-26 10:15:24,858 [INFO] Pricing: $0.3/1M input tokens | $2.5/1M output tokens
+2026-03-26 10:15:24,877 [INFO] Loaded 974 problems from ../MBPP/mbpp_formatted.jsonl
+2026-03-26 10:15:30,844 [INFO] [idx=0-run1] score=2 raw='2' in_tok=359 out_tok=1 cost=$0.000110 latency=5.80s
+2026-03-26 10:15:35,173 [INFO] [idx=1-run1] score=1 raw='1' in_tok=150 out_tok=1 cost=$0.000047 latency=4.21s
+2026-03-26 10:15:44,410 [INFO] [idx=2-run1] score=1 raw='1' in_tok=160 out_tok=1 cost=$0.000051 latency=9.13s
+2026-03-26 10:15:51,190 [INFO] [idx=3-run1] score=1 raw='1' in_tok=147 out_tok=1 cost=$0.000047 latency=6.67s
+2026-03-26 10:16:02,237 [INFO] [idx=4-run1] score=2 raw='2' in_tok=270 out_tok=1 cost=$0.000083 latency=10.94s
+2026-03-26 10:16:10,535 [INFO] [idx=5-run1] score=2 raw='2' in_tok=169 out_tok=1 cost=$0.000053 latency=8.19s
+2026-03-26 10:16:14,819 [INFO] [idx=6-run1] score=1 raw='1' in_tok=143 out_tok=1 cost=$0.000045 latency=4.18s
+2026-03-26 10:16:17,002 [INFO] [idx=7-run1] score=1 raw='1' in_tok=135 out_tok=1 cost=$0.000043 latency=2.08s
+2026-03-26 10:16:25,135 [INFO] [idx=8-run1] score=1 raw='1' in_tok=183 out_tok=1 cost=$0.000057 latency=8.03s
+2026-03-26 10:16:33,699 [INFO] [idx=9-run1] score=1 raw='1' in_tok=136 out_tok=1 cost=$0.000043 latency=8.46s
+2026-03-26 10:16:40,102 [INFO] [idx=10-run1] score=1 raw='1' in_tok=228 out_tok=1 cost=$0.000071 latency=6.30s
+2026-03-26 10:16:44,082 [INFO] [idx=11-run1] score=1 raw='1' in_tok=130 out_tok=1 cost=$0.000041 latency=3.88s
+2026-03-26 10:16:49,648 [INFO] [idx=12-run1] score=1 raw='1' in_tok=151 out_tok=1 cost=$0.000048 latency=5.46s
+2026-03-26 10:16:52,899 [INFO] [idx=13-run1] score=1 raw='1' in_tok=128 out_tok=1 cost=$0.000041 latency=3.13s
+2026-03-26 10:17:08,763 [INFO] [idx=14-run1] score=2 raw='2' in_tok=129 out_tok=1 cost=$0.000041 latency=15.75s
+2026-03-26 10:17:13,711 [INFO] [idx=15-run1] score=2 raw='2' in_tok=165 out_tok=1 cost=$0.000052 latency=4.84s
+2026-03-26 10:17:15,269 [INFO] [idx=16-run1] score=1 raw='1' in_tok=117 out_tok=1 cost=$0.000038 latency=1.45s
+2026-03-26 10:17:27,245 [INFO] [idx=17-run1] score=2 raw='2' in_tok=414 out_tok=1 cost=$0.000127 latency=11.87s
+2026-03-26 10:17:31,345 [INFO] [idx=18-run1] score=1 raw='1' in_tok=140 out_tok=1 cost=$0.000044 latency=4.00s
+2026-03-26 10:17:50,860 [INFO] [idx=19-run1] score=3 raw='3' in_tok=213 out_tok=1 cost=$0.000066 latency=19.41s
+2026-03-26 10:17:54,540 [INFO] [idx=20-run1] score=1 raw='1' in_tok=148 out_tok=1 cost=$0.000047 latency=3.57s
+2026-03-26 10:17:57,892 [INFO] [idx=21-run1] score=2 raw='2' in_tok=193 out_tok=1 cost=$0.000060 latency=3.25s
+2026-03-26 10:18:01,388 [INFO] [idx=22-run1] score=1 raw='1' in_tok=181 out_tok=1 cost=$0.000057 latency=3.39s
+2026-03-26 10:18:04,162 [INFO] [idx=23-run1] score=1 raw='1' in_tok=195 out_tok=1 cost=$0.000061 latency=2.66s
+2026-03-26 10:18:18,405 [INFO] [idx=24-run1] score=2 raw='2' in_tok=181 out_tok=1 cost=$0.000057 latency=14.14s
+2026-03-26 10:18:25,304 [INFO] [idx=25-run1] score=1 raw='1' in_tok=160 out_tok=1 cost=$0.000051 latency=6.79s
+2026-03-26 10:18:29,685 [INFO] [idx=26-run1] score=2 raw='2' in_tok=147 out_tok=1 cost=$0.000047 latency=4.27s
+2026-03-26 10:18:38,136 [INFO] [idx=27-run1] score=2 raw='2' in_tok=173 out_tok=1 cost=$0.000054 latency=8.35s
+2026-03-26 10:18:43,165 [INFO] [idx=28-run1] score=1 raw='1' in_tok=201 out_tok=1 cost=$0.000063 latency=4.92s
+2026-03-26 10:18:49,335 [INFO] [idx=29-run1] score=1 raw='1' in_tok=231 out_tok=1 cost=$0.000072 latency=6.07s
+2026-03-26 10:18:56,648 [INFO] [idx=30-run1] score=2 raw='2' in_tok=316 out_tok=1 cost=$0.000097 latency=7.21s
+2026-03-26 10:22:54,166 [INFO] [idx=31-run1] score=2 raw=':
+```python
+import math
+
+def largest_prime_factor(n):
+    """
+    Finds the largest prime factor of a given number n.
+
+    Args:
+        n: An integer (n >= 2).
+
+    Returns:
+        The largest prime factor of n.
+    """
+    if n < 2:
+        raise ValueError("Input must be an integer greater than or equal to 2.")
+
+    max_prime = -1
+
+    # Handle factor 2 separately
+    while n % 2 == 0:
+        max_prime = 2
+        n //= 2  # Use integer division
+
+    # n must be odd at this point. So we can skip even numbers and iterate by 2.
+    # We only need to check divisors up to sqrt(n)
+    for i in range(3, int(math.sqrt(n)) + 1, 2):
+        # While i divides n, update max_prime and divide n
+        while n % i == 0:
+            max_prime = i
+            n //= i  # Use integer division
+
+    # If n is still greater than 2 after all divisions,
+    # it means the remaining n is a prime number itself and must be the largest.
+    if n > 2:
+        max_prime = n
+
+    return max_prime
+
+```' in_tok=232 out_tok=301 cost=$0.000822 latency=237.41s
+2026-03-26 10:22:57,911 [INFO] [idx=32-run1] score=1 raw='1' in_tok=193 out_tok=1 cost=$0.000060 latency=3.64s
+2026-03-26 10:23:17,801 [INFO] [idx=33-run1] score=1 raw='1' in_tok=245 out_tok=1 cost=$0.000076 latency=19.79s
+2026-03-26 10:23:20,589 [INFO] [idx=34-run1] score=1 raw='1' in_tok=119 out_tok=1 cost=$0.000038 latency=2.67s
+2026-03-26 10:23:26,930 [INFO] [idx=35-run1] score=2 raw='2' in_tok=176 out_tok=1 cost=$0.000055 latency=6.23s
+2026-03-26 10:23:31,328 [INFO] [idx=36-run1] score=1 raw='1' in_tok=170 out_tok=1 cost=$0.000053 latency=4.30s
+2026-03-26 10:23:45,395 [INFO] [idx=37-run1] score=2 raw='2' in_tok=177 out_tok=1 cost=$0.000056 latency=13.96s
+2026-03-26 10:23:53,529 [INFO] [idx=38-run1] score=2 raw='2' in_tok=349 out_tok=1 cost=$0.000107 latency=8.03s
+2026-03-26 10:24:02,397 [INFO] [idx=39-run1] score=2 raw='2' in_tok=144 out_tok=1 cost=$0.000046 latency=8.77s
+2026-03-26 10:24:05,767 [INFO] [idx=40-run1] score=1 raw='1' in_tok=133 out_tok=1 cost=$0.000042 latency=3.27s
+2026-03-26 10:24:16,108 [INFO] [idx=41-run1] score=1 raw='1' in_tok=134 out_tok=1 cost=$0.000043 latency=10.23s
+2026-03-26 10:24:19,753 [INFO] [idx=42-run1] score=1 raw='1' in_tok=165 out_tok=1 cost=$0.000052 latency=3.53s
+2026-03-26 10:24:24,712 [INFO] [idx=43-run1] score=1 raw='1' in_tok=157 out_tok=1 cost=$0.000050 latency=4.85s
+2026-03-26 10:24:29,534 [INFO] [idx=44-run1] score=1 raw='1' in_tok=214 out_tok=1 cost=$0.000067 latency=4.72s
+2026-03-26 10:24:37,255 [INFO] [idx=45-run1] score=1 raw='1' in_tok=142 out_tok=1 cost=$0.000045 latency=7.61s
+2026-03-26 10:24:51,193 [INFO] [idx=46-run1] score=2 raw='2' in_tok=212 out_tok=1 cost=$0.000066 latency=13.83s
+2026-03-26 10:25:09,092 [INFO] [idx=47-run1] score=2 raw='2' in_tok=181 out_tok=1 cost=$0.000057 latency=17.80s
+2026-03-26 10:25:12,951 [INFO] [idx=48-run1] score=1 raw='1' in_tok=136 out_tok=1 cost=$0.000043 latency=3.75s
+2026-03-26 10:25:17,491 [INFO] [idx=49-run1] score=1 raw='1' in_tok=167 out_tok=1 cost=$0.000053 latency=4.42s
+2026-03-26 10:25:19,711 [INFO] [idx=50-run1] score=1 raw='1' in_tok=138 out_tok=1 cost=$0.000044 latency=2.12s
+2026-03-26 10:25:22,460 [INFO] [idx=51-run1] score=1 raw='1' in_tok=121 out_tok=1 cost=$0.000039 latency=2.64s
+2026-03-26 10:25:24,341 [INFO] [idx=52-run1] score=1 raw='1' in_tok=152 out_tok=1 cost=$0.000048 latency=1.76s
+2026-03-26 10:25:27,897 [INFO] [idx=53-run1] score=2 raw='2' in_tok=255 out_tok=1 cost=$0.000079 latency=3.45s
+2026-03-26 10:25:30,795 [INFO] [idx=54-run1] score=1 raw='1' in_tok=138 out_tok=1 cost=$0.000044 latency=2.79s
+2026-03-26 10:25:33,441 [INFO] [idx=55-run1] score=1 raw='1' in_tok=198 out_tok=1 cost=$0.000062 latency=2.53s
+2026-03-26 10:25:38,869 [INFO] [idx=56-run1] score=1 raw='1' in_tok=175 out_tok=1 cost=$0.000055 latency=5.32s
+2026-03-26 10:25:55,652 [INFO] [idx=57-run1] score=1 raw='1' in_tok=127 out_tok=1 cost=$0.000041 latency=16.67s
+2026-03-26 10:25:58,737 [INFO] [idx=58-run1] score=1 raw='1' in_tok=122 out_tok=1 cost=$0.000039 latency=2.98s
+2026-03-26 10:26:04,381 [INFO] [idx=59-run1] score=2 raw='2' in_tok=262 out_tok=1 cost=$0.000081 latency=5.53s
+2026-03-26 10:26:17,808 [INFO] [idx=60-run1] score=3 raw='3' in_tok=216 out_tok=1 cost=$0.000067 latency=13.31s
+2026-03-26 10:26:20,959 [INFO] [idx=61-run1] score=1 raw='1' in_tok=113 out_tok=1 cost=$0.000036 latency=3.05s
+2026-03-26 10:26:24,142 [INFO] [idx=62-run1] score=1 raw='1' in_tok=150 out_tok=1 cost=$0.000047 latency=3.08s
+2026-03-26 10:26:28,604 [INFO] [idx=63-run1] score=1 raw='1' in_tok=165 out_tok=1 cost=$0.000052 latency=4.36s
+2026-03-26 10:26:32,385 [INFO] [idx=64-run1] score=2 raw='2' in_tok=167 out_tok=1 cost=$0.000053 latency=3.68s
+2026-03-26 10:26:35,075 [INFO] [idx=65-run1] score=1 raw='1' in_tok=150 out_tok=1 cost=$0.000047 latency=2.59s
+2026-03-26 10:26:45,659 [INFO] [idx=66-run1] score=3 raw='3' in_tok=241 out_tok=1 cost=$0.000075 latency=10.47s
+2026-03-26 10:26:50,296 [INFO] [idx=67-run1] score=1 raw='1' in_tok=174 out_tok=1 cost=$0.000055 latency=4.54s
+2026-03-26 10:26:58,525 [INFO] [idx=68-run1] score=2 raw='2' in_tok=266 out_tok=1 cost=$0.000082 latency=8.13s
+2026-03-26 10:27:04,593 [INFO] [idx=69-run1] score=1 raw='1' in_tok=213 out_tok=1 cost=$0.000066 latency=5.96s
+2026-03-26 10:27:08,630 [INFO] [idx=70-run1] score=2 raw='2' in_tok=257 out_tok=1 cost=$0.000080 latency=3.93s
+2026-03-26 10:27:20,348 [INFO] [idx=71-run1] score=2 raw='2' in_tok=139 out_tok=1 cost=$0.000044 latency=11.61s
+2026-03-26 10:27:26,294 [INFO] [idx=72-run1] score=2 raw='2' in_tok=130 out_tok=1 cost=$0.000041 latency=5.84s
+2026-03-26 10:27:38,088 [INFO] [idx=73-run1] score=2 raw='2' in_tok=331 out_tok=1 cost=$0.000102 latency=11.69s
+2026-03-26 10:27:44,294 [INFO] [idx=74-run1] score=1 raw='1' in_tok=154 out_tok=1 cost=$0.000049 latency=6.10s
+2026-03-26 10:27:57,308 [INFO] [idx=75-run1] score=3 raw='3' in_tok=180 out_tok=1 cost=$0.000057 latency=12.91s
+2026-03-26 10:28:04,106 [INFO] [idx=76-run1] score=1 raw='1' in_tok=125 out_tok=1 cost=$0.000040 latency=6.69s
+2026-03-26 10:28:21,459 [INFO] [idx=77-run1] score=3 raw='3' in_tok=192 out_tok=1 cost=$0.000060 latency=17.25s
+2026-03-26 10:28:29,347 [INFO] [idx=78-run1] score=1 raw='1' in_tok=160 out_tok=1 cost=$0.000051 latency=7.78s
+2026-03-26 10:28:33,625 [INFO] [idx=79-run1] score=1 raw='1' in_tok=127 out_tok=1 cost=$0.000041 latency=4.17s
+2026-03-26 10:28:41,890 [INFO] [idx=80-run1] score=2 raw='2' in_tok=170 out_tok=1 cost=$0.000053 latency=8.16s
+2026-03-26 10:28:43,664 [INFO] [idx=81-run1] score=1 raw='1' in_tok=131 out_tok=1 cost=$0.000042 latency=1.66s
+2026-03-26 10:28:49,471 [INFO] [idx=82-run1] score=2 raw='2' in_tok=214 out_tok=1 cost=$0.000067 latency=5.70s
+2026-03-26 10:28:58,664 [INFO] [idx=83-run1] score=2 raw='2' in_tok=159 out_tok=1 cost=$0.000050 latency=9.09s
+2026-03-26 10:29:01,411 [INFO] [idx=84-run1] score=1 raw='1' in_tok=131 out_tok=1 cost=$0.000042 latency=2.64s
+2026-03-26 10:29:06,464 [INFO] [idx=85-run1] score=1 raw='1' in_tok=124 out_tok=1 cost=$0.000040 latency=4.95s
+2026-03-26 10:29:14,451 [INFO] [idx=86-run1] score=2 raw='2' in_tok=151 out_tok=1 cost=$0.000048 latency=7.88s
+2026-03-26 10:29:17,732 [INFO] [idx=87-run1] score=1 raw='1' in_tok=133 out_tok=1 cost=$0.000042 latency=3.17s
+2026-03-26 10:29:21,572 [INFO] [idx=88-run1] score=1 raw='1' in_tok=115 out_tok=1 cost=$0.000037 latency=3.72s
+2026-03-26 10:29:23,695 [INFO] [idx=89-run1] score=1 raw='1' in_tok=152 out_tok=1 cost=$0.000048 latency=2.02s
+2026-03-26 10:29:27,338 [INFO] [idx=90-run1] score=1 raw='1' in_tok=143 out_tok=1 cost=$0.000045 latency=3.53s
+2026-03-26 10:29:36,035 [INFO] [idx=91-run1] score=1 raw='1' in_tok=171 out_tok=1 cost=$0.000054 latency=8.60s
+2026-03-26 10:29:40,481 [INFO] [idx=92-run1] score=1 raw='1' in_tok=170 out_tok=1 cost=$0.000053 latency=4.33s
+2026-03-26 10:29:46,078 [INFO] [idx=93-run1] score=1 raw='1' in_tok=146 out_tok=1 cost=$0.000046 latency=5.49s
+2026-03-26 10:29:48,667 [INFO] [idx=94-run1] score=1 raw='1' in_tok=132 out_tok=1 cost=$0.000042 latency=2.49s
+2026-03-26 10:29:57,125 [INFO] [idx=95-run1] score=2 raw='2' in_tok=146 out_tok=1 cost=$0.000046 latency=8.34s
+2026-03-26 10:30:01,344 [INFO] [idx=96-run1] score=1 raw='1' in_tok=205 out_tok=1 cost=$0.000064 latency=4.12s
+2026-03-26 10:30:05,179 [INFO] [idx=97-run1] score=1 raw='1' in_tok=147 out_tok=1 cost=$0.000047 latency=3.73s
+2026-03-26 10:30:11,533 [INFO] [idx=98-run1] score=1 raw='1' in_tok=125 out_tok=1 cost=$0.000040 latency=6.25s
+2026-03-26 10:30:18,482 [INFO] [idx=99-run1] score=1 raw='1' in_tok=161 out_tok=1 cost=$0.000051 latency=6.85s
+2026-03-26 10:30:27,170 [INFO] [idx=100-run1] score=2 raw='2' in_tok=185 out_tok=1 cost=$0.000058 latency=8.58s
+2026-03-26 10:30:45,907 [INFO] [idx=101-run1] score=1 raw='1' in_tok=134 out_tok=1 cost=$0.000043 latency=18.63s
+2026-03-26 10:30:51,517 [INFO] [idx=102-run1] score=2 raw='2' in_tok=199 out_tok=1 cost=$0.000062 latency=5.50s
+2026-03-26 10:30:57,914 [INFO] [idx=103-run1] score=1 raw='1' in_tok=149 out_tok=1 cost=$0.000047 latency=6.30s
+2026-03-26 10:31:00,991 [INFO] [idx=104-run1] score=1 raw='1' in_tok=115 out_tok=1 cost=$0.000037 latency=2.97s
+2026-03-26 10:31:04,590 [INFO] [idx=105-run1] score=1 raw='1' in_tok=140 out_tok=1 cost=$0.000044 latency=3.49s
+2026-03-26 10:31:18,721 [INFO] [idx=106-run1] score=2 raw='2' in_tok=243 out_tok=1 cost=$0.000075 latency=14.03s
+2026-03-26 10:31:28,493 [INFO] [idx=107-run1] score=1 raw='1' in_tok=183 out_tok=1 cost=$0.000057 latency=9.67s
+2026-03-26 10:31:37,725 [INFO] [idx=108-run1] score=1 raw='1' in_tok=162 out_tok=1 cost=$0.000051 latency=9.12s
+2026-03-26 10:32:01,844 [INFO] [idx=109-run1] score=2 raw='2' in_tok=223 out_tok=1 cost=$0.000069 latency=24.02s
+2026-03-26 10:32:07,021 [INFO] [idx=110-run1] score=2 raw='2' in_tok=145 out_tok=1 cost=$0.000046 latency=5.07s
+2026-03-26 10:32:11,987 [INFO] [idx=111-run1] score=1 raw='1' in_tok=119 out_tok=1 cost=$0.000038 latency=4.86s
+2026-03-26 10:32:22,485 [INFO] [idx=112-run1] score=1 raw='1' in_tok=237 out_tok=1 cost=$0.000074 latency=10.39s
+2026-03-26 10:32:29,164 [INFO] [idx=113-run1] score=2 raw='2' in_tok=151 out_tok=1 cost=$0.000048 latency=6.57s
+2026-03-26 10:32:32,401 [INFO] [idx=114-run1] score=1 raw='1' in_tok=132 out_tok=1 cost=$0.000042 latency=3.13s
+2026-03-26 10:32:36,602 [INFO] [idx=115-run1] score=1 raw='1' in_tok=131 out_tok=1 cost=$0.000042 latency=4.10s
+2026-03-26 10:32:44,492 [INFO] [idx=116-run1] score=1 raw='1' in_tok=201 out_tok=1 cost=$0.000063 latency=7.79s
+2026-03-26 10:32:47,875 [INFO] [idx=117-run1] score=1 raw='1' in_tok=144 out_tok=1 cost=$0.000046 latency=3.28s
+2026-03-26 10:32:56,313 [INFO] [idx=118-run1] score=1 raw='1' in_tok=150 out_tok=1 cost=$0.000047 latency=8.33s
+2026-03-26 10:33:02,970 [INFO] [idx=119-run1] score=1 raw='1' in_tok=145 out_tok=1 cost=$0.000046 latency=6.53s
+2026-03-26 10:33:12,918 [INFO] [idx=120-run1] score=2 raw='2' in_tok=207 out_tok=1 cost=$0.000065 latency=9.84s
+2026-03-26 10:33:30,407 [INFO] [idx=121-run1] score=3 raw='3' in_tok=259 out_tok=1 cost=$0.000080 latency=17.38s
+2026-03-26 10:33:37,164 [INFO] [idx=122-run1] score=2 raw='2' in_tok=298 out_tok=1 cost=$0.000092 latency=6.66s
+2026-03-26 10:33:42,286 [INFO] [idx=123-run1] score=1 raw='1' in_tok=141 out_tok=1 cost=$0.000045 latency=5.01s
+2026-03-26 10:33:49,482 [INFO] [idx=124-run1] score=2 raw='2' in_tok=233 out_tok=1 cost=$0.000072 latency=7.08s
+2026-03-26 10:33:55,366 [INFO] [idx=125-run1] score=1 raw='1' in_tok=166 out_tok=1 cost=$0.000052 latency=5.78s
+2026-03-26 10:33:59,164 [INFO] [idx=126-run1] score=2 raw='2' in_tok=184 out_tok=1 cost=$0.000058 latency=3.68s
+2026-03-26 10:34:02,318 [INFO] [idx=127-run1] score=1 raw='1' in_tok=169 out_tok=1 cost=$0.000053 latency=3.04s
+2026-03-26 10:34:14,063 [INFO] [idx=128-run1] score=2 raw='2' in_tok=304 out_tok=1 cost=$0.000094 latency=11.64s
+2026-03-26 10:34:19,288 [INFO] [idx=129-run1] score=2 raw='2' in_tok=168 out_tok=1 cost=$0.000053 latency=5.12s
+2026-03-26 10:34:25,209 [INFO] [idx=130-run1] score=1 raw='1' in_tok=216 out_tok=1 cost=$0.000067 latency=5.80s
+2026-03-26 10:34:29,380 [INFO] [idx=131-run1] score=1 raw='1' in_tok=123 out_tok=1 cost=$0.000039 latency=4.07s
+2026-03-26 10:34:32,783 [INFO] [idx=132-run1] score=1 raw='1' in_tok=150 out_tok=1 cost=$0.000047 latency=3.29s

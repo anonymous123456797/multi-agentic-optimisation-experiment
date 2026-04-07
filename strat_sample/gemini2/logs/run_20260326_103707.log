@@ -1,0 +1,23 @@
+2026-03-26 10:37:07,635 [INFO] Run started. Model: gemini-2.5-flash, N_RUNS: 1
+2026-03-26 10:37:07,637 [INFO] Pricing: $0.3/1M input tokens | $2.5/1M output tokens
+2026-03-26 10:37:08,174 [INFO] Loaded 974 problems from ../MBPP/mbpp_formatted.jsonl
+2026-03-26 10:37:08,351 [INFO] Loaded 101 cached scores from checkpoint.
+2026-03-26 10:37:08,361 [INFO] AFC is enabled with max remote calls: 10.
+2026-03-26 10:37:08,937 [INFO] HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent "HTTP/1.1 200 OK"
+2026-03-26 10:37:08,940 [INFO] [idx=101-run1] score=2 raw='2' in_tok=134 out_tok=1 cost=$0.000043 latency=0.58s
+2026-03-26 10:37:09,041 [INFO] AFC is enabled with max remote calls: 10.
+2026-03-26 10:37:09,393 [INFO] HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent "HTTP/1.1 200 OK"
+2026-03-26 10:37:09,393 [INFO] [idx=102-run1] score=3 raw='3' in_tok=199 out_tok=1 cost=$0.000062 latency=0.35s
+2026-03-26 10:37:09,497 [INFO] AFC is enabled with max remote calls: 10.
+2026-03-26 10:37:09,939 [INFO] HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent "HTTP/1.1 200 OK"
+2026-03-26 10:37:09,954 [INFO] [idx=103-run1] score=1 raw='1' in_tok=149 out_tok=1 cost=$0.000047 latency=0.46s
+2026-03-26 10:37:10,056 [INFO] AFC is enabled with max remote calls: 10.
+2026-03-26 10:37:10,394 [INFO] HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent "HTTP/1.1 200 OK"
+2026-03-26 10:37:10,406 [INFO] [idx=104-run1] score=1 raw='1' in_tok=115 out_tok=1 cost=$0.000037 latency=0.35s
+2026-03-26 10:37:10,507 [INFO] AFC is enabled with max remote calls: 10.
+2026-03-26 10:37:10,943 [INFO] HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent "HTTP/1.1 200 OK"
+2026-03-26 10:37:10,943 [INFO] [idx=105-run1] score=1 raw='1' in_tok=140 out_tok=1 cost=$0.000044 latency=0.44s
+2026-03-26 10:37:11,051 [INFO] AFC is enabled with max remote calls: 10.
+2026-03-26 10:37:11,389 [INFO] HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent "HTTP/1.1 200 OK"
+2026-03-26 10:37:11,389 [INFO] [idx=106-run1] score=2 raw='2' in_tok=243 out_tok=1 cost=$0.000075 latency=0.34s
+2026-03-26 10:37:11,498 [INFO] AFC is enabled with max remote calls: 10.

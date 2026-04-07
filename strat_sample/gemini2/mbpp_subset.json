@@ -1,0 +1,984 @@
+[
+  {
+    "text": "Write a function to find the occurrence and position of the substrings within a string.",
+    "code": "import re\r\ndef occurance_substring(text,pattern):\r\n for match in re.finditer(pattern, text):\r\n    s = match.start()\r\n    e = match.end()\r\n    return (text[s:e], s, e)",
+    "task_id": 773,
+    "test_setup_code": "",
+    "test_list": [
+      "assert occurance_substring('python programming, python language','python')==('python', 0, 6)",
+      "assert occurance_substring('python programming,programming language','programming')==('programming', 7, 18)",
+      "assert occurance_substring('python programming,programming language','language')==('language', 31, 39)"
+    ],
+    "challenge_test_list": [],
+    "complexity": 2,
+    "branches": 1,
+    "complexity_norm": 1.1333333333,
+    "branches_norm": 1.0952380952,
+    "llm_score_raw": 2.0,
+    "final_score": 1.7361904762,
+    "difficulty": "medium",
+    "score_breakdown": "llm_raw=2.00 cpx_norm=1.13 br_norm=1.10 \u2192 final=1.74 \u2192 medium"
+  },
+  {
+    "text": "Write a function to add two lists using map and lambda function.",
+    "code": "def add_list(nums1,nums2):\r\n  result = map(lambda x, y: x + y, nums1, nums2)\r\n  return list(result)",
+    "task_id": 729,
+    "test_setup_code": "",
+    "test_list": [
+      "assert add_list([1, 2, 3],[4,5,6])==[5, 7, 9]",
+      "assert add_list([1,2],[3,4])==[4,6]",
+      "assert add_list([10,20],[50,70])==[60,90]"
+    ],
+    "challenge_test_list": [],
+    "complexity": 1,
+    "branches": 0,
+    "complexity_norm": 1.0,
+    "branches_norm": 1.0,
+    "llm_score_raw": 1.0,
+    "final_score": 1.0,
+    "difficulty": "easy",
+    "score_breakdown": "llm_raw=1.00 cpx_norm=1.00 br_norm=1.00 \u2192 final=1.00 \u2192 easy"
+  },
+  {
+    "text": "Write a function to find the maximum difference between available pairs in the given tuple list.",
+    "code": "def max_difference(test_list):\r\n  temp = [abs(b - a) for a, b in test_list]\r\n  res = max(temp)\r\n  return (res) ",
+    "task_id": 63,
+    "test_setup_code": "",
+    "test_list": [
+      "assert max_difference([(3, 5), (1, 7), (10, 3), (1, 2)]) == 7",
+      "assert max_difference([(4, 6), (2, 17), (9, 13), (11, 12)]) == 15",
+      "assert max_difference([(12, 35), (21, 27), (13, 23), (41, 22)]) == 23"
+    ],
+    "challenge_test_list": [],
+    "complexity": 2,
+    "branches": 1,
+    "complexity_norm": 1.1333333333,
+    "branches_norm": 1.0952380952,
+    "llm_score_raw": 2.0,
+    "final_score": 1.7361904762,
+    "difficulty": "medium",
+    "score_breakdown": "llm_raw=2.00 cpx_norm=1.13 br_norm=1.10 \u2192 final=1.74 \u2192 medium"
+  },
+  {
+    "text": "Write a python function to find the average of cubes of first n natural numbers.",
+    "code": "def find_Average_Of_Cube(n):  \r\n    sum = 0\r\n    for i in range(1, n + 1): \r\n        sum += i * i * i  \r\n    return round(sum / n, 6) ",
+    "task_id": 422,
+    "test_setup_code": "",
+    "test_list": [
+      "assert find_Average_Of_Cube(2) == 4.5",
+      "assert find_Average_Of_Cube(3) == 12",
+      "assert find_Average_Of_Cube(1) == 1"
+    ],
+    "challenge_test_list": [],
+    "complexity": 2,
+    "branches": 1,
+    "complexity_norm": 1.1333333333,
+    "branches_norm": 1.0952380952,
+    "llm_score_raw": 1.0,
+    "final_score": 1.0361904762,
+    "difficulty": "easy",
+    "score_breakdown": "llm_raw=1.00 cpx_norm=1.13 br_norm=1.10 \u2192 final=1.04 \u2192 easy"
+  },
+  {
+    "text": "Write a python function to find number of integers with odd number of set bits.",
+    "code": "def count_With_Odd_SetBits(n): \r\n    if (n % 2 != 0): \r\n        return (n + 1) / 2\r\n    count = bin(n).count('1') \r\n    ans = n / 2\r\n    if (count % 2 != 0): \r\n        ans += 1\r\n    return ans ",
+    "task_id": 78,
+    "test_setup_code": "",
+    "test_list": [
+      "assert count_With_Odd_SetBits(5) == 3",
+      "assert count_With_Odd_SetBits(10) == 5",
+      "assert count_With_Odd_SetBits(15) == 8"
+    ],
+    "challenge_test_list": [],
+    "complexity": 3,
+    "branches": 2,
+    "complexity_norm": 1.2666666667,
+    "branches_norm": 1.1904761905,
+    "llm_score_raw": 2.0,
+    "final_score": 1.7723809524,
+    "difficulty": "medium",
+    "score_breakdown": "llm_raw=2.00 cpx_norm=1.27 br_norm=1.19 \u2192 final=1.77 \u2192 medium"
+  },
+  {
+    "text": "Write a python function to convert the given string to lower case.",
+    "code": "def is_lower(string):\r\n  return (string.lower())",
+    "task_id": 477,
+    "test_setup_code": "",
+    "test_list": [
+      "assert is_lower(\"InValid\") == \"invalid\"",
+      "assert is_lower(\"TruE\") == \"true\"",
+      "assert is_lower(\"SenTenCE\") == \"sentence\""
+    ],
+    "challenge_test_list": [],
+    "complexity": 1,
+    "branches": 0,
+    "complexity_norm": 1.0,
+    "branches_norm": 1.0,
+    "llm_score_raw": 1.0,
+    "final_score": 1.0,
+    "difficulty": "easy",
+    "score_breakdown": "llm_raw=1.00 cpx_norm=1.00 br_norm=1.00 \u2192 final=1.00 \u2192 easy"
+  },
+  {
+    "text": "Write a function to find the largest palindromic number in the given array.",
+    "code": "def is_palindrome(n) : \r\n\tdivisor = 1\r\n\twhile (n / divisor >= 10) : \r\n\t\tdivisor *= 10\r\n\twhile (n != 0) : \r\n\t\tleading = n // divisor \r\n\t\ttrailing = n % 10\r\n\t\tif (leading != trailing) : \r\n\t\t\treturn False\r\n\t\tn = (n % divisor) // 10\r\n\t\tdivisor = divisor // 100\r\n\treturn True\r\ndef largest_palindrome(A, n) : \r\n\tA.sort() \r\n\tfor i in range(n - 1, -1, -1) : \r\n\t\tif (is_palindrome(A[i])) : \r\n\t\t\treturn A[i] \r\n\treturn -1",
+    "task_id": 485,
+    "test_setup_code": "",
+    "test_list": [
+      "assert largest_palindrome([1, 232, 54545, 999991], 4) == 54545",
+      "assert largest_palindrome([1, 2, 3, 4, 5, 50], 6) == 5",
+      "assert largest_palindrome([1, 3, 7, 9, 45], 5)  == 9"
+    ],
+    "challenge_test_list": [],
+    "complexity": 7,
+    "branches": 5,
+    "complexity_norm": 1.8,
+    "branches_norm": 1.4761904762,
+    "llm_score_raw": 2.0,
+    "final_score": 1.9076190476,
+    "difficulty": "medium",
+    "score_breakdown": "llm_raw=2.00 cpx_norm=1.80 br_norm=1.48 \u2192 final=1.91 \u2192 medium"
+  },
+  {
+    "text": "Write a function to remove all the words with k length in the given string.",
+    "code": "def remove_length(test_str, K):\r\n  temp = test_str.split()\r\n  res = [ele for ele in temp if len(ele) != K]\r\n  res = ' '.join(res)\r\n  return (res) ",
+    "task_id": 772,
+    "test_setup_code": "",
+    "test_list": [
+      "assert remove_length('The person is most value tet', 3) == 'person is most value'",
+      "assert remove_length('If you told me about this ok', 4) == 'If you me about ok'",
+      "assert remove_length('Forces of darkeness is come into the play', 4) == 'Forces of darkeness is the'"
+    ],
+    "challenge_test_list": [],
+    "complexity": 3,
+    "branches": 2,
+    "complexity_norm": 1.2666666667,
+    "branches_norm": 1.1904761905,
+    "llm_score_raw": 2.0,
+    "final_score": 1.7723809524,
+    "difficulty": "medium",
+    "score_breakdown": "llm_raw=2.00 cpx_norm=1.27 br_norm=1.19 \u2192 final=1.77 \u2192 medium"
+  },
+  {
+    "text": "Write a python function to check whether the count of divisors is even or odd.",
+    "code": "import math \r\ndef count_Divisors(n) : \r\n    count = 0\r\n    for i in range(1, (int)(math.sqrt(n)) + 2) : \r\n        if (n % i == 0) : \r\n            if( n // i == i) : \r\n                count = count + 1\r\n            else : \r\n                count = count + 2\r\n    if (count % 2 == 0) : \r\n        return (\"Even\") \r\n    else : \r\n        return (\"Odd\") ",
+    "task_id": 781,
+    "test_setup_code": "",
+    "test_list": [
+      "assert count_Divisors(10) == \"Even\"",
+      "assert count_Divisors(100) == \"Odd\"",
+      "assert count_Divisors(125) == \"Even\""
+    ],
+    "challenge_test_list": [],
+    "complexity": 5,
+    "branches": 3,
+    "complexity_norm": 1.5333333333,
+    "branches_norm": 1.2857142857,
+    "llm_score_raw": 2.0,
+    "final_score": 1.8352380952,
+    "difficulty": "medium",
+    "score_breakdown": "llm_raw=2.00 cpx_norm=1.53 br_norm=1.29 \u2192 final=1.84 \u2192 medium"
+  },
+  {
+    "text": "Write a python function to find the first repeated character in a given string.",
+    "code": "def first_repeated_char(str1):\r\n  for index,c in enumerate(str1):\r\n    if str1[:index+1].count(c) > 1:\r\n      return c \r\n  return \"None\"",
+    "task_id": 602,
+    "test_setup_code": "",
+    "test_list": [
+      "assert first_repeated_char(\"abcabc\") == \"a\"",
+      "assert first_repeated_char(\"abc\") == \"None\"",
+      "assert first_repeated_char(\"123123\") == \"1\""
+    ],
+    "challenge_test_list": [],
+    "complexity": 3,
+    "branches": 2,
+    "complexity_norm": 1.2666666667,
+    "branches_norm": 1.1904761905,
+    "llm_score_raw": 2.0,
+    "final_score": 1.7723809524,
+    "difficulty": "medium",
+    "score_breakdown": "llm_raw=2.00 cpx_norm=1.27 br_norm=1.19 \u2192 final=1.77 \u2192 medium"
+  },
+  {
+    "text": "Write a function to find the nested list elements which are present in another list.",
+    "code": "def intersection_nested_lists(l1, l2):\r\n    result = [[n for n in lst if n in l1] for lst in l2]\r\n    return result",
+    "task_id": 298,
+    "test_setup_code": "",
+    "test_list": [
+      "assert intersection_nested_lists( [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14],[[12, 18, 23, 25, 45], [7, 11, 19, 24, 28], [1, 5, 8, 18, 15, 16]])==[[12], [7, 11], [1, 5, 8]]",
+      "assert intersection_nested_lists([[2, 3, 1], [4, 5], [6, 8]], [[4, 5], [6, 8]])==[[], []]",
+      "assert intersection_nested_lists(['john','amal','joel','george'],[['john'],['jack','john','mary'],['howard','john'],['jude']])==[['john'], ['john'], ['john'], []]"
+    ],
+    "challenge_test_list": [],
+    "complexity": 4,
+    "branches": 3,
+    "complexity_norm": 1.4,
+    "branches_norm": 1.2857142857,
+    "llm_score_raw": 2.0,
+    "final_score": 1.8085714286,
+    "difficulty": "medium",
+    "score_breakdown": "llm_raw=2.00 cpx_norm=1.40 br_norm=1.29 \u2192 final=1.81 \u2192 medium"
+  },
+  {
+    "text": "Write a python function to find number of solutions in quadratic equation.",
+    "code": "def Check_Solution(a,b,c) : \r\n    if ((b*b) - (4*a*c)) > 0 : \r\n        return (\"2 solutions\") \r\n    elif ((b*b) - (4*a*c)) == 0 : \r\n        return (\"1 solution\") \r\n    else : \r\n        return (\"No solutions\") ",
+    "task_id": 880,
+    "test_setup_code": "",
+    "test_list": [
+      "assert Check_Solution(2,5,2) == \"2 solutions\"",
+      "assert Check_Solution(1,1,1) == \"No solutions\"",
+      "assert Check_Solution(1,2,1) == \"1 solution\""
+    ],
+    "challenge_test_list": [],
+    "complexity": 3,
+    "branches": 3,
+    "complexity_norm": 1.2666666667,
+    "branches_norm": 1.2857142857,
+    "llm_score_raw": 1.0,
+    "final_score": 1.0819047619,
+    "difficulty": "easy",
+    "score_breakdown": "llm_raw=1.00 cpx_norm=1.27 br_norm=1.29 \u2192 final=1.08 \u2192 easy"
+  },
+  {
+    "text": "Write a function to find all five characters long word in the given string by using regex.",
+    "code": "import re\r\ndef find_long_word(text):\r\n  return (re.findall(r\"\\b\\w{5}\\b\", text))",
+    "task_id": 319,
+    "test_setup_code": "",
+    "test_list": [
+      "assert find_long_word('Please move back to strem') == ['strem']",
+      "assert find_long_word('4K Ultra HD streaming player') == ['Ultra']",
+      "assert find_long_word('Streaming Media Player') == ['Media']"
+    ],
+    "challenge_test_list": [],
+    "complexity": 1,
+    "branches": 0,
+    "complexity_norm": 1.0,
+    "branches_norm": 1.0,
+    "llm_score_raw": 1.0,
+    "final_score": 1.0,
+    "difficulty": "easy",
+    "score_breakdown": "llm_raw=1.00 cpx_norm=1.00 br_norm=1.00 \u2192 final=1.00 \u2192 easy"
+  },
+  {
+    "text": "Write a function to find the minimum difference in the tuple pairs of given tuples.",
+    "code": "def min_difference(test_list):\r\n  temp = [abs(b - a) for a, b in test_list]\r\n  res = min(temp)\r\n  return (res) ",
+    "task_id": 875,
+    "test_setup_code": "",
+    "test_list": [
+      "assert min_difference([(3, 5), (1, 7), (10, 3), (1, 2)]) == 1",
+      "assert min_difference([(4, 6), (12, 8), (11, 4), (2, 13)]) == 2",
+      "assert min_difference([(5, 17), (3, 9), (12, 5), (3, 24)]) == 6"
+    ],
+    "challenge_test_list": [],
+    "complexity": 2,
+    "branches": 1,
+    "complexity_norm": 1.1333333333,
+    "branches_norm": 1.0952380952,
+    "llm_score_raw": 1.0,
+    "final_score": 1.0361904762,
+    "difficulty": "easy",
+    "score_breakdown": "llm_raw=1.00 cpx_norm=1.13 br_norm=1.10 \u2192 final=1.04 \u2192 easy"
+  },
+  {
+    "text": "Write a function to find the median of a trapezium.",
+    "code": "def median_trapezium(base1,base2,height):\r\n median = 0.5 * (base1+ base2)\r\n return median",
+    "task_id": 432,
+    "test_setup_code": "",
+    "test_list": [
+      "assert median_trapezium(15,25,35)==20",
+      "assert median_trapezium(10,20,30)==15",
+      "assert median_trapezium(6,9,4)==7.5"
+    ],
+    "challenge_test_list": [],
+    "complexity": 1,
+    "branches": 0,
+    "complexity_norm": 1.0,
+    "branches_norm": 1.0,
+    "llm_score_raw": 1.0,
+    "final_score": 1.0,
+    "difficulty": "easy",
+    "score_breakdown": "llm_raw=1.00 cpx_norm=1.00 br_norm=1.00 \u2192 final=1.00 \u2192 easy"
+  },
+  {
+    "text": "Write a function to count the element frequency in the mixed nested tuple.",
+    "code": "def flatten(test_tuple): \r\n\tfor tup in test_tuple: \r\n\t\tif isinstance(tup, tuple): \r\n\t\t\tyield from flatten(tup) \r\n\t\telse: \r\n\t\t\tyield tup \r\ndef count_element_freq(test_tuple):\r\n  res = {}\r\n  for ele in flatten(test_tuple):\r\n    if ele not in res:\r\n      res[ele] = 0\r\n    res[ele] += 1\r\n  return (res) ",
+    "task_id": 512,
+    "test_setup_code": "",
+    "test_list": [
+      "assert count_element_freq((5, 6, (5, 6), 7, (8, 9), 9) ) == {5: 2, 6: 2, 7: 1, 8: 1, 9: 2}",
+      "assert count_element_freq((6, 7, (6, 7), 8, (9, 10), 10) ) == {6: 2, 7: 2, 8: 1, 9: 1, 10: 2}",
+      "assert count_element_freq((7, 8, (7, 8), 9, (10, 11), 11) ) == {7: 2, 8: 2, 9: 1, 10: 1, 11: 2}"
+    ],
+    "challenge_test_list": [],
+    "complexity": 6,
+    "branches": 4,
+    "complexity_norm": 1.6666666667,
+    "branches_norm": 1.380952381,
+    "llm_score_raw": 2.0,
+    "final_score": 1.8714285714,
+    "difficulty": "medium",
+    "score_breakdown": "llm_raw=2.00 cpx_norm=1.67 br_norm=1.38 \u2192 final=1.87 \u2192 medium"
+  },
+  {
+    "text": "Write a python function to check whether two given lines are parallel or not.",
+    "code": "def parallel_lines(line1, line2):\r\n  return line1[0]/line1[1] == line2[0]/line2[1]",
+    "task_id": 525,
+    "test_setup_code": "",
+    "test_list": [
+      "assert parallel_lines([2,3,4], [2,3,8]) == True",
+      "assert parallel_lines([2,3,4], [4,-3,8]) == False",
+      "assert parallel_lines([3,3],[5,5]) == True"
+    ],
+    "challenge_test_list": [],
+    "complexity": 1,
+    "branches": 0,
+    "complexity_norm": 1.0,
+    "branches_norm": 1.0,
+    "llm_score_raw": 2.0,
+    "final_score": 1.7,
+    "difficulty": "medium",
+    "score_breakdown": "llm_raw=2.00 cpx_norm=1.00 br_norm=1.00 \u2192 final=1.70 \u2192 medium"
+  },
+  {
+    "text": "Write a function to search a literals string in a string and also find the location within the original string where the pattern occurs by using regex.",
+    "code": "import re\r\npattern = 'fox'\r\ntext = 'The quick brown fox jumps over the lazy dog.'\r\ndef find_literals(text, pattern):\r\n  match = re.search(pattern, text)\r\n  s = match.start()\r\n  e = match.end()\r\n  return (match.re.pattern, s, e)",
+    "task_id": 607,
+    "test_setup_code": "",
+    "test_list": [
+      "assert find_literals('The quick brown fox jumps over the lazy dog.', 'fox') == ('fox', 16, 19)",
+      "assert find_literals('Its been a very crazy procedure right', 'crazy') == ('crazy', 16, 21)",
+      "assert find_literals('Hardest choices required strongest will', 'will') == ('will', 35, 39)"
+    ],
+    "challenge_test_list": [],
+    "complexity": 1,
+    "branches": 0,
+    "complexity_norm": 1.0,
+    "branches_norm": 1.0,
+    "llm_score_raw": 1.0,
+    "final_score": 1.0,
+    "difficulty": "easy",
+    "score_breakdown": "llm_raw=1.00 cpx_norm=1.00 br_norm=1.00 \u2192 final=1.00 \u2192 easy"
+  },
+  {
+    "text": "Write a python function to find the sum of absolute differences in all pairs of the given array.",
+    "code": "def sum_Pairs(arr,n): \r\n    sum = 0\r\n    for i in range(n - 1,-1,-1): \r\n        sum += i*arr[i] - (n-1-i) * arr[i] \r\n    return sum",
+    "task_id": 144,
+    "test_setup_code": "",
+    "test_list": [
+      "assert sum_Pairs([1,8,9,15,16],5) == 74",
+      "assert sum_Pairs([1,2,3,4],4) == 10",
+      "assert sum_Pairs([1,2,3,4,5,7,9,11,14],9) == 188"
+    ],
+    "challenge_test_list": [],
+    "complexity": 2,
+    "branches": 1,
+    "complexity_norm": 1.1333333333,
+    "branches_norm": 1.0952380952,
+    "llm_score_raw": 2.0,
+    "final_score": 1.7361904762,
+    "difficulty": "medium",
+    "score_breakdown": "llm_raw=2.00 cpx_norm=1.13 br_norm=1.10 \u2192 final=1.74 \u2192 medium"
+  },
+  {
+    "text": "Write a function to find all the values in a list that are greater than a specified number.",
+    "code": "def greater_specificnum(list,num):\r\n greater_specificnum=all(x >= num for x in list)\r\n return greater_specificnum",
+    "task_id": 184,
+    "test_setup_code": "",
+    "test_list": [
+      "assert greater_specificnum([220, 330, 500],200)==True",
+      "assert greater_specificnum([12, 17, 21],20)==False",
+      "assert greater_specificnum([1,2,3,4],10)==False"
+    ],
+    "challenge_test_list": [],
+    "complexity": 2,
+    "branches": 1,
+    "complexity_norm": 1.1333333333,
+    "branches_norm": 1.0952380952,
+    "llm_score_raw": 1.0,
+    "final_score": 1.0361904762,
+    "difficulty": "easy",
+    "score_breakdown": "llm_raw=1.00 cpx_norm=1.13 br_norm=1.10 \u2192 final=1.04 \u2192 easy"
+  },
+  {
+    "text": "Write a function to extract specified number of elements from a given list, which follow each other continuously.",
+    "code": "from itertools import groupby \r\ndef extract_elements(numbers, n):\r\n    result = [i for i, j in groupby(numbers) if len(list(j)) == n] \r\n    return result",
+    "task_id": 898,
+    "test_setup_code": "",
+    "test_list": [
+      "assert extract_elements([1, 1, 3, 4, 4, 5, 6, 7],2)==[1, 4]",
+      "assert extract_elements([0, 1, 2, 3, 4, 4, 4, 4, 5, 7],4)==[4]",
+      "assert extract_elements([0,0,0,0,0],5)==[0]"
+    ],
+    "challenge_test_list": [],
+    "complexity": 3,
+    "branches": 2,
+    "complexity_norm": 1.2666666667,
+    "branches_norm": 1.1904761905,
+    "llm_score_raw": 2.0,
+    "final_score": 1.7723809524,
+    "difficulty": "medium",
+    "score_breakdown": "llm_raw=2.00 cpx_norm=1.27 br_norm=1.19 \u2192 final=1.77 \u2192 medium"
+  },
+  {
+    "text": "Write a function to find numbers divisible by m or n from a list of numbers using lambda function.",
+    "code": "def div_of_nums(nums,m,n):\r\n result = list(filter(lambda x: (x % m == 0 or x % n == 0), nums)) \r\n return result",
+    "task_id": 817,
+    "test_setup_code": "",
+    "test_list": [
+      "assert div_of_nums([19, 65, 57, 39, 152, 639, 121, 44, 90, 190],19,13)==[19, 65, 57, 39, 152, 190]",
+      "assert div_of_nums([1, 2, 3, 5, 7, 8, 10],2,5)==[2, 5, 8, 10]",
+      "assert div_of_nums([10,15,14,13,18,12,20],10,5)==[10, 15, 20]"
+    ],
+    "challenge_test_list": [],
+    "complexity": 2,
+    "branches": 0,
+    "complexity_norm": 1.1333333333,
+    "branches_norm": 1.0,
+    "llm_score_raw": 1.0,
+    "final_score": 1.0266666667,
+    "difficulty": "easy",
+    "score_breakdown": "llm_raw=1.00 cpx_norm=1.13 br_norm=1.00 \u2192 final=1.03 \u2192 easy"
+  },
+  {
+    "text": "Write a function to remove the matching tuples from the given two tuples.",
+    "code": "def remove_matching_tuple(test_list1, test_list2):\r\n  res = [sub for sub in test_list1 if sub not in test_list2]\r\n  return (res) ",
+    "task_id": 484,
+    "test_setup_code": "",
+    "test_list": [
+      "assert remove_matching_tuple([('Hello', 'dude'), ('How', 'are'), ('you', '?')], [('Hello', 'dude'), ('How', 'are')]) == [('you', '?')]",
+      "assert remove_matching_tuple([('Part', 'of'), ('the', 'journey'), ('is ', 'end')], [('Journey', 'the'), ('is', 'end')]) == [('Part', 'of'), ('the', 'journey'), ('is ', 'end')]",
+      "assert remove_matching_tuple([('Its', 'been'), ('a', 'long'), ('day', 'without')], [('a', 'long'), ('my', 'friend')]) == [('Its', 'been'), ('day', 'without')]"
+    ],
+    "challenge_test_list": [],
+    "complexity": 3,
+    "branches": 2,
+    "complexity_norm": 1.2666666667,
+    "branches_norm": 1.1904761905,
+    "llm_score_raw": 1.0,
+    "final_score": 1.0723809524,
+    "difficulty": "easy",
+    "score_breakdown": "llm_raw=1.00 cpx_norm=1.27 br_norm=1.19 \u2192 final=1.07 \u2192 easy"
+  },
+  {
+    "text": "Write a function to find the maximum profit earned from a maximum of k stock transactions",
+    "code": "def max_profit(price, k):\r\n    n = len(price)\r\n    final_profit = [[None for x in range(n)] for y in range(k + 1)]\r\n    for i in range(k + 1):\r\n        for j in range(n):\r\n            if i == 0 or j == 0:\r\n                final_profit[i][j] = 0\r\n            else:\r\n                max_so_far = 0\r\n                for x in range(j):\r\n                    curr_price = price[j] - price[x] + final_profit[i-1][x]\r\n                    if max_so_far < curr_price:\r\n                        max_so_far = curr_price\r\n                final_profit[i][j] = max(final_profit[i][j-1], max_so_far)\r\n    return final_profit[k][n-1]",
+    "task_id": 469,
+    "test_setup_code": "",
+    "test_list": [
+      "assert max_profit([1, 5, 2, 3, 7, 6, 4, 5], 3) == 10",
+      "assert max_profit([2, 4, 7, 5, 4, 3, 5], 2) == 7",
+      "assert max_profit([10, 6, 8, 4, 2], 2) == 2"
+    ],
+    "challenge_test_list": [],
+    "complexity": 9,
+    "branches": 7,
+    "complexity_norm": 2.0666666667,
+    "branches_norm": 1.6666666667,
+    "llm_score_raw": 3.0,
+    "final_score": 2.68,
+    "difficulty": "hard",
+    "score_breakdown": "llm_raw=3.00 cpx_norm=2.07 br_norm=1.67 \u2192 final=2.68 \u2192 hard"
+  },
+  {
+    "text": "Write a function to reflect the modified run-length encoding from a list.",
+    "code": "from itertools import groupby\r\ndef modified_encode(alist):\r\n        def ctr_ele(el):\r\n            if len(el)>1: return [len(el), el[0]]\r\n            else: return el[0]\r\n        return [ctr_ele(list(group)) for key, group in groupby(alist)]",
+    "task_id": 317,
+    "test_setup_code": "",
+    "test_list": [
+      "assert modified_encode([1,1,2,3,4,4,5,1])==[[2, 1], 2, 3, [2, 4], 5, 1]",
+      "assert modified_encode('automatically')==['a', 'u', 't', 'o', 'm', 'a', 't', 'i', 'c', 'a', [2, 'l'], 'y']",
+      "assert modified_encode('python')==['p', 'y', 't', 'h', 'o', 'n']"
+    ],
+    "challenge_test_list": [],
+    "complexity": 2,
+    "branches": 2,
+    "complexity_norm": 1.1333333333,
+    "branches_norm": 1.1904761905,
+    "llm_score_raw": 2.0,
+    "final_score": 1.7457142857,
+    "difficulty": "medium",
+    "score_breakdown": "llm_raw=2.00 cpx_norm=1.13 br_norm=1.19 \u2192 final=1.75 \u2192 medium"
+  },
+  {
+    "text": "Write a function to calculate a grid of hexagon coordinates where function returns a list of lists containing 6 tuples of x, y point coordinates.",
+    "code": "import math\r\ndef calculate_polygons(startx, starty, endx, endy, radius):\r\n    sl = (2 * radius) * math.tan(math.pi / 6)\r\n    p = sl * 0.5\r\n    b = sl * math.cos(math.radians(30))\r\n    w = b * 2\r\n    h = 2 * sl   \r\n    startx = startx - w\r\n    starty = starty - h\r\n    endx = endx + w\r\n    endy = endy + h\r\n    origx = startx\r\n    origy = starty\r\n    xoffset = b\r\n    yoffset = 3 * p\r\n    polygons = []\r\n    row = 1\r\n    counter = 0\r\n    while starty < endy:\r\n        if row % 2 == 0:\r\n            startx = origx + xoffset\r\n        else:\r\n            startx = origx\r\n        while startx < endx:\r\n            p1x = startx\r\n            p1y = starty + p\r\n            p2x = startx\r\n            p2y = starty + (3 * p)\r\n            p3x = startx + b\r\n            p3y = starty + h\r\n            p4x = startx + w\r\n            p4y = starty + (3 * p)\r\n            p5x = startx + w\r\n            p5y = starty + p\r\n            p6x = startx + b\r\n            p6y = starty\r\n            poly = [\r\n                (p1x, p1y),\r\n                (p2x, p2y),\r\n                (p3x, p3y),\r\n                (p4x, p4y),\r\n                (p5x, p5y),\r\n                (p6x, p6y),\r\n                (p1x, p1y)]\r\n            polygons.append(poly)\r\n            counter += 1\r\n            startx += w\r\n        starty += yoffset\r\n        row += 1\r\n    return polygons",
+    "task_id": 493,
+    "test_setup_code": "",
+    "test_list": [
+      "assert calculate_polygons(1,1, 4, 4, 3)==[[(-5.0, -4.196152422706632), (-5.0, -0.7320508075688767), (-2.0, 1.0), (1.0, -0.7320508075688767), (1.0, -4.196152422706632), (-2.0, -5.928203230275509), (-5.0, -4.196152422706632)], [(1.0, -4.196152422706632), (1.0, -0.7320508075688767), (4.0, 1.0), (7.0, -0.7320508075688767), (7.0, -4.196152422706632), (4.0, -5.928203230275509), (1.0, -4.196152422706632)], [(7.0, -4.196152422706632), (7.0, -0.7320508075688767), (10.0, 1.0), (13.0, -0.7320508075688767), (13.0, -4.196152422706632), (10.0, -5.928203230275509), (7.0, -4.196152422706632)], [(-2.0, 1.0000000000000004), (-2.0, 4.464101615137755), (1.0, 6.196152422706632), (4.0, 4.464101615137755), (4.0, 1.0000000000000004), (1.0, -0.7320508075688767), (-2.0, 1.0000000000000004)], [(4.0, 1.0000000000000004), (4.0, 4.464101615137755), (7.0, 6.196152422706632), (10.0, 4.464101615137755), (10.0, 1.0000000000000004), (7.0, -0.7320508075688767), (4.0, 1.0000000000000004)], [(-5.0, 6.196152422706632), (-5.0, 9.660254037844387), (-2.0, 11.392304845413264), (1.0, 9.660254037844387), (1.0, 6.196152422706632), (-2.0, 4.464101615137755), (-5.0, 6.196152422706632)], [(1.0, 6.196152422706632), (1.0, 9.660254037844387), (4.0, 11.392304845413264), (7.0, 9.660254037844387), (7.0, 6.196152422706632), (4.0, 4.464101615137755), (1.0, 6.196152422706632)], [(7.0, 6.196152422706632), (7.0, 9.660254037844387), (10.0, 11.392304845413264), (13.0, 9.660254037844387), (13.0, 6.196152422706632), (10.0, 4.464101615137755), (7.0, 6.196152422706632)], [(-2.0, 11.392304845413264), (-2.0, 14.85640646055102), (1.0, 16.588457268119896), (4.0, 14.85640646055102), (4.0, 11.392304845413264), (1.0, 9.660254037844387), (-2.0, 11.392304845413264)], [(4.0, 11.392304845413264), (4.0, 14.85640646055102), (7.0, 16.588457268119896), (10.0, 14.85640646055102), (10.0, 11.392304845413264), (7.0, 9.660254037844387), (4.0, 11.392304845413264)]]",
+      "assert calculate_polygons(5,4,7,9,8)==[[(-11.0, -9.856406460551018), (-11.0, -0.6188021535170058), (-3.0, 4.0), (5.0, -0.6188021535170058), (5.0, -9.856406460551018), (-3.0, -14.475208614068023), (-11.0, -9.856406460551018)], [(5.0, -9.856406460551018), (5.0, -0.6188021535170058), (13.0, 4.0), (21.0, -0.6188021535170058), (21.0, -9.856406460551018), (13.0, -14.475208614068023), (5.0, -9.856406460551018)], [(21.0, -9.856406460551018), (21.0, -0.6188021535170058), (29.0, 4.0), (37.0, -0.6188021535170058), (37.0, -9.856406460551018), (29.0, -14.475208614068023), (21.0, -9.856406460551018)], [(-3.0, 4.0), (-3.0, 13.237604307034012), (5.0, 17.856406460551018), (13.0, 13.237604307034012), (13.0, 4.0), (5.0, -0.6188021535170058), (-3.0, 4.0)], [(13.0, 4.0), (13.0, 13.237604307034012), (21.0, 17.856406460551018), (29.0, 13.237604307034012), (29.0, 4.0), (21.0, -0.6188021535170058), (13.0, 4.0)], [(-11.0, 17.856406460551018), (-11.0, 27.09401076758503), (-3.0, 31.712812921102035), (5.0, 27.09401076758503), (5.0, 17.856406460551018), (-3.0, 13.237604307034012), (-11.0, 17.856406460551018)], [(5.0, 17.856406460551018), (5.0, 27.09401076758503), (13.0, 31.712812921102035), (21.0, 27.09401076758503), (21.0, 17.856406460551018), (13.0, 13.237604307034012), (5.0, 17.856406460551018)], [(21.0, 17.856406460551018), (21.0, 27.09401076758503), (29.0, 31.712812921102035), (37.0, 27.09401076758503), (37.0, 17.856406460551018), (29.0, 13.237604307034012), (21.0, 17.856406460551018)], [(-3.0, 31.712812921102035), (-3.0, 40.95041722813605), (5.0, 45.569219381653056), (13.0, 40.95041722813605), (13.0, 31.712812921102035), (5.0, 27.09401076758503), (-3.0, 31.712812921102035)], [(13.0, 31.712812921102035), (13.0, 40.95041722813605), (21.0, 45.569219381653056), (29.0, 40.95041722813605), (29.0, 31.712812921102035), (21.0, 27.09401076758503), (13.0, 31.712812921102035)]]",
+      "assert calculate_polygons(9,6,4,3,2)==[[(5.0, 2.5358983848622456), (5.0, 4.8452994616207485), (7.0, 6.0), (9.0, 4.8452994616207485), (9.0, 2.5358983848622456), (7.0, 1.3811978464829942), (5.0, 2.5358983848622456)], [(7.0, 6.0), (7.0, 8.309401076758503), (9.0, 9.464101615137753), (11.0, 8.309401076758503), (11.0, 6.0), (9.0, 4.8452994616207485), (7.0, 6.0)]]"
+    ],
+    "challenge_test_list": [],
+    "complexity": 4,
+    "branches": 3,
+    "complexity_norm": 1.4,
+    "branches_norm": 1.2857142857,
+    "llm_score_raw": 3.0,
+    "final_score": 2.5085714286,
+    "difficulty": "hard",
+    "score_breakdown": "llm_raw=3.00 cpx_norm=1.40 br_norm=1.29 \u2192 final=2.51 \u2192 hard"
+  },
+  {
+    "text": "Write a python function to find binomial co-efficient.",
+    "code": "def binomial_Coeff(n,k): \r\n    if k > n : \r\n       return 0\r\n    if k==0 or k ==n : \r\n        return 1 \r\n    return binomial_Coeff(n-1,k-1) + binomial_Coeff(n-1,k) ",
+    "task_id": 28,
+    "test_setup_code": "",
+    "test_list": [
+      "assert binomial_Coeff(5,2) == 10",
+      "assert binomial_Coeff(4,3) == 4",
+      "assert binomial_Coeff(3,2) == 3"
+    ],
+    "challenge_test_list": [
+      "assert binomial_Coeff(14,6) == 3003"
+    ],
+    "complexity": 4,
+    "branches": 2,
+    "complexity_norm": 1.4,
+    "branches_norm": 1.1904761905,
+    "llm_score_raw": 2.0,
+    "final_score": 1.799047619,
+    "difficulty": "medium",
+    "score_breakdown": "llm_raw=2.00 cpx_norm=1.40 br_norm=1.19 \u2192 final=1.80 \u2192 medium"
+  },
+  {
+    "text": "Write a function to find t-nth term of geometric series.",
+    "code": "import math\r\ndef tn_gp(a,n,r):\r\n  tn = a * (math.pow(r, n - 1))\r\n  return tn",
+    "task_id": 55,
+    "test_setup_code": "",
+    "test_list": [
+      "assert tn_gp(1,5,2)==16",
+      "assert tn_gp(1,5,4)==256",
+      "assert tn_gp(2,6,3)==486"
+    ],
+    "challenge_test_list": [],
+    "complexity": 1,
+    "branches": 0,
+    "complexity_norm": 1.0,
+    "branches_norm": 1.0,
+    "llm_score_raw": 1.0,
+    "final_score": 1.0,
+    "difficulty": "easy",
+    "score_breakdown": "llm_raw=1.00 cpx_norm=1.00 br_norm=1.00 \u2192 final=1.00 \u2192 easy"
+  },
+  {
+    "text": "Write a function to locate the right insertion point for a specified value in sorted order.",
+    "code": "import bisect\r\ndef right_insertion(a, x):\r\n    i = bisect.bisect_right(a, x)\r\n    return i",
+    "task_id": 786,
+    "test_setup_code": "",
+    "test_list": [
+      "assert right_insertion([1,2,4,5],6)==4",
+      "assert right_insertion([1,2,4,5],3)==2",
+      "assert right_insertion([1,2,4,5],7)==4"
+    ],
+    "challenge_test_list": [],
+    "complexity": 1,
+    "branches": 0,
+    "complexity_norm": 1.0,
+    "branches_norm": 1.0,
+    "llm_score_raw": 1.0,
+    "final_score": 1.0,
+    "difficulty": "easy",
+    "score_breakdown": "llm_raw=1.00 cpx_norm=1.00 br_norm=1.00 \u2192 final=1.00 \u2192 easy"
+  },
+  {
+    "text": "Write a function to find the maximum sum of subsequences of given array with no adjacent elements.",
+    "code": "def max_sum_subseq(A):\r\n    n = len(A)\r\n    if n == 1:\r\n        return A[0]\r\n    look_up = [None] * n\r\n    look_up[0] = A[0]\r\n    look_up[1] = max(A[0], A[1])\r\n    for i in range(2, n):\r\n        look_up[i] = max(look_up[i - 1], look_up[i - 2] + A[i])\r\n        look_up[i] = max(look_up[i], A[i])\r\n    return look_up[n - 1]",
+    "task_id": 895,
+    "test_setup_code": "",
+    "test_list": [
+      "assert max_sum_subseq([1, 2, 9, 4, 5, 0, 4, 11, 6]) == 26",
+      "assert max_sum_subseq([1, 2, 9, 5, 6, 0, 5, 12, 7]) == 28",
+      "assert max_sum_subseq([1, 3, 10, 5, 6, 0, 6, 14, 21]) == 44"
+    ],
+    "challenge_test_list": [],
+    "complexity": 3,
+    "branches": 2,
+    "complexity_norm": 1.2666666667,
+    "branches_norm": 1.1904761905,
+    "llm_score_raw": 2.0,
+    "final_score": 1.7723809524,
+    "difficulty": "medium",
+    "score_breakdown": "llm_raw=2.00 cpx_norm=1.27 br_norm=1.19 \u2192 final=1.77 \u2192 medium"
+  },
+  {
+    "text": "Write a function to insert an element before each element of a list.",
+    "code": "def insert_element(list,element):\r\n list = [v for elt in list for v in (element, elt)]\r\n return list",
+    "task_id": 251,
+    "test_setup_code": "",
+    "test_list": [
+      "assert insert_element(['Red', 'Green', 'Black'] ,'c')==['c', 'Red', 'c', 'Green', 'c', 'Black'] ",
+      "assert insert_element(['python', 'java'] ,'program')==['program', 'python', 'program', 'java'] ",
+      "assert insert_element(['happy', 'sad'] ,'laugh')==['laugh', 'happy', 'laugh', 'sad'] "
+    ],
+    "challenge_test_list": [],
+    "complexity": 3,
+    "branches": 2,
+    "complexity_norm": 1.2666666667,
+    "branches_norm": 1.1904761905,
+    "llm_score_raw": 2.0,
+    "final_score": 1.7723809524,
+    "difficulty": "medium",
+    "score_breakdown": "llm_raw=2.00 cpx_norm=1.27 br_norm=1.19 \u2192 final=1.77 \u2192 medium"
+  },
+  {
+    "text": "Write a function to find length of the subarray having maximum sum.",
+    "code": "from sys import maxsize \r\ndef max_sub_array_sum(a,size): \r\n\tmax_so_far = -maxsize - 1\r\n\tmax_ending_here = 0\r\n\tstart = 0\r\n\tend = 0\r\n\ts = 0\r\n\tfor i in range(0,size): \r\n\t\tmax_ending_here += a[i] \r\n\t\tif max_so_far < max_ending_here: \r\n\t\t\tmax_so_far = max_ending_here \r\n\t\t\tstart = s \r\n\t\t\tend = i \r\n\t\tif max_ending_here < 0: \r\n\t\t\tmax_ending_here = 0\r\n\t\t\ts = i+1\r\n\treturn (end - start + 1)",
+    "task_id": 836,
+    "test_setup_code": "",
+    "test_list": [
+      "assert max_sub_array_sum([-2, -3, 4, -1, -2, 1, 5, -3],8) == 5",
+      "assert max_sub_array_sum([1, -2, 1, 1, -2, 1],6) == 2",
+      "assert max_sub_array_sum([-1, -2, 3, 4, 5],5) == 3"
+    ],
+    "challenge_test_list": [],
+    "complexity": 4,
+    "branches": 3,
+    "complexity_norm": 1.4,
+    "branches_norm": 1.2857142857,
+    "llm_score_raw": 2.0,
+    "final_score": 1.8085714286,
+    "difficulty": "medium",
+    "score_breakdown": "llm_raw=2.00 cpx_norm=1.40 br_norm=1.29 \u2192 final=1.81 \u2192 medium"
+  },
+  {
+    "text": "Write a python function to check whether the given array is monotonic or not.",
+    "code": "def is_Monotonic(A): \r\n    return (all(A[i] <= A[i + 1] for i in range(len(A) - 1)) or\r\n            all(A[i] >= A[i + 1] for i in range(len(A) - 1))) ",
+    "task_id": 68,
+    "test_setup_code": "",
+    "test_list": [
+      "assert is_Monotonic([6, 5, 4, 4]) == True",
+      "assert is_Monotonic([1, 2, 2, 3]) == True",
+      "assert is_Monotonic([1, 3, 2]) == False"
+    ],
+    "challenge_test_list": [],
+    "complexity": 4,
+    "branches": 2,
+    "complexity_norm": 1.4,
+    "branches_norm": 1.1904761905,
+    "llm_score_raw": 2.0,
+    "final_score": 1.799047619,
+    "difficulty": "medium",
+    "score_breakdown": "llm_raw=2.00 cpx_norm=1.40 br_norm=1.19 \u2192 final=1.80 \u2192 medium"
+  },
+  {
+    "text": "Write a python function to find the kth element in an array containing odd elements first and then even elements.",
+    "code": "def get_Number(n, k): \r\n    arr = [0] * n; \r\n    i = 0; \r\n    odd = 1; \r\n    while (odd <= n):   \r\n        arr[i] = odd; \r\n        i += 1; \r\n        odd += 2;\r\n    even = 2; \r\n    while (even <= n): \r\n        arr[i] = even; \r\n        i += 1;\r\n        even += 2; \r\n    return arr[k - 1]; ",
+    "task_id": 844,
+    "test_setup_code": "",
+    "test_list": [
+      "assert get_Number(8,5) == 2",
+      "assert get_Number(7,2) == 3",
+      "assert get_Number(5,2) == 3"
+    ],
+    "challenge_test_list": [],
+    "complexity": 3,
+    "branches": 2,
+    "complexity_norm": 1.2666666667,
+    "branches_norm": 1.1904761905,
+    "llm_score_raw": 2.0,
+    "final_score": 1.7723809524,
+    "difficulty": "medium",
+    "score_breakdown": "llm_raw=2.00 cpx_norm=1.27 br_norm=1.19 \u2192 final=1.77 \u2192 medium"
+  },
+  {
+    "text": "Write a function to find the diameter of a circle.",
+    "code": "def diameter_circle(r):\r\n  diameter=2*r\r\n  return diameter",
+    "task_id": 499,
+    "test_setup_code": "",
+    "test_list": [
+      "assert diameter_circle(10)==20",
+      "assert diameter_circle(40)==80",
+      "assert diameter_circle(15)==30"
+    ],
+    "challenge_test_list": [],
+    "complexity": 1,
+    "branches": 0,
+    "complexity_norm": 1.0,
+    "branches_norm": 1.0,
+    "llm_score_raw": 1.0,
+    "final_score": 1.0,
+    "difficulty": "easy",
+    "score_breakdown": "llm_raw=1.00 cpx_norm=1.00 br_norm=1.00 \u2192 final=1.00 \u2192 easy"
+  },
+  {
+    "text": "Write a function to check if there is a subset with sum divisible by m.",
+    "code": "def modular_sum(arr, n, m): \r\n\tif (n > m): \r\n\t\treturn True\r\n\tDP = [False for i in range(m)] \r\n\tfor i in range(n): \r\n\t\tif (DP[0]): \r\n\t\t\treturn True\r\n\t\ttemp = [False for i in range(m)] \r\n\t\tfor j in range(m): \r\n\t\t\tif (DP[j] == True): \r\n\t\t\t\tif (DP[(j + arr[i]) % m] == False): \r\n\t\t\t\t\ttemp[(j + arr[i]) % m] = True\r\n\t\tfor j in range(m): \r\n\t\t\tif (temp[j]): \r\n\t\t\t\tDP[j] = True\r\n\t\tDP[arr[i] % m] = True\r\n\treturn DP[0]",
+    "task_id": 515,
+    "test_setup_code": "",
+    "test_list": [
+      "assert modular_sum([3, 1, 7, 5], 4, 6) == True",
+      "assert modular_sum([1, 7], 2, 5) == False",
+      "assert modular_sum([1, 6], 2, 5) == False"
+    ],
+    "challenge_test_list": [],
+    "complexity": 11,
+    "branches": 10,
+    "complexity_norm": 2.3333333333,
+    "branches_norm": 1.9523809524,
+    "llm_score_raw": 3.0,
+    "final_score": 2.7619047619,
+    "difficulty": "hard",
+    "score_breakdown": "llm_raw=3.00 cpx_norm=2.33 br_norm=1.95 \u2192 final=2.76 \u2192 hard"
+  },
+  {
+    "text": "Write a function to flatten the given tuple matrix into the tuple list with each tuple representing each column.",
+    "code": "def matrix_to_list(test_list):\r\n  temp = [ele for sub in test_list for ele in sub]\r\n  res = list(zip(*temp))\r\n  return (str(res))",
+    "task_id": 652,
+    "test_setup_code": "",
+    "test_list": [
+      "assert matrix_to_list([[(4, 5), (7, 8)], [(10, 13), (18, 17)], [(0, 4), (10, 1)]]) == '[(4, 7, 10, 18, 0, 10), (5, 8, 13, 17, 4, 1)]'",
+      "assert matrix_to_list([[(5, 6), (8, 9)], [(11, 14), (19, 18)], [(1, 5), (11, 2)]]) == '[(5, 8, 11, 19, 1, 11), (6, 9, 14, 18, 5, 2)]'",
+      "assert matrix_to_list([[(6, 7), (9, 10)], [(12, 15), (20, 21)], [(23, 7), (15, 8)]]) == '[(6, 9, 12, 20, 23, 15), (7, 10, 15, 21, 7, 8)]'"
+    ],
+    "challenge_test_list": [],
+    "complexity": 3,
+    "branches": 2,
+    "complexity_norm": 1.2666666667,
+    "branches_norm": 1.1904761905,
+    "llm_score_raw": 2.0,
+    "final_score": 1.7723809524,
+    "difficulty": "medium",
+    "score_breakdown": "llm_raw=2.00 cpx_norm=1.27 br_norm=1.19 \u2192 final=1.77 \u2192 medium"
+  },
+  {
+    "text": "Write a python function to count negative numbers in a list.",
+    "code": "def neg_count(list):\r\n  neg_count= 0\r\n  for num in list: \r\n    if num <= 0: \r\n      neg_count += 1\r\n  return neg_count ",
+    "task_id": 329,
+    "test_setup_code": "",
+    "test_list": [
+      "assert neg_count([-1,-2,3,-4,-5]) == 4",
+      "assert neg_count([1,2,3]) == 0",
+      "assert neg_count([1,2,-3,-10,20]) == 2"
+    ],
+    "challenge_test_list": [],
+    "complexity": 3,
+    "branches": 2,
+    "complexity_norm": 1.2666666667,
+    "branches_norm": 1.1904761905,
+    "llm_score_raw": 1.0,
+    "final_score": 1.0723809524,
+    "difficulty": "easy",
+    "score_breakdown": "llm_raw=1.00 cpx_norm=1.27 br_norm=1.19 \u2192 final=1.07 \u2192 easy"
+  },
+  {
+    "text": "Write a function to merge two dictionaries.",
+    "code": "def merge_dict(d1,d2):\r\n d = d1.copy()\r\n d.update(d2)\r\n return d",
+    "task_id": 263,
+    "test_setup_code": "",
+    "test_list": [
+      "assert merge_dict({'a': 100, 'b': 200},{'x': 300, 'y': 200})=={'x': 300, 'y': 200, 'a': 100, 'b': 200}",
+      "assert merge_dict({'a':900,'b':900,'d':900},{'a':900,'b':900,'d':900})=={'a':900,'b':900,'d':900,'a':900,'b':900,'d':900}",
+      "assert merge_dict({'a':10,'b':20},{'x':30,'y':40})=={'x':30,'y':40,'a':10,'b':20}"
+    ],
+    "challenge_test_list": [],
+    "complexity": 1,
+    "branches": 0,
+    "complexity_norm": 1.0,
+    "branches_norm": 1.0,
+    "llm_score_raw": 1.0,
+    "final_score": 1.0,
+    "difficulty": "easy",
+    "score_breakdown": "llm_raw=1.00 cpx_norm=1.00 br_norm=1.00 \u2192 final=1.00 \u2192 easy"
+  },
+  {
+    "text": "Write a python function to check whether all the bits are within a given range or not.",
+    "code": "def all_Bits_Set_In_The_Given_Range(n,l,r): \r\n    num = ((1 << r) - 1) ^ ((1 << (l - 1)) - 1) \r\n    new_num = n & num \r\n    if (num == new_num): \r\n        return True\r\n    return False",
+    "task_id": 884,
+    "test_setup_code": "",
+    "test_list": [
+      "assert all_Bits_Set_In_The_Given_Range(10,2,1) == True ",
+      "assert all_Bits_Set_In_The_Given_Range(5,2,4) == False",
+      "assert all_Bits_Set_In_The_Given_Range(22,2,3) == True "
+    ],
+    "challenge_test_list": [],
+    "complexity": 2,
+    "branches": 1,
+    "complexity_norm": 1.1333333333,
+    "branches_norm": 1.0952380952,
+    "llm_score_raw": 2.0,
+    "final_score": 1.7361904762,
+    "difficulty": "medium",
+    "score_breakdown": "llm_raw=2.00 cpx_norm=1.13 br_norm=1.10 \u2192 final=1.74 \u2192 medium"
+  },
+  {
+    "text": "Write a function to sort a list in a dictionary.",
+    "code": "def sorted_dict(dict1):\r\n  sorted_dict = {x: sorted(y) for x, y in dict1.items()}\r\n  return sorted_dict",
+    "task_id": 662,
+    "test_setup_code": "",
+    "test_list": [
+      "assert sorted_dict({'n1': [2, 3, 1], 'n2': [5, 1, 2], 'n3': [3, 2, 4]})=={'n1': [1, 2, 3], 'n2': [1, 2, 5], 'n3': [2, 3, 4]}",
+      "assert sorted_dict({'n1': [25,37,41], 'n2': [41,54,63], 'n3': [29,38,93]})=={'n1': [25, 37, 41], 'n2': [41, 54, 63], 'n3': [29, 38, 93]}",
+      "assert sorted_dict({'n1': [58,44,56], 'n2': [91,34,58], 'n3': [100,200,300]})=={'n1': [44, 56, 58], 'n2': [34, 58, 91], 'n3': [100, 200, 300]}"
+    ],
+    "challenge_test_list": [],
+    "complexity": 2,
+    "branches": 1,
+    "complexity_norm": 1.1333333333,
+    "branches_norm": 1.0952380952,
+    "llm_score_raw": 2.0,
+    "final_score": 1.7361904762,
+    "difficulty": "medium",
+    "score_breakdown": "llm_raw=2.00 cpx_norm=1.13 br_norm=1.10 \u2192 final=1.74 \u2192 medium"
+  },
+  {
+    "text": "Write a python function to count the pairs with xor as an odd number.",
+    "code": "def find_Odd_Pair(A,N) : \r\n    oddPair = 0\r\n    for i in range(0,N) :  \r\n        for j in range(i+1,N) :  \r\n            if ((A[i] ^ A[j]) % 2 != 0):  \r\n                oddPair+=1  \r\n    return oddPair  ",
+    "task_id": 556,
+    "test_setup_code": "",
+    "test_list": [
+      "assert find_Odd_Pair([5,4,7,2,1],5) == 6",
+      "assert find_Odd_Pair([7,2,8,1,0,5,11],7) == 12",
+      "assert find_Odd_Pair([1,2,3],3) == 2"
+    ],
+    "challenge_test_list": [],
+    "complexity": 4,
+    "branches": 3,
+    "complexity_norm": 1.4,
+    "branches_norm": 1.2857142857,
+    "llm_score_raw": 2.0,
+    "final_score": 1.8085714286,
+    "difficulty": "medium",
+    "score_breakdown": "llm_raw=2.00 cpx_norm=1.40 br_norm=1.29 \u2192 final=1.81 \u2192 medium"
+  },
+  {
+    "text": "Write a function to check if all values are same in a dictionary.",
+    "code": "def check_value(dict, n):\r\n    result = all(x == n for x in dict.values()) \r\n    return result",
+    "task_id": 464,
+    "test_setup_code": "",
+    "test_list": [
+      "assert check_value({'Cierra Vega': 12, 'Alden Cantrell': 12, 'Kierra Gentry': 12, 'Pierre Cox': 12},10)==False",
+      "assert check_value({'Cierra Vega': 12, 'Alden Cantrell': 12, 'Kierra Gentry': 12, 'Pierre Cox': 12},12)==True",
+      "assert check_value({'Cierra Vega': 12, 'Alden Cantrell': 12, 'Kierra Gentry': 12, 'Pierre Cox': 12},5)==False"
+    ],
+    "challenge_test_list": [],
+    "complexity": 2,
+    "branches": 1,
+    "complexity_norm": 1.1333333333,
+    "branches_norm": 1.0952380952,
+    "llm_score_raw": 2.0,
+    "final_score": 1.7361904762,
+    "difficulty": "medium",
+    "score_breakdown": "llm_raw=2.00 cpx_norm=1.13 br_norm=1.10 \u2192 final=1.74 \u2192 medium"
+  },
+  {
+    "text": "Write a python function to check whether the length of the word is even or not.",
+    "code": "def word_len(s): \r\n    s = s.split(' ')   \r\n    for word in s:    \r\n        if len(word)%2==0: \r\n            return True  \r\n        else:\r\n          return False",
+    "task_id": 964,
+    "test_setup_code": "",
+    "test_list": [
+      "assert word_len(\"program\") == False",
+      "assert word_len(\"solution\") == True",
+      "assert word_len(\"data\") == True"
+    ],
+    "challenge_test_list": [],
+    "complexity": 3,
+    "branches": 2,
+    "complexity_norm": 1.2666666667,
+    "branches_norm": 1.1904761905,
+    "llm_score_raw": 2.0,
+    "final_score": 1.7723809524,
+    "difficulty": "medium",
+    "score_breakdown": "llm_raw=2.00 cpx_norm=1.27 br_norm=1.19 \u2192 final=1.77 \u2192 medium"
+  },
+  {
+    "text": "Write a function to convert a list to a tuple.",
+    "code": "def list_tuple(listx):\r\n  tuplex = tuple(listx)\r\n  return tuplex",
+    "task_id": 587,
+    "test_setup_code": "",
+    "test_list": [
+      "assert list_tuple([5, 10, 7, 4, 15, 3])==(5, 10, 7, 4, 15, 3)",
+      "assert list_tuple([2, 4, 5, 6, 2, 3, 4, 4, 7])==(2, 4, 5, 6, 2, 3, 4, 4, 7)",
+      "assert list_tuple([58,44,56])==(58,44,56)"
+    ],
+    "challenge_test_list": [],
+    "complexity": 1,
+    "branches": 0,
+    "complexity_norm": 1.0,
+    "branches_norm": 1.0,
+    "llm_score_raw": 1.0,
+    "final_score": 1.0,
+    "difficulty": "easy",
+    "score_breakdown": "llm_raw=1.00 cpx_norm=1.00 br_norm=1.00 \u2192 final=1.00 \u2192 easy"
+  },
+  {
+    "text": "Write a python function to find the minimum number of swaps required to convert one binary string to another.",
+    "code": "def min_Swaps(str1,str2) : \r\n    count = 0\r\n    for i in range(len(str1)) : \r\n        if str1[i] != str2[i] : \r\n            count += 1\r\n    if count % 2 == 0 : \r\n        return (count // 2) \r\n    else : \r\n        return (\"Not Possible\") ",
+    "task_id": 699,
+    "test_setup_code": "",
+    "test_list": [
+      "assert min_Swaps(\"1101\",\"1110\") == 1",
+      "assert min_Swaps(\"1111\",\"0100\") == \"Not Possible\"",
+      "assert min_Swaps(\"1110000\",\"0001101\") == 3"
+    ],
+    "challenge_test_list": [],
+    "complexity": 4,
+    "branches": 3,
+    "complexity_norm": 1.4,
+    "branches_norm": 1.2857142857,
+    "llm_score_raw": 2.0,
+    "final_score": 1.8085714286,
+    "difficulty": "medium",
+    "score_breakdown": "llm_raw=2.00 cpx_norm=1.40 br_norm=1.29 \u2192 final=1.81 \u2192 medium"
+  },
+  {
+    "text": "Write a function to find all words which are at least 4 characters long in a string by using regex.",
+    "code": "import re\r\ndef find_char_long(text):\r\n  return (re.findall(r\"\\b\\w{4,}\\b\", text))",
+    "task_id": 7,
+    "test_setup_code": "",
+    "test_list": [
+      "assert find_char_long('Please move back to stream') == ['Please', 'move', 'back', 'stream']",
+      "assert find_char_long('Jing Eco and Tech') == ['Jing', 'Tech']",
+      "assert find_char_long('Jhingai wulu road Zone 3') == ['Jhingai', 'wulu', 'road', 'Zone']"
+    ],
+    "challenge_test_list": [],
+    "complexity": 1,
+    "branches": 0,
+    "complexity_norm": 1.0,
+    "branches_norm": 1.0,
+    "llm_score_raw": 1.0,
+    "final_score": 1.0,
+    "difficulty": "easy",
+    "score_breakdown": "llm_raw=1.00 cpx_norm=1.00 br_norm=1.00 \u2192 final=1.00 \u2192 easy"
+  },
+  {
+    "text": "Write a function to create a list taking alternate elements from another given list.",
+    "code": "def alternate_elements(list1):\r\n    result=[]\r\n    for item in list1[::2]:\r\n        result.append(item)\r\n    return result ",
+    "task_id": 718,
+    "test_setup_code": "",
+    "test_list": [
+      "assert alternate_elements([\"red\", \"black\", \"white\", \"green\", \"orange\"])==['red', 'white', 'orange']",
+      "assert alternate_elements([2, 0, 3, 4, 0, 2, 8, 3, 4, 2])==[2, 3, 0, 8, 4]",
+      "assert alternate_elements([1, 2, 3, 4, 5, 6, 7, 8, 9, 10])==[1,3,5,7,9]"
+    ],
+    "challenge_test_list": [],
+    "complexity": 2,
+    "branches": 1,
+    "complexity_norm": 1.1333333333,
+    "branches_norm": 1.0952380952,
+    "llm_score_raw": 1.0,
+    "final_score": 1.0361904762,
+    "difficulty": "easy",
+    "score_breakdown": "llm_raw=1.00 cpx_norm=1.13 br_norm=1.10 \u2192 final=1.04 \u2192 easy"
+  },
+  {
+    "text": "Write a function to sort a list of lists by a given index of the inner list.",
+    "code": "from operator import itemgetter\r\ndef index_on_inner_list(list_data, index_no):\r\n    result = sorted(list_data, key=itemgetter(index_no))\r\n    return result",
+    "task_id": 381,
+    "test_setup_code": "",
+    "test_list": [
+      "assert index_on_inner_list([('Greyson Fulton', 98, 99), ('Brady Kent', 97, 96), ('Wyatt Knott', 91, 94), ('Beau Turnbull', 94, 98)] ,0)==[('Beau Turnbull', 94, 98), ('Brady Kent', 97, 96), ('Greyson Fulton', 98, 99), ('Wyatt Knott', 91, 94)]",
+      "assert index_on_inner_list([('Greyson Fulton', 98, 99), ('Brady Kent', 97, 96), ('Wyatt Knott', 91, 94), ('Beau Turnbull', 94, 98)] ,1)==[('Wyatt Knott', 91, 94), ('Beau Turnbull', 94, 98), ('Brady Kent', 97, 96), ('Greyson Fulton', 98, 99)]",
+      "assert index_on_inner_list([('Greyson Fulton', 98, 99), ('Brady Kent', 97, 96), ('Wyatt Knott', 91, 94), ('Beau Turnbull', 94, 98)] ,2)==[('Wyatt Knott', 91, 94), ('Brady Kent', 97, 96), ('Beau Turnbull', 94, 98), ('Greyson Fulton', 98, 99)]"
+    ],
+    "challenge_test_list": [],
+    "complexity": 1,
+    "branches": 0,
+    "complexity_norm": 1.0,
+    "branches_norm": 1.0,
+    "llm_score_raw": 2.0,
+    "final_score": 1.7,
+    "difficulty": "medium",
+    "score_breakdown": "llm_raw=2.00 cpx_norm=1.00 br_norm=1.00 \u2192 final=1.70 \u2192 medium"
+  }
+]

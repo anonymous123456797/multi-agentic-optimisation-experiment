@@ -1,0 +1,200 @@
+[
+  {
+    "model_family": "qwen2.5-coder",
+    "model_size": "1.5b",
+    "variant": "instruct",
+    "quantization": "q4_K_M",
+    "temperature": 0.0,
+    "top_p": 0.9,
+    "num_predict": 192,
+    "num_ctx": 1024,
+    "exec_timeout": 10,
+    "prompt_template": {
+      "instruction": 0,
+      "output_constraint": 0,
+      "reasoning_scaffold": 0,
+      "format_rule": 0,
+      "test_hint": 1
+    }
+  },
+  {
+    "model_family": "qwen2.5-coder",
+    "model_size": "1.5b",
+    "variant": "instruct",
+    "quantization": "q8_0",
+    "temperature": 0.1,
+    "top_p": 0.9,
+    "num_predict": 192,
+    "num_ctx": 1024,
+    "exec_timeout": 10,
+    "prompt_template": {
+      "instruction": 0,
+      "output_constraint": 0,
+      "reasoning_scaffold": 0,
+      "format_rule": 0,
+      "test_hint": 1
+    }
+  },
+  {
+    "model_family": "qwen2.5-coder",
+    "model_size": "7b",
+    "variant": "instruct",
+    "quantization": "q4_K_M",
+    "temperature": 0.0,
+    "top_p": 0.9,
+    "num_predict": 192,
+    "num_ctx": 1024,
+    "exec_timeout": 10,
+    "prompt_template": {
+      "instruction": 0,
+      "output_constraint": 0,
+      "reasoning_scaffold": 0,
+      "format_rule": 0,
+      "test_hint": 1
+    }
+  },
+  {
+    "model_family": "qwen2.5-coder",
+    "model_size": "7b",
+    "variant": "instruct",
+    "quantization": "q8_0",
+    "temperature": 0.1,
+    "top_p": 0.9,
+    "num_predict": 192,
+    "num_ctx": 1024,
+    "exec_timeout": 10,
+    "prompt_template": {
+      "instruction": 0,
+      "output_constraint": 0,
+      "reasoning_scaffold": 0,
+      "format_rule": 0,
+      "test_hint": 1
+    }
+  },
+  {
+    "model_family": "qwen2.5-coder",
+    "model_size": "7b",
+    "variant": "instruct",
+    "quantization": "q4_K_M",
+    "temperature": 0.1,
+    "top_p": 0.9,
+    "num_predict": 192,
+    "num_ctx": 1024,
+    "exec_timeout": 10,
+    "prompt_template": {
+      "instruction": 0,
+      "output_constraint": 0,
+      "reasoning_scaffold": 0,
+      "format_rule": 0,
+      "test_hint": 1
+    }
+  },
+  {
+    "model_family": "qwen2.5-coder",
+    "model_size": "7b",
+    "variant": "instruct",
+    "quantization": "q8_0",
+    "temperature": 0.0,
+    "top_p": 0.9,
+    "num_predict": 192,
+    "num_ctx": 1024,
+    "exec_timeout": 10,
+    "prompt_template": {
+      "instruction": 0,
+      "output_constraint": 0,
+      "reasoning_scaffold": 0,
+      "format_rule": 0,
+      "test_hint": 1
+    }
+  },
+  {
+    "model_family": "qwen2.5-coder",
+    "model_size": "32b",
+    "variant": "instruct",
+    "quantization": "q4_K_M",
+    "temperature": 0.0,
+    "top_p": 0.9,
+    "num_predict": 192,
+    "num_ctx": 1024,
+    "exec_timeout": 10,
+    "prompt_template": {
+      "instruction": 0,
+      "output_constraint": 0,
+      "reasoning_scaffold": 0,
+      "format_rule": 0,
+      "test_hint": 1
+    }
+  },
+  {
+    "model_family": "qwen2.5-coder",
+    "model_size": "32b",
+    "variant": "instruct",
+    "quantization": "q4_K_M",
+    "temperature": 0.0,
+    "top_p": 0.95,
+    "num_predict": 192,
+    "num_ctx": 1024,
+    "exec_timeout": 10,
+    "prompt_template": {
+      "instruction": 0,
+      "output_constraint": 0,
+      "reasoning_scaffold": 0,
+      "format_rule": 0,
+      "test_hint": 1
+    }
+  },
+  {
+    "model_family": "qwen2.5-coder",
+    "model_size": "32b",
+    "variant": "instruct",
+    "quantization": "q4_K_M",
+    "temperature": 0.0,
+    "top_p": 0.9,
+    "num_predict": 256,
+    "num_ctx": 1024,
+    "exec_timeout": 10,
+    "prompt_template": {
+      "instruction": 0,
+      "output_constraint": 0,
+      "reasoning_scaffold": 0,
+      "format_rule": 0,
+      "test_hint": 1
+    }
+  },
+  {
+    "model_family": "qwen2.5-coder",
+    "model_size": "32b",
+    "variant": "instruct",
+    "quantization": "q8_0",
+    "temperature": 0.0,
+    "top_p": 0.9,
+    "num_predict": 192,
+    "num_ctx": 1024,
+    "exec_timeout": 10,
+    "prompt_template": {
+      "instruction": 0,
+      "output_constraint": 0,
+      "reasoning_scaffold": 0,
+      "format_rule": 0,
+      "test_hint": 1
+    }
+  },
+  {
+    "model_family": "qwen2.5-coder",
+    "model_size": "32b",
+    "variant": "instruct",
+    "quantization": "fp16",
+    "temperature": 0.0,
+    "top_p": 0.9,
+    "num_predict": 192,
+    "num_ctx": 1024,
+    "exec_timeout": 10,
+    "prompt_template": {
+      "instruction": 0,
+      "output_constraint": 0,
+      "reasoning_scaffold": 0,
+      "format_rule": 0,
+      "test_hint": 1
+    }
+  }
+]

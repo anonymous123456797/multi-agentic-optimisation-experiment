@@ -1,0 +1,128 @@
+[
+  {
+    "model_size": "1.5b",
+    "quantization": "q4_K_M",
+    "test_hint": 0,
+    "pass@1": 0.32,
+    "runtime": 0.6415
+  },
+  {
+    "model_size": "1.5b",
+    "quantization": "q4_K_M",
+    "test_hint": 1,
+    "pass@1": 0.54,
+    "runtime": 0.4521
+  },
+  {
+    "model_size": "1.5b",
+    "quantization": "q8_0",
+    "test_hint": 0,
+    "pass@1": 0.32,
+    "runtime": 0.422
+  },
+  {
+    "model_size": "1.5b",
+    "quantization": "q8_0",
+    "test_hint": 1,
+    "pass@1": 0.5,
+    "runtime": 0.4316
+  },
+  {
+    "model_size": "1.5b",
+    "quantization": "fp16",
+    "test_hint": 0,
+    "pass@1": 0.28,
+    "runtime": 0.5398
+  },
+  {
+    "model_size": "1.5b",
+    "quantization": "fp16",
+    "test_hint": 1,
+    "pass@1": 0.5,
+    "runtime": 0.5255
+  },
+  {
+    "model_size": "7b",
+    "quantization": "q4_K_M",
+    "test_hint": 0,
+    "pass@1": 0.54,
+    "runtime": 0.6397
+  },
+  {
+    "model_size": "7b",
+    "quantization": "q4_K_M",
+    "test_hint": 1,
+    "pass@1": 0.74,
+    "runtime": 0.6307
+  },
+  {
+    "model_size": "7b",
+    "quantization": "q8_0",
+    "test_hint": 0,
+    "pass@1": 0.52,
+    "runtime": 0.8792
+  },
+  {
+    "model_size": "7b",
+    "quantization": "q8_0",
+    "test_hint": 1,
+    "pass@1": 0.76,
+    "runtime": 0.8161
+  },
+  {
+    "model_size": "7b",
+    "quantization": "fp16",
+    "test_hint": 0,
+    "pass@1": 0.54,
+    "runtime": 1.413
+  },
+  {
+    "model_size": "7b",
+    "quantization": "fp16",
+    "test_hint": 1,
+    "pass@1": 0.78,
+    "runtime": 1.2448
+  },
+  {
+    "model_size": "32b",
+    "quantization": "q4_K_M",
+    "test_hint": 0,
+    "pass@1": 0.52,
+    "runtime": 2.0437
+  },
+  {
+    "model_size": "32b",
+    "quantization": "q4_K_M",
+    "test_hint": 1,
+    "pass@1": 0.88,
+    "runtime": 2.099
+  },
+  {
+    "model_size": "32b",
+    "quantization": "q8_0",
+    "test_hint": 0,
+    "pass@1": 0.54,
+    "runtime": 3.161
+  },
+  {
+    "model_size": "32b",
+    "quantization": "q8_0",
+    "test_hint": 1,
+    "pass@1": 0.82,
+    "runtime": 2.9611
+  },
+  {
+    "model_size": "32b",
+    "quantization": "fp16",
+    "test_hint": 0,
+    "pass@1": 0.52,
+    "runtime": 22.24
+  },
+  {
+    "model_size": "32b",
+    "quantization": "fp16",
+    "test_hint": 1,
+    "pass@1": 0.84,
+    "runtime": 20.5991
+  }
+]

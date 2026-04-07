@@ -1,0 +1,917 @@
+2026-03-25 21:49:28,487 [INFO] Run started. Model: gemini-2.5-flash, N_RUNS: 2
+2026-03-25 21:49:28,487 [INFO] Pricing: $0.1/1M input tokens | $0.4/1M output tokens
+2026-03-25 21:49:28,487 [INFO] Loaded 974 problems from ./MBPP/mbpp_formatted.jsonl
+2026-03-25 21:49:33,504 [INFO] [idx=0-run1] score=3 raw='3' in_tok=364 out_tok=1 cost=$0.000037 latency=4.81s
+2026-03-25 21:49:39,559 [INFO] [idx=0-run2] score=3 raw='3' in_tok=364 out_tok=1 cost=$0.000037 latency=5.95s
+2026-03-25 21:49:45,669 [INFO] [idx=1-run1] score=1 raw='1' in_tok=155 out_tok=1 cost=$0.000016 latency=6.01s
+2026-03-25 21:49:51,733 [INFO] [idx=1-run2] score=1 raw='1' in_tok=155 out_tok=1 cost=$0.000016 latency=5.96s
+2026-03-25 21:50:01,015 [INFO] [idx=2-run1] score=2 raw='2' in_tok=165 out_tok=1 cost=$0.000017 latency=9.17s
+2026-03-25 21:50:08,864 [INFO] [idx=2-run2] score=2 raw='2' in_tok=165 out_tok=1 cost=$0.000017 latency=7.74s
+2026-03-25 21:50:18,566 [INFO] [idx=3-run1] score=1 raw='1' in_tok=152 out_tok=1 cost=$0.000016 latency=9.60s
+2026-03-25 21:50:27,964 [INFO] [idx=3-run2] score=1 raw='1' in_tok=152 out_tok=1 cost=$0.000016 latency=9.29s
+2026-03-25 21:50:32,767 [INFO] [idx=4-run1] score=3 raw='3' in_tok=275 out_tok=1 cost=$0.000028 latency=4.70s
+2026-03-25 21:50:39,202 [INFO] [idx=4-run2] score=3 raw='3' in_tok=275 out_tok=1 cost=$0.000028 latency=6.33s
+2026-03-25 21:50:49,746 [INFO] [idx=5-run1] score=4 raw='4' in_tok=174 out_tok=1 cost=$0.000018 latency=10.44s
+2026-03-25 21:50:58,677 [INFO] [idx=5-run2] score=3 raw='3' in_tok=174 out_tok=1 cost=$0.000018 latency=8.83s
+2026-03-25 21:51:04,941 [INFO] [idx=6-run1] score=1 raw='1' in_tok=148 out_tok=1 cost=$0.000015 latency=6.16s
+2026-03-25 21:51:12,190 [INFO] [idx=6-run2] score=2 raw='2' in_tok=148 out_tok=1 cost=$0.000015 latency=7.15s
+2026-03-25 21:51:23,206 [INFO] [idx=7-run1] score=1 raw='1' in_tok=140 out_tok=1 cost=$0.000014 latency=10.91s
+2026-03-25 21:51:35,088 [INFO] [idx=7-run2] score=1 raw='1' in_tok=140 out_tok=1 cost=$0.000014 latency=11.77s
+2026-03-25 21:51:42,437 [INFO] [idx=8-run1] score=3 raw='3' in_tok=188 out_tok=1 cost=$0.000019 latency=7.25s
+2026-03-25 21:51:49,171 [INFO] [idx=8-run2] score=2 raw='2' in_tok=188 out_tok=1 cost=$0.000019 latency=6.62s
+2026-03-25 21:51:55,418 [INFO] [idx=9-run1] score=1 raw='1' in_tok=141 out_tok=1 cost=$0.000015 latency=6.14s
+2026-03-25 21:52:02,151 [INFO] [idx=9-run2] score=1 raw='1' in_tok=141 out_tok=1 cost=$0.000015 latency=6.63s
+2026-03-25 21:52:07,583 [INFO] [idx=10-run1] score=3 raw='3' in_tok=233 out_tok=1 cost=$0.000024 latency=5.33s
+2026-03-25 21:52:12,931 [INFO] [idx=10-run2] score=3 raw='3' in_tok=233 out_tok=1 cost=$0.000024 latency=5.23s
+2026-03-25 21:52:20,014 [INFO] [idx=11-run1] score=1 raw='1' in_tok=135 out_tok=1 cost=$0.000014 latency=6.97s
+2026-03-25 21:52:26,763 [INFO] [idx=11-run2] score=1 raw='1' in_tok=135 out_tok=1 cost=$0.000014 latency=6.64s
+2026-03-25 21:52:36,044 [INFO] [idx=12-run1] score=2 raw='2' in_tok=156 out_tok=1 cost=$0.000016 latency=9.17s
+2026-03-25 21:52:45,090 [INFO] [idx=12-run2] score=2 raw='2' in_tok=156 out_tok=1 cost=$0.000016 latency=8.94s
+2026-03-25 21:52:47,369 [INFO] [idx=13-run1] score=1 raw='1' in_tok=133 out_tok=1 cost=$0.000014 latency=2.17s
+2026-03-25 21:52:49,662 [INFO] [idx=13-run2] score=1 raw='1' in_tok=133 out_tok=1 cost=$0.000014 latency=2.19s
+2026-03-25 21:53:06,625 [INFO] [idx=14-run1] score=1 raw='1' in_tok=134 out_tok=1 cost=$0.000014 latency=16.86s
+2026-03-25 21:53:23,040 [INFO] [idx=14-run2] score=1 raw='1' in_tok=134 out_tok=1 cost=$0.000014 latency=16.31s
+2026-03-25 21:53:30,307 [INFO] [idx=15-run1] score=2 raw='2' in_tok=170 out_tok=1 cost=$0.000017 latency=7.16s
+2026-03-25 21:53:38,905 [INFO] [idx=15-run2] score=2 raw='2' in_tok=170 out_tok=1 cost=$0.000017 latency=8.49s
+2026-03-25 21:53:40,620 [INFO] [idx=16-run1] score=1 raw='1' in_tok=122 out_tok=1 cost=$0.000013 latency=1.61s
+2026-03-25 21:53:42,337 [INFO] [idx=16-run2] score=1 raw='1' in_tok=122 out_tok=1 cost=$0.000013 latency=1.61s
+2026-03-25 21:53:48,822 [INFO] [idx=17-run1] score=3 raw='3' in_tok=419 out_tok=1 cost=$0.000042 latency=6.37s
+2026-03-25 21:53:55,703 [INFO] [idx=17-run2] score=3 raw='3' in_tok=419 out_tok=1 cost=$0.000042 latency=6.77s
+2026-03-25 21:54:00,196 [INFO] [idx=18-run1] score=2 raw='2' in_tok=145 out_tok=1 cost=$0.000015 latency=4.38s
+2026-03-25 21:54:07,033 [INFO] [idx=18-run2] score=2 raw='2' in_tok=145 out_tok=1 cost=$0.000015 latency=6.73s
+2026-03-25 21:54:18,147 [INFO] [idx=19-run1] score=3 raw='3' in_tok=218 out_tok=1 cost=$0.000022 latency=11.01s
+2026-03-25 21:54:30,607 [INFO] [idx=19-run2] score=3 raw='3' in_tok=218 out_tok=1 cost=$0.000022 latency=12.36s
+2026-03-25 21:54:35,947 [INFO] [idx=20-run1] score=2 raw='2' in_tok=153 out_tok=1 cost=$0.000016 latency=5.24s
+2026-03-25 21:54:44,528 [INFO] [idx=20-run2] score=1 raw='1' in_tok=153 out_tok=1 cost=$0.000016 latency=8.48s
+2026-03-25 21:54:47,971 [INFO] [idx=21-run1] score=2 raw='2' in_tok=198 out_tok=1 cost=$0.000020 latency=3.34s
+2026-03-25 21:54:51,262 [INFO] [idx=21-run2] score=2 raw='2' in_tok=198 out_tok=1 cost=$0.000020 latency=3.19s
+2026-03-25 21:54:57,612 [INFO] [idx=22-run1] score=2 raw='2' in_tok=186 out_tok=1 cost=$0.000019 latency=6.23s
+2026-03-25 21:55:03,827 [INFO] [idx=22-run2] score=2 raw='2' in_tok=186 out_tok=1 cost=$0.000019 latency=6.10s
+2026-03-25 21:55:10,824 [INFO] [idx=23-run1] score=2 raw='2' in_tok=200 out_tok=1 cost=$0.000020 latency=6.89s
+2026-03-25 21:55:15,008 [INFO] [idx=23-run2] score=2 raw='2' in_tok=200 out_tok=1 cost=$0.000020 latency=4.08s
+2026-03-25 21:55:24,580 [INFO] [idx=24-run1] score=3 raw='3' in_tok=186 out_tok=1 cost=$0.000019 latency=9.46s
+2026-03-25 21:55:34,339 [INFO] [idx=24-run2] score=3 raw='3' in_tok=186 out_tok=1 cost=$0.000019 latency=9.66s
+2026-03-25 21:55:42,157 [INFO] [idx=25-run1] score=3 raw='3' in_tok=165 out_tok=1 cost=$0.000017 latency=7.71s
+2026-03-25 21:55:49,721 [INFO] [idx=25-run2] score=3 raw='3' in_tok=165 out_tok=1 cost=$0.000017 latency=7.46s
+2026-03-25 21:55:58,453 [INFO] [idx=26-run1] score=2 raw='2' in_tok=152 out_tok=1 cost=$0.000016 latency=8.62s
+2026-03-25 21:56:03,271 [INFO] [idx=26-run2] score=2 raw='2' in_tok=152 out_tok=1 cost=$0.000016 latency=4.72s
+2026-03-25 21:56:10,234 [INFO] [idx=27-run1] score=3 raw='3' in_tok=178 out_tok=1 cost=$0.000018 latency=6.86s
+2026-03-25 21:56:17,819 [INFO] [idx=27-run2] score=3 raw='3' in_tok=178 out_tok=1 cost=$0.000018 latency=7.47s
+2026-03-25 21:56:22,966 [INFO] [idx=28-run1] score=3 raw='3' in_tok=206 out_tok=1 cost=$0.000021 latency=5.04s
+2026-03-25 21:56:27,500 [INFO] [idx=28-run2] score=3 raw='3' in_tok=206 out_tok=1 cost=$0.000021 latency=4.43s
+2026-03-25 21:56:34,546 [INFO] [idx=29-run1] score=3 raw='3' in_tok=236 out_tok=1 cost=$0.000024 latency=6.92s
+2026-03-25 21:56:45,090 [INFO] [idx=29-run2] score=3 raw='3' in_tok=236 out_tok=1 cost=$0.000024 latency=10.44s
+2026-03-25 21:56:52,597 [INFO] [idx=30-run1] score=3 raw='3' in_tok=321 out_tok=1 cost=$0.000033 latency=7.40s
+2026-03-25 21:56:59,781 [INFO] [idx=30-run2] score=3 raw='3' in_tok=321 out_tok=1 cost=$0.000033 latency=7.08s
+2026-03-25 21:57:06,494 [INFO] [idx=31-run1] score=3 raw='3' in_tok=237 out_tok=1 cost=$0.000024 latency=6.60s
+2026-03-25 21:57:13,727 [INFO] [idx=31-run2] score=3 raw='3' in_tok=237 out_tok=1 cost=$0.000024 latency=7.12s
+2026-03-25 21:57:18,311 [INFO] [idx=32-run1] score=2 raw='2' in_tok=198 out_tok=1 cost=$0.000020 latency=4.48s
+2026-03-25 21:57:24,580 [INFO] [idx=32-run2] score=2 raw='2' in_tok=198 out_tok=1 cost=$0.000020 latency=6.16s
+2026-03-25 21:57:31,682 [INFO] [idx=33-run1] score=3 raw='3' in_tok=250 out_tok=1 cost=$0.000025 latency=7.00s
+2026-03-25 21:57:45,472 [INFO] [idx=33-run2] score=3 raw='3' in_tok=250 out_tok=1 cost=$0.000025 latency=13.69s
+2026-03-25 21:57:48,440 [INFO] [idx=34-run1] score=1 raw='1' in_tok=124 out_tok=1 cost=$0.000013 latency=2.86s
+2026-03-25 21:57:51,822 [INFO] [idx=34-run2] score=1 raw='1' in_tok=124 out_tok=1 cost=$0.000013 latency=3.28s
+2026-03-25 21:58:01,738 [INFO] [idx=35-run1] score=2 raw='2' in_tok=181 out_tok=1 cost=$0.000019 latency=9.80s
+2026-03-25 21:58:11,620 [INFO] [idx=35-run2] score=3 raw='3' in_tok=181 out_tok=1 cost=$0.000019 latency=9.77s
+2026-03-25 21:58:14,769 [INFO] [idx=36-run1] score=2 raw='2' in_tok=175 out_tok=1 cost=$0.000018 latency=3.04s
+2026-03-25 21:58:18,569 [INFO] [idx=36-run2] score=2 raw='2' in_tok=175 out_tok=1 cost=$0.000018 latency=3.68s
+2026-03-25 21:58:29,651 [INFO] [idx=37-run1] score=3 raw='3' in_tok=182 out_tok=1 cost=$0.000019 latency=10.97s
+2026-03-25 21:58:39,031 [INFO] [idx=37-run2] score=2 raw='2' in_tok=182 out_tok=1 cost=$0.000019 latency=9.27s
+2026-03-25 21:58:45,781 [INFO] [idx=38-run1] score=3 raw='3' in_tok=354 out_tok=1 cost=$0.000036 latency=6.65s
+2026-03-25 21:58:53,332 [INFO] [idx=38-run2] score=3 raw='3' in_tok=354 out_tok=1 cost=$0.000036 latency=7.45s
+2026-03-25 21:59:01,255 [INFO] [idx=39-run1] score=3 raw='3' in_tok=149 out_tok=1 cost=$0.000015 latency=7.81s
+2026-03-25 21:59:10,228 [INFO] [idx=39-run2] score=3 raw='3' in_tok=149 out_tok=1 cost=$0.000015 latency=8.87s
+2026-03-25 21:59:13,201 [INFO] [idx=40-run1] score=2 raw='2' in_tok=138 out_tok=1 cost=$0.000014 latency=2.87s
+2026-03-25 21:59:16,227 [INFO] [idx=40-run2] score=2 raw='2' in_tok=138 out_tok=1 cost=$0.000014 latency=2.92s
+2026-03-25 21:59:22,861 [INFO] [idx=41-run1] score=2 raw='2' in_tok=139 out_tok=1 cost=$0.000014 latency=6.52s
+2026-03-25 21:59:31,161 [INFO] [idx=41-run2] score=2 raw='2' in_tok=139 out_tok=1 cost=$0.000014 latency=8.19s
+2026-03-25 21:59:35,543 [INFO] [idx=42-run1] score=2 raw='2' in_tok=170 out_tok=1 cost=$0.000017 latency=4.28s
+2026-03-25 21:59:39,931 [INFO] [idx=42-run2] score=2 raw='2' in_tok=170 out_tok=1 cost=$0.000017 latency=4.28s
+2026-03-25 21:59:46,343 [INFO] [idx=43-run1] score=2 raw='2' in_tok=162 out_tok=1 cost=$0.000017 latency=6.31s
+2026-03-25 21:59:51,089 [INFO] [idx=43-run2] score=2 raw='2' in_tok=162 out_tok=1 cost=$0.000017 latency=4.64s
+2026-03-25 21:59:56,536 [INFO] [idx=44-run1] score=3 raw='3' in_tok=219 out_tok=1 cost=$0.000022 latency=5.34s
+2026-03-25 22:00:01,823 [INFO] [idx=44-run2] score=3 raw='3' in_tok=219 out_tok=1 cost=$0.000022 latency=5.18s
+2026-03-25 22:00:07,442 [INFO] [idx=45-run1] score=2 raw='2' in_tok=147 out_tok=1 cost=$0.000015 latency=5.51s
+2026-03-25 22:00:13,325 [INFO] [idx=45-run2] score=1 raw='1' in_tok=147 out_tok=1 cost=$0.000015 latency=5.78s
+2026-03-25 22:00:21,043 [INFO] [idx=46-run1] score=3 raw='3' in_tok=217 out_tok=1 cost=$0.000022 latency=7.61s
+2026-03-25 22:00:28,669 [INFO] [idx=46-run2] score=3 raw='3' in_tok=217 out_tok=1 cost=$0.000022 latency=7.52s
+2026-03-25 22:00:49,717 [INFO] [idx=47-run1] score=2 raw='2' in_tok=186 out_tok=1 cost=$0.000019 latency=20.93s
+2026-03-25 22:01:10,712 [INFO] [idx=47-run2] score=2 raw='2' in_tok=186 out_tok=1 cost=$0.000019 latency=20.89s
+2026-03-25 22:01:15,530 [INFO] [idx=48-run1] score=2 raw='2' in_tok=141 out_tok=1 cost=$0.000015 latency=4.70s
+2026-03-25 22:01:19,110 [INFO] [idx=48-run2] score=2 raw='2' in_tok=141 out_tok=1 cost=$0.000015 latency=3.47s
+2026-03-25 22:01:23,395 [INFO] [idx=49-run1] score=2 raw='2' in_tok=172 out_tok=1 cost=$0.000018 latency=4.18s
+2026-03-25 22:01:28,386 [INFO] [idx=49-run2] score=2 raw='2' in_tok=172 out_tok=1 cost=$0.000018 latency=4.88s
+2026-03-25 22:01:34,992 [INFO] [idx=50-run1] score=2 raw='2' in_tok=143 out_tok=1 cost=$0.000015 latency=6.50s
+2026-03-25 22:01:37,776 [INFO] [idx=50-run2] score=2 raw='2' in_tok=143 out_tok=1 cost=$0.000015 latency=2.68s
+2026-03-25 22:01:40,041 [INFO] [idx=51-run1] score=1 raw='1' in_tok=126 out_tok=1 cost=$0.000013 latency=2.14s
+2026-03-25 22:01:42,541 [INFO] [idx=51-run2] score=1 raw='1' in_tok=126 out_tok=1 cost=$0.000013 latency=2.39s
+2026-03-25 22:01:46,642 [INFO] [idx=52-run1] score=2 raw='2' in_tok=157 out_tok=1 cost=$0.000016 latency=4.00s
+2026-03-25 22:01:50,673 [INFO] [idx=52-run2] score=2 raw='2' in_tok=157 out_tok=1 cost=$0.000016 latency=3.93s
+2026-03-25 22:01:55,879 [INFO] [idx=53-run1] score=3 raw='3' in_tok=260 out_tok=1 cost=$0.000026 latency=5.10s
+2026-03-25 22:02:01,055 [INFO] [idx=53-run2] score=3 raw='3' in_tok=260 out_tok=1 cost=$0.000026 latency=5.07s
+2026-03-25 22:02:04,355 [INFO] [idx=54-run1] score=1 raw='1' in_tok=143 out_tok=1 cost=$0.000015 latency=3.18s
+2026-03-25 22:02:07,455 [INFO] [idx=54-run2] score=1 raw='1' in_tok=143 out_tok=1 cost=$0.000015 latency=2.99s
+2026-03-25 22:02:13,739 [INFO] [idx=55-run1] score=2 raw='2' in_tok=203 out_tok=1 cost=$0.000021 latency=6.17s
+2026-03-25 22:02:20,188 [INFO] [idx=55-run2] score=2 raw='2' in_tok=203 out_tok=1 cost=$0.000021 latency=6.34s
+2026-03-25 22:02:26,120 [INFO] [idx=56-run1] score=2 raw='2' in_tok=180 out_tok=1 cost=$0.000018 latency=5.82s
+2026-03-25 22:02:31,633 [INFO] [idx=56-run2] score=2 raw='2' in_tok=180 out_tok=1 cost=$0.000018 latency=5.40s
+2026-03-25 22:02:48,962 [INFO] [idx=57-run1] score=2 raw='2' in_tok=132 out_tok=1 cost=$0.000014 latency=17.23s
+2026-03-25 22:03:07,183 [INFO] [idx=57-run2] score=3 raw='3' in_tok=132 out_tok=1 cost=$0.000014 latency=18.12s
+2026-03-25 22:03:11,531 [INFO] [idx=58-run1] score=1 raw='1' in_tok=127 out_tok=1 cost=$0.000013 latency=4.24s
+2026-03-25 22:03:19,524 [INFO] [idx=58-run2] score=1 raw='1' in_tok=127 out_tok=1 cost=$0.000013 latency=7.89s
+2026-03-25 22:03:24,912 [INFO] [idx=59-run1] score=3 raw='3' in_tok=267 out_tok=1 cost=$0.000027 latency=5.28s
+2026-03-25 22:03:30,993 [INFO] [idx=59-run2] score=3 raw='3' in_tok=267 out_tok=1 cost=$0.000027 latency=5.97s
+2026-03-25 22:03:44,177 [INFO] [idx=60-run1] score=4 raw='4' in_tok=221 out_tok=1 cost=$0.000023 latency=13.08s
+2026-03-25 22:03:56,459 [INFO] [idx=60-run2] score=4 raw='4' in_tok=221 out_tok=1 cost=$0.000023 latency=12.17s
+2026-03-25 22:03:59,341 [INFO] [idx=61-run1] score=1 raw='1' in_tok=118 out_tok=1 cost=$0.000012 latency=2.77s
+2026-03-25 22:04:02,173 [INFO] [idx=61-run2] score=1 raw='1' in_tok=118 out_tok=1 cost=$0.000012 latency=2.72s
+2026-03-25 22:04:06,056 [INFO] [idx=62-run1] score=2 raw='2' in_tok=155 out_tok=1 cost=$0.000016 latency=3.78s
+2026-03-25 22:04:09,872 [INFO] [idx=62-run2] score=2 raw='2' in_tok=155 out_tok=1 cost=$0.000016 latency=3.71s
+2026-03-25 22:04:13,970 [INFO] [idx=63-run1] score=2 raw='2' in_tok=170 out_tok=1 cost=$0.000017 latency=4.00s
+2026-03-25 22:04:17,695 [INFO] [idx=63-run2] score=2 raw='2' in_tok=170 out_tok=1 cost=$0.000017 latency=3.61s
+2026-03-25 22:04:25,987 [INFO] [idx=64-run1] score=3 raw='3' in_tok=172 out_tok=1 cost=$0.000018 latency=8.19s
+2026-03-25 22:04:34,220 [INFO] [idx=64-run2] score=3 raw='3' in_tok=172 out_tok=1 cost=$0.000018 latency=8.13s
+2026-03-25 22:04:36,803 [INFO] [idx=65-run1] score=2 raw='2' in_tok=155 out_tok=1 cost=$0.000016 latency=2.48s
+2026-03-25 22:04:39,073 [INFO] [idx=65-run2] score=2 raw='2' in_tok=155 out_tok=1 cost=$0.000016 latency=2.16s
+2026-03-25 22:04:52,320 [INFO] [idx=66-run1] score=3 raw='3' in_tok=246 out_tok=1 cost=$0.000025 latency=13.14s
+2026-03-25 22:05:07,216 [INFO] [idx=66-run2] score=3 raw='3' in_tok=246 out_tok=1 cost=$0.000025 latency=14.79s
+2026-03-25 22:05:14,167 [INFO] [idx=67-run1] score=2 raw='2' in_tok=179 out_tok=1 cost=$0.000018 latency=6.84s
+2026-03-25 22:05:20,459 [INFO] [idx=67-run2] score=2 raw='2' in_tok=179 out_tok=1 cost=$0.000018 latency=6.19s
+2026-03-25 22:05:30,893 [INFO] [idx=68-run1] score=3 raw='3' in_tok=271 out_tok=1 cost=$0.000027 latency=10.33s
+2026-03-25 22:05:47,060 [INFO] [idx=68-run2] score=2 raw='2' in_tok=271 out_tok=1 cost=$0.000027 latency=16.06s
+2026-03-25 22:05:53,340 [INFO] [idx=69-run1] score=2 raw='2' in_tok=218 out_tok=1 cost=$0.000022 latency=6.17s
+2026-03-25 22:05:59,458 [INFO] [idx=69-run2] score=2 raw='2' in_tok=218 out_tok=1 cost=$0.000022 latency=6.02s
+2026-03-25 22:06:03,238 [INFO] [idx=70-run1] score=3 raw='3' in_tok=262 out_tok=1 cost=$0.000027 latency=3.67s
+2026-03-25 22:06:09,972 [INFO] [idx=70-run2] score=3 raw='3' in_tok=262 out_tok=1 cost=$0.000027 latency=6.63s
+2026-03-25 22:06:19,607 [INFO] [idx=71-run1] score=1 raw='1' in_tok=144 out_tok=1 cost=$0.000015 latency=9.52s
+2026-03-25 22:06:32,121 [INFO] [idx=71-run2] score=3 raw='3' in_tok=144 out_tok=1 cost=$0.000015 latency=12.41s
+2026-03-25 22:06:40,416 [INFO] [idx=72-run1] score=2 raw='2' in_tok=135 out_tok=1 cost=$0.000014 latency=8.17s
+2026-03-25 22:06:47,601 [INFO] [idx=72-run2] score=2 raw='2' in_tok=135 out_tok=1 cost=$0.000014 latency=7.08s
+2026-03-25 22:06:58,950 [INFO] [idx=73-run1] score=3 raw='3' in_tok=336 out_tok=1 cost=$0.000034 latency=11.25s
+2026-03-25 22:07:08,033 [INFO] [idx=73-run2] score=3 raw='3' in_tok=336 out_tok=1 cost=$0.000034 latency=8.98s
+2026-03-25 22:07:13,487 [INFO] [idx=74-run1] score=3 raw='3' in_tok=159 out_tok=1 cost=$0.000016 latency=5.35s
+2026-03-25 22:07:18,754 [INFO] [idx=74-run2] score=2 raw='2' in_tok=159 out_tok=1 cost=$0.000016 latency=5.16s
+2026-03-25 22:07:29,096 [INFO] [idx=75-run1] score=3 raw='3' in_tok=185 out_tok=1 cost=$0.000019 latency=10.24s
+2026-03-25 22:07:42,678 [INFO] [idx=75-run2] score=4 raw='4' in_tok=185 out_tok=1 cost=$0.000019 latency=13.47s
+2026-03-25 22:07:49,986 [INFO] [idx=76-run1] score=3 raw='3' in_tok=130 out_tok=1 cost=$0.000013 latency=7.19s
+2026-03-25 22:07:58,732 [INFO] [idx=76-run2] score=3 raw='3' in_tok=130 out_tok=1 cost=$0.000013 latency=8.64s
+2026-03-25 22:08:18,645 [INFO] [idx=77-run1] score=5 raw='5' in_tok=197 out_tok=1 cost=$0.000020 latency=19.81s
+2026-03-25 22:08:38,094 [INFO] [idx=77-run2] score=5 raw='5' in_tok=197 out_tok=1 cost=$0.000020 latency=19.34s
+2026-03-25 22:08:44,238 [INFO] [idx=78-run1] score=1 raw='1' in_tok=165 out_tok=1 cost=$0.000017 latency=6.04s
+2026-03-25 22:08:50,304 [INFO] [idx=78-run2] score=1 raw='1' in_tok=165 out_tok=1 cost=$0.000017 latency=5.95s
+2026-03-25 22:08:56,518 [INFO] [idx=79-run1] score=1 raw='1' in_tok=132 out_tok=1 cost=$0.000014 latency=6.10s
+2026-03-25 22:09:02,680 [INFO] [idx=79-run2] score=1 raw='1' in_tok=132 out_tok=1 cost=$0.000014 latency=6.06s
+2026-03-25 22:09:09,168 [INFO] [idx=80-run1] score=3 raw='3' in_tok=175 out_tok=1 cost=$0.000018 latency=6.39s
+2026-03-25 22:09:16,599 [INFO] [idx=80-run2] score=2 raw='2' in_tok=175 out_tok=1 cost=$0.000018 latency=7.32s
+2026-03-25 22:09:20,148 [INFO] [idx=81-run1] score=1 raw='1' in_tok=136 out_tok=1 cost=$0.000014 latency=3.44s
+2026-03-25 22:09:23,903 [INFO] [idx=81-run2] score=1 raw='1' in_tok=136 out_tok=1 cost=$0.000014 latency=3.65s
+2026-03-25 22:09:30,097 [INFO] [idx=82-run1] score=3 raw='3' in_tok=219 out_tok=1 cost=$0.000022 latency=6.09s
+2026-03-25 22:09:36,113 [INFO] [idx=82-run2] score=3 raw='3' in_tok=219 out_tok=1 cost=$0.000022 latency=5.91s
+2026-03-25 22:09:48,113 [INFO] [idx=83-run1] score=3 raw='3' in_tok=164 out_tok=1 cost=$0.000017 latency=11.90s
+2026-03-25 22:10:00,193 [INFO] [idx=83-run2] score=3 raw='3' in_tok=164 out_tok=1 cost=$0.000017 latency=11.98s
+2026-03-25 22:10:02,310 [INFO] [idx=84-run1] score=1 raw='1' in_tok=136 out_tok=1 cost=$0.000014 latency=2.00s
+2026-03-25 22:10:04,660 [INFO] [idx=84-run2] score=1 raw='1' in_tok=136 out_tok=1 cost=$0.000014 latency=2.24s
+2026-03-25 22:10:08,310 [INFO] [idx=85-run1] score=1 raw='1' in_tok=129 out_tok=1 cost=$0.000013 latency=3.55s
+2026-03-25 22:10:11,810 [INFO] [idx=85-run2] score=1 raw='1' in_tok=129 out_tok=1 cost=$0.000013 latency=3.39s
+2026-03-25 22:10:19,157 [INFO] [idx=86-run1] score=1 raw='1' in_tok=156 out_tok=1 cost=$0.000016 latency=7.24s
+2026-03-25 22:10:25,274 [INFO] [idx=86-run2] score=1 raw='1' in_tok=156 out_tok=1 cost=$0.000016 latency=6.01s
+2026-03-25 22:10:29,356 [INFO] [idx=87-run1] score=1 raw='1' in_tok=138 out_tok=1 cost=$0.000014 latency=3.98s
+2026-03-25 22:10:35,936 [INFO] [idx=87-run2] score=1 raw='1' in_tok=138 out_tok=1 cost=$0.000014 latency=6.47s
+2026-03-25 22:10:38,538 [INFO] [idx=88-run1] score=1 raw='1' in_tok=120 out_tok=1 cost=$0.000012 latency=2.50s
+2026-03-25 22:10:41,322 [INFO] [idx=88-run2] score=1 raw='1' in_tok=120 out_tok=1 cost=$0.000012 latency=2.67s
+2026-03-25 22:10:44,538 [INFO] [idx=89-run1] score=2 raw='2' in_tok=157 out_tok=1 cost=$0.000016 latency=3.10s
+2026-03-25 22:10:47,504 [INFO] [idx=89-run2] score=2 raw='2' in_tok=157 out_tok=1 cost=$0.000016 latency=2.86s
+2026-03-25 22:10:50,206 [INFO] [idx=90-run1] score=2 raw='2' in_tok=148 out_tok=1 cost=$0.000015 latency=2.59s
+2026-03-25 22:10:54,536 [INFO] [idx=90-run2] score=2 raw='2' in_tok=148 out_tok=1 cost=$0.000015 latency=4.22s
+2026-03-25 22:11:02,404 [INFO] [idx=91-run1] score=2 raw='2' in_tok=176 out_tok=1 cost=$0.000018 latency=7.76s
+2026-03-25 22:11:10,701 [INFO] [idx=91-run2] score=2 raw='2' in_tok=176 out_tok=1 cost=$0.000018 latency=8.20s
+2026-03-25 22:11:19,316 [INFO] [idx=92-run1] score=2 raw='2' in_tok=175 out_tok=1 cost=$0.000018 latency=8.50s
+2026-03-25 22:11:26,532 [INFO] [idx=92-run2] score=3 raw='3' in_tok=175 out_tok=1 cost=$0.000018 latency=7.11s
+2026-03-25 22:11:34,115 [INFO] [idx=93-run1] score=2 raw='2' in_tok=151 out_tok=1 cost=$0.000016 latency=7.48s
+2026-03-25 22:11:42,263 [INFO] [idx=93-run2] score=2 raw='2' in_tok=151 out_tok=1 cost=$0.000016 latency=8.04s
+2026-03-25 22:11:48,596 [INFO] [idx=94-run1] score=1 raw='1' in_tok=137 out_tok=1 cost=$0.000014 latency=6.23s
+2026-03-25 22:11:53,550 [INFO] [idx=94-run2] score=1 raw='1' in_tok=137 out_tok=1 cost=$0.000014 latency=4.84s
+2026-03-25 22:11:58,345 [INFO] [idx=95-run1] score=2 raw='2' in_tok=151 out_tok=1 cost=$0.000016 latency=4.69s
+2026-03-25 22:12:03,192 [INFO] [idx=95-run2] score=2 raw='2' in_tok=151 out_tok=1 cost=$0.000016 latency=4.72s
+2026-03-25 22:12:10,710 [INFO] [idx=96-run1] score=3 raw='3' in_tok=210 out_tok=1 cost=$0.000021 latency=7.42s
+2026-03-25 22:12:18,992 [INFO] [idx=96-run2] score=3 raw='3' in_tok=210 out_tok=1 cost=$0.000021 latency=8.17s
+2026-03-25 22:12:22,742 [INFO] [idx=97-run1] score=2 raw='2' in_tok=152 out_tok=1 cost=$0.000016 latency=3.65s
+2026-03-25 22:12:26,541 [INFO] [idx=97-run2] score=2 raw='2' in_tok=152 out_tok=1 cost=$0.000016 latency=3.70s
+2026-03-25 22:12:32,390 [INFO] [idx=98-run1] score=1 raw='1' in_tok=130 out_tok=1 cost=$0.000013 latency=5.75s
+2026-03-25 22:12:38,325 [INFO] [idx=98-run2] score=1 raw='1' in_tok=130 out_tok=1 cost=$0.000013 latency=5.83s
+2026-03-25 22:12:53,003 [INFO] [idx=99-run1] score=2 raw='2' in_tok=166 out_tok=1 cost=$0.000017 latency=14.57s
+2026-03-25 22:13:05,442 [INFO] [idx=99-run2] score=2 raw='2' in_tok=166 out_tok=1 cost=$0.000017 latency=12.32s
+2026-03-25 22:13:14,636 [INFO] [idx=100-run1] score=3 raw='3' in_tok=190 out_tok=1 cost=$0.000019 latency=9.09s
+2026-03-25 22:13:31,732 [INFO] [idx=100-run2] score=3 raw='3' in_tok=190 out_tok=1 cost=$0.000019 latency=16.99s
+2026-03-25 22:13:42,864 [INFO] [idx=101-run1] score=2 raw='2' in_tok=139 out_tok=1 cost=$0.000014 latency=11.03s
+2026-03-25 22:13:54,603 [INFO] [idx=101-run2] score=2 raw='2' in_tok=139 out_tok=1 cost=$0.000014 latency=11.64s
+2026-03-25 22:14:03,010 [INFO] [idx=102-run1] score=3 raw='3' in_tok=204 out_tok=1 cost=$0.000021 latency=8.30s
+2026-03-25 22:14:11,321 [INFO] [idx=102-run2] score=3 raw='3' in_tok=204 out_tok=1 cost=$0.000021 latency=8.21s
+2026-03-25 22:14:16,910 [INFO] [idx=103-run1] score=2 raw='2' in_tok=154 out_tok=1 cost=$0.000016 latency=5.49s
+2026-03-25 22:14:23,232 [INFO] [idx=103-run2] score=2 raw='2' in_tok=154 out_tok=1 cost=$0.000016 latency=6.22s
+2026-03-25 22:14:27,194 [INFO] [idx=104-run1] score=1 raw='1' in_tok=120 out_tok=1 cost=$0.000012 latency=3.85s
+2026-03-25 22:14:29,975 [INFO] [idx=104-run2] score=1 raw='1' in_tok=120 out_tok=1 cost=$0.000012 latency=2.67s
+2026-03-25 22:14:35,575 [INFO] [idx=105-run1] score=2 raw='2' in_tok=145 out_tok=1 cost=$0.000015 latency=5.49s
+2026-03-25 22:14:41,690 [INFO] [idx=105-run2] score=2 raw='2' in_tok=145 out_tok=1 cost=$0.000015 latency=6.00s
+2026-03-25 22:14:57,138 [INFO] [idx=106-run1] score=3 raw='3' in_tok=248 out_tok=1 cost=$0.000025 latency=15.34s
+2026-03-25 22:15:11,737 [INFO] [idx=106-run2] score=3 raw='3' in_tok=248 out_tok=1 cost=$0.000025 latency=14.50s
+2026-03-25 22:15:27,221 [INFO] [idx=107-run1] score=3 raw='3' in_tok=188 out_tok=1 cost=$0.000019 latency=15.37s
+2026-03-25 22:15:41,915 [INFO] [idx=107-run2] score=3 raw='3' in_tok=188 out_tok=1 cost=$0.000019 latency=14.59s
+2026-03-25 22:15:51,382 [INFO] [idx=108-run1] score=2 raw='2' in_tok=167 out_tok=1 cost=$0.000017 latency=9.36s
+2026-03-25 22:16:10,479 [INFO] [idx=108-run2] score=3 raw='3' in_tok=167 out_tok=1 cost=$0.000017 latency=18.99s
+2026-03-25 22:16:29,511 [INFO] [idx=109-run1] score=4 raw='4' in_tok=228 out_tok=1 cost=$0.000023 latency=18.93s
+2026-03-25 22:16:40,262 [INFO] [idx=109-run2] score=3 raw='3' in_tok=228 out_tok=1 cost=$0.000023 latency=10.64s
+2026-03-25 22:16:48,106 [INFO] [idx=110-run1] score=3 raw='3' in_tok=150 out_tok=1 cost=$0.000015 latency=7.74s
+2026-03-25 22:16:55,724 [INFO] [idx=110-run2] score=3 raw='3' in_tok=150 out_tok=1 cost=$0.000015 latency=7.52s
+2026-03-25 22:17:02,473 [INFO] [idx=111-run1] score=1 raw='1' in_tok=124 out_tok=1 cost=$0.000013 latency=6.64s
+2026-03-25 22:17:09,621 [INFO] [idx=111-run2] score=1 raw='1' in_tok=124 out_tok=1 cost=$0.000013 latency=7.05s
+2026-03-25 22:17:16,237 [INFO] [idx=112-run1] score=3 raw='3' in_tok=242 out_tok=1 cost=$0.000025 latency=6.51s
+2026-03-25 22:17:22,486 [INFO] [idx=112-run2] score=3 raw='3' in_tok=242 out_tok=1 cost=$0.000025 latency=6.14s
+2026-03-25 22:17:28,770 [INFO] [idx=113-run1] score=2 raw='2' in_tok=156 out_tok=1 cost=$0.000016 latency=6.18s
+2026-03-25 22:17:35,211 [INFO] [idx=113-run2] score=2 raw='2' in_tok=156 out_tok=1 cost=$0.000016 latency=6.33s
+2026-03-25 22:17:40,892 [INFO] [idx=114-run1] score=2 raw='2' in_tok=137 out_tok=1 cost=$0.000014 latency=5.58s
+2026-03-25 22:17:47,317 [INFO] [idx=114-run2] score=2 raw='2' in_tok=137 out_tok=1 cost=$0.000014 latency=6.32s
+2026-03-25 22:17:54,830 [INFO] [idx=115-run1] score=1 raw='1' in_tok=136 out_tok=1 cost=$0.000014 latency=7.40s
+2026-03-25 22:18:02,582 [INFO] [idx=115-run2] score=1 raw='1' in_tok=136 out_tok=1 cost=$0.000014 latency=7.65s
+2026-03-25 22:18:14,431 [INFO] [idx=116-run1] score=3 raw='3' in_tok=206 out_tok=1 cost=$0.000021 latency=11.74s
+2026-03-25 22:18:25,511 [INFO] [idx=116-run2] score=3 raw='3' in_tok=206 out_tok=1 cost=$0.000021 latency=10.98s
+2026-03-25 22:18:29,926 [INFO] [idx=117-run1] score=1 raw='1' in_tok=149 out_tok=1 cost=$0.000015 latency=4.31s
+2026-03-25 22:18:33,943 [INFO] [idx=117-run2] score=1 raw='1' in_tok=149 out_tok=1 cost=$0.000015 latency=3.91s
+2026-03-25 22:18:43,343 [INFO] [idx=118-run1] score=2 raw='2' in_tok=155 out_tok=1 cost=$0.000016 latency=9.30s
+2026-03-25 22:18:51,976 [INFO] [idx=118-run2] score=2 raw='2' in_tok=155 out_tok=1 cost=$0.000016 latency=8.52s
+2026-03-25 22:18:58,478 [INFO] [idx=119-run1] score=1 raw='1' in_tok=150 out_tok=1 cost=$0.000015 latency=6.39s
+2026-03-25 22:19:05,405 [INFO] [idx=119-run2] score=1 raw='1' in_tok=150 out_tok=1 cost=$0.000015 latency=6.82s
+2026-03-25 22:19:12,753 [INFO] [idx=120-run1] score=3 raw='3' in_tok=212 out_tok=1 cost=$0.000022 latency=7.25s
+2026-03-25 22:19:21,222 [INFO] [idx=120-run2] score=3 raw='3' in_tok=212 out_tok=1 cost=$0.000022 latency=8.37s
+2026-03-25 22:19:34,743 [INFO] [idx=121-run1] score=4 raw='4' in_tok=264 out_tok=1 cost=$0.000027 latency=13.41s
+2026-03-25 22:19:48,116 [INFO] [idx=121-run2] score=4 raw='4' in_tok=264 out_tok=1 cost=$0.000027 latency=13.27s
+2026-03-25 22:19:54,238 [INFO] [idx=122-run1] score=3 raw='3' in_tok=303 out_tok=1 cost=$0.000031 latency=6.00s
+2026-03-25 22:20:00,598 [INFO] [idx=122-run2] score=3 raw='3' in_tok=303 out_tok=1 cost=$0.000031 latency=6.26s
+2026-03-25 22:20:08,180 [INFO] [idx=123-run1] score=1 raw='1' in_tok=146 out_tok=1 cost=$0.000015 latency=7.48s
+2026-03-25 22:20:18,829 [INFO] [idx=123-run2] score=1 raw='1' in_tok=146 out_tok=1 cost=$0.000015 latency=10.54s
+2026-03-25 22:20:30,995 [INFO] [idx=124-run1] score=3 raw='3' in_tok=238 out_tok=1 cost=$0.000024 latency=12.07s
+2026-03-25 22:20:37,710 [INFO] [idx=124-run2] score=3 raw='3' in_tok=238 out_tok=1 cost=$0.000024 latency=6.61s
+2026-03-25 22:20:42,692 [INFO] [idx=125-run1] score=2 raw='2' in_tok=171 out_tok=1 cost=$0.000018 latency=4.88s
+2026-03-25 22:20:48,179 [INFO] [idx=125-run2] score=2 raw='2' in_tok=171 out_tok=1 cost=$0.000018 latency=5.38s
+2026-03-25 22:20:52,070 [INFO] [idx=126-run1] score=3 raw='3' in_tok=189 out_tok=1 cost=$0.000019 latency=3.79s
+2026-03-25 22:20:56,896 [INFO] [idx=126-run2] score=3 raw='3' in_tok=189 out_tok=1 cost=$0.000019 latency=4.72s
+2026-03-25 22:21:00,055 [INFO] [idx=127-run1] score=2 raw='2' in_tok=174 out_tok=1 cost=$0.000018 latency=3.06s
+2026-03-25 22:21:04,066 [INFO] [idx=127-run2] score=2 raw='2' in_tok=174 out_tok=1 cost=$0.000018 latency=3.90s
+2026-03-25 22:21:10,536 [INFO] [idx=128-run1] score=3 raw='3' in_tok=309 out_tok=1 cost=$0.000031 latency=6.37s
+2026-03-25 22:21:16,896 [INFO] [idx=128-run2] score=3 raw='3' in_tok=309 out_tok=1 cost=$0.000031 latency=6.26s
+2026-03-25 22:21:23,683 [INFO] [idx=129-run1] score=2 raw='2' in_tok=173 out_tok=1 cost=$0.000018 latency=6.68s
+2026-03-25 22:21:29,461 [INFO] [idx=129-run2] score=3 raw='3' in_tok=173 out_tok=1 cost=$0.000018 latency=5.68s
+2026-03-25 22:21:37,693 [INFO] [idx=130-run1] score=3 raw='3' in_tok=221 out_tok=1 cost=$0.000023 latency=8.12s
+2026-03-25 22:21:45,931 [INFO] [idx=130-run2] score=3 raw='3' in_tok=221 out_tok=1 cost=$0.000023 latency=8.13s
+2026-03-25 22:21:49,873 [INFO] [idx=131-run1] score=1 raw='1' in_tok=128 out_tok=1 cost=$0.000013 latency=3.84s
+2026-03-25 22:21:55,773 [INFO] [idx=131-run2] score=1 raw='1' in_tok=128 out_tok=1 cost=$0.000013 latency=5.80s
+2026-03-25 22:21:59,642 [INFO] [idx=132-run1] score=2 raw='2' in_tok=155 out_tok=1 cost=$0.000016 latency=3.77s
+2026-03-25 22:22:05,030 [INFO] [idx=132-run2] score=2 raw='2' in_tok=155 out_tok=1 cost=$0.000016 latency=5.29s
+2026-03-25 22:22:15,560 [INFO] [idx=133-run1] score=2 raw='2' in_tok=215 out_tok=1 cost=$0.000022 latency=10.43s
+2026-03-25 22:22:26,482 [INFO] [idx=133-run2] score=2 raw='2' in_tok=215 out_tok=1 cost=$0.000022 latency=10.81s
+2026-03-25 22:22:29,168 [INFO] [idx=134-run1] score=1 raw='1' in_tok=123 out_tok=1 cost=$0.000013 latency=2.58s
+2026-03-25 22:22:32,106 [INFO] [idx=134-run2] score=1 raw='1' in_tok=123 out_tok=1 cost=$0.000013 latency=2.84s
+2026-03-25 22:22:35,270 [INFO] [idx=135-run1] score=2 raw='2' in_tok=297 out_tok=1 cost=$0.000030 latency=3.06s
+2026-03-25 22:22:38,898 [INFO] [idx=135-run2] score=2 raw='2' in_tok=297 out_tok=1 cost=$0.000030 latency=3.52s
+2026-03-25 22:22:43,451 [INFO] [idx=136-run1] score=2 raw='2' in_tok=183 out_tok=1 cost=$0.000019 latency=4.45s
+2026-03-25 22:22:46,793 [INFO] [idx=136-run2] score=2 raw='2' in_tok=183 out_tok=1 cost=$0.000019 latency=3.24s
+2026-03-25 22:22:53,794 [INFO] [idx=137-run1] score=2 raw='2' in_tok=163 out_tok=1 cost=$0.000017 latency=6.90s
+2026-03-25 22:23:02,784 [INFO] [idx=137-run2] score=2 raw='2' in_tok=163 out_tok=1 cost=$0.000017 latency=8.89s
+2026-03-25 22:23:04,824 [INFO] [idx=138-run1] score=1 raw='1' in_tok=130 out_tok=1 cost=$0.000013 latency=1.93s
+2026-03-25 22:23:07,048 [INFO] [idx=138-run2] score=1 raw='1' in_tok=130 out_tok=1 cost=$0.000013 latency=2.12s
+2026-03-25 22:23:21,448 [INFO] [idx=139-run1] score=3 raw='3' in_tok=182 out_tok=1 cost=$0.000019 latency=14.29s
+2026-03-25 22:23:33,227 [INFO] [idx=139-run2] score=3 raw='3' in_tok=182 out_tok=1 cost=$0.000019 latency=11.67s
+2026-03-25 22:23:41,777 [INFO] [idx=140-run1] score=4 raw='4' in_tok=214 out_tok=1 cost=$0.000022 latency=8.45s
+2026-03-25 22:23:46,561 [INFO] [idx=140-run2] score=3 raw='3' in_tok=214 out_tok=1 cost=$0.000022 latency=4.68s
+2026-03-25 22:23:54,604 [INFO] [idx=141-run1] score=2 raw='2' in_tok=154 out_tok=1 cost=$0.000016 latency=7.94s
+2026-03-25 22:24:02,455 [INFO] [idx=141-run2] score=2 raw='2' in_tok=154 out_tok=1 cost=$0.000016 latency=7.75s
+2026-03-25 22:24:06,274 [INFO] [idx=142-run1] score=2 raw='2' in_tok=145 out_tok=1 cost=$0.000015 latency=3.72s
+2026-03-25 22:24:09,856 [INFO] [idx=142-run2] score=2 raw='2' in_tok=145 out_tok=1 cost=$0.000015 latency=3.47s
+2026-03-25 22:24:29,008 [INFO] [idx=143-run1] score=4 raw='4' in_tok=175 out_tok=1 cost=$0.000018 latency=19.05s
+2026-03-25 22:24:48,718 [INFO] [idx=143-run2] score=4 raw='4' in_tok=175 out_tok=1 cost=$0.000018 latency=19.61s
+2026-03-25 22:24:53,638 [INFO] [idx=144-run1] score=2 raw='2' in_tok=200 out_tok=1 cost=$0.000020 latency=4.82s
+2026-03-25 22:24:58,401 [INFO] [idx=144-run2] score=2 raw='2' in_tok=200 out_tok=1 cost=$0.000020 latency=4.66s
+2026-03-25 22:25:07,999 [INFO] [idx=145-run1] score=2 raw='2' in_tok=140 out_tok=1 cost=$0.000014 latency=9.49s
+2026-03-25 22:25:16,581 [INFO] [idx=145-run2] score=2 raw='2' in_tok=140 out_tok=1 cost=$0.000014 latency=8.48s
+2026-03-25 22:25:22,446 [INFO] [idx=146-run1] score=3 raw='3' in_tok=233 out_tok=1 cost=$0.000024 latency=5.75s
+2026-03-25 22:25:28,063 [INFO] [idx=146-run2] score=3 raw='3' in_tok=233 out_tok=1 cost=$0.000024 latency=5.52s
+2026-03-25 22:25:37,178 [INFO] [idx=147-run1] score=3 raw='3' in_tok=264 out_tok=1 cost=$0.000027 latency=9.00s
+2026-03-25 22:25:46,994 [INFO] [idx=147-run2] score=4 raw='4' in_tok=264 out_tok=1 cost=$0.000027 latency=9.71s
+2026-03-25 22:25:51,126 [INFO] [idx=148-run1] score=3 raw='3' in_tok=264 out_tok=1 cost=$0.000027 latency=4.03s
+2026-03-25 22:25:57,288 [INFO] [idx=148-run2] score=3 raw='3' in_tok=264 out_tok=1 cost=$0.000027 latency=6.06s
+2026-03-25 22:26:08,733 [INFO] [idx=149-run1] score=3 raw='3' in_tok=176 out_tok=1 cost=$0.000018 latency=11.34s
+2026-03-25 22:26:19,732 [INFO] [idx=149-run2] score=3 raw='3' in_tok=176 out_tok=1 cost=$0.000018 latency=10.89s
+2026-03-25 22:26:24,104 [INFO] [idx=150-run1] score=3 raw='3' in_tok=166 out_tok=1 cost=$0.000017 latency=4.27s
+2026-03-25 22:26:28,572 [INFO] [idx=150-run2] score=3 raw='3' in_tok=166 out_tok=1 cost=$0.000017 latency=4.37s
+2026-03-25 22:26:35,595 [INFO] [idx=151-run1] score=3 raw='3' in_tok=320 out_tok=1 cost=$0.000032 latency=6.92s
+2026-03-25 22:26:41,138 [INFO] [idx=151-run2] score=3 raw='3' in_tok=320 out_tok=1 cost=$0.000032 latency=5.44s
+2026-03-25 22:26:46,354 [INFO] [idx=152-run1] score=1 raw='1' in_tok=151 out_tok=1 cost=$0.000016 latency=5.11s
+2026-03-25 22:26:52,104 [INFO] [idx=152-run2] score=1 raw='1' in_tok=151 out_tok=1 cost=$0.000016 latency=5.65s
+2026-03-25 22:26:58,435 [INFO] [idx=153-run1] score=2 raw='2' in_tok=135 out_tok=1 cost=$0.000014 latency=6.23s
+2026-03-25 22:27:03,837 [INFO] [idx=153-run2] score=2 raw='2' in_tok=135 out_tok=1 cost=$0.000014 latency=5.30s
+2026-03-25 22:27:25,685 [INFO] [idx=154-run1] score=2 raw='2' in_tok=200 out_tok=1 cost=$0.000020 latency=21.75s
+2026-03-25 22:27:45,213 [INFO] [idx=154-run2] score=2 raw='2' in_tok=200 out_tok=1 cost=$0.000020 latency=19.42s
+2026-03-25 22:27:52,581 [INFO] [idx=155-run1] score=2 raw='2' in_tok=150 out_tok=1 cost=$0.000015 latency=7.27s
+2026-03-25 22:28:06,043 [INFO] [idx=155-run2] score=2 raw='2' in_tok=150 out_tok=1 cost=$0.000015 latency=13.36s
+2026-03-25 22:28:17,146 [INFO] [idx=156-run1] score=4 raw='4' in_tok=142 out_tok=1 cost=$0.000015 latency=11.00s
+2026-03-25 22:28:26,175 [INFO] [idx=156-run2] score=4 raw='4' in_tok=142 out_tok=1 cost=$0.000015 latency=8.93s
+2026-03-25 22:28:32,456 [INFO] [idx=157-run1] score=2 raw='2' in_tok=208 out_tok=1 cost=$0.000021 latency=6.17s
+2026-03-25 22:28:38,707 [INFO] [idx=157-run2] score=2 raw='2' in_tok=208 out_tok=1 cost=$0.000021 latency=6.15s
+2026-03-25 22:28:43,287 [INFO] [idx=158-run1] score=3 raw='3' in_tok=346 out_tok=1 cost=$0.000035 latency=4.47s
+2026-03-25 22:28:47,670 [INFO] [idx=158-run2] score=3 raw='3' in_tok=346 out_tok=1 cost=$0.000035 latency=4.28s
+2026-03-25 22:29:00,135 [INFO] [idx=159-run1] score=2 raw='2' in_tok=209 out_tok=1 cost=$0.000021 latency=12.36s
+2026-03-25 22:29:04,203 [INFO] [idx=159-run2] score=2 raw='2' in_tok=209 out_tok=1 cost=$0.000021 latency=3.96s
+2026-03-25 22:29:09,671 [INFO] [idx=160-run1] score=2 raw='2' in_tok=142 out_tok=1 cost=$0.000015 latency=5.35s
+2026-03-25 22:29:14,117 [INFO] [idx=160-run2] score=2 raw='2' in_tok=142 out_tok=1 cost=$0.000015 latency=4.34s
+2026-03-25 22:29:18,468 [INFO] [idx=161-run1] score=2 raw='2' in_tok=165 out_tok=1 cost=$0.000017 latency=4.25s
+2026-03-25 22:29:22,449 [INFO] [idx=161-run2] score=2 raw='2' in_tok=165 out_tok=1 cost=$0.000017 latency=3.87s
+2026-03-25 22:29:30,133 [INFO] [idx=162-run1] score=1 raw='1' in_tok=148 out_tok=1 cost=$0.000015 latency=7.58s
+2026-03-25 22:29:36,353 [INFO] [idx=162-run2] score=1 raw='1' in_tok=148 out_tok=1 cost=$0.000015 latency=6.10s
+2026-03-25 22:29:45,863 [INFO] [idx=163-run1] score=3 raw='3' in_tok=228 out_tok=1 cost=$0.000023 latency=9.41s
+2026-03-25 22:29:57,748 [INFO] [idx=163-run2] score=3 raw='3' in_tok=228 out_tok=1 cost=$0.000023 latency=11.77s
+2026-03-25 22:30:01,475 [INFO] [idx=164-run1] score=2 raw='2' in_tok=207 out_tok=1 cost=$0.000021 latency=3.63s
+2026-03-25 22:30:05,043 [INFO] [idx=164-run2] score=2 raw='2' in_tok=207 out_tok=1 cost=$0.000021 latency=3.45s
+2026-03-25 22:30:12,460 [INFO] [idx=165-run1] score=2 raw='2' in_tok=192 out_tok=1 cost=$0.000020 latency=7.31s
+2026-03-25 22:30:23,192 [INFO] [idx=165-run2] score=3 raw='3' in_tok=192 out_tok=1 cost=$0.000020 latency=10.62s
+2026-03-25 22:30:34,972 [INFO] [idx=166-run1] score=3 raw='3' in_tok=190 out_tok=1 cost=$0.000019 latency=11.67s
+2026-03-25 22:30:46,972 [INFO] [idx=166-run2] score=3 raw='3' in_tok=190 out_tok=1 cost=$0.000019 latency=11.90s
+2026-03-25 22:30:48,792 [INFO] [idx=167-run1] score=2 raw='2' in_tok=150 out_tok=1 cost=$0.000015 latency=1.72s
+2026-03-25 22:30:50,713 [INFO] [idx=167-run2] score=2 raw='2' in_tok=150 out_tok=1 cost=$0.000015 latency=1.82s
+2026-03-25 22:30:54,269 [INFO] [idx=168-run1] score=2 raw='2' in_tok=187 out_tok=1 cost=$0.000019 latency=3.45s
+2026-03-25 22:30:59,239 [INFO] [idx=168-run2] score=2 raw='2' in_tok=187 out_tok=1 cost=$0.000019 latency=4.87s
+2026-03-25 22:31:02,271 [INFO] [idx=169-run1] score=2 raw='2' in_tok=198 out_tok=1 cost=$0.000020 latency=2.93s
+2026-03-25 22:31:05,186 [INFO] [idx=169-run2] score=2 raw='2' in_tok=198 out_tok=1 cost=$0.000020 latency=2.80s
+2026-03-25 22:31:07,354 [INFO] [idx=170-run1] score=1 raw='1' in_tok=129 out_tok=1 cost=$0.000013 latency=2.05s
+2026-03-25 22:31:09,387 [INFO] [idx=170-run2] score=1 raw='1' in_tok=129 out_tok=1 cost=$0.000013 latency=1.92s
+2026-03-25 22:31:18,351 [INFO] [idx=171-run1] score=2 raw='2' in_tok=209 out_tok=1 cost=$0.000021 latency=8.85s
+2026-03-25 22:31:25,315 [INFO] [idx=171-run2] score=2 raw='2' in_tok=209 out_tok=1 cost=$0.000021 latency=6.86s
+2026-03-25 22:31:32,449 [INFO] [idx=172-run1] score=2 raw='2' in_tok=140 out_tok=1 cost=$0.000014 latency=7.03s
+2026-03-25 22:31:39,759 [INFO] [idx=172-run2] score=2 raw='2' in_tok=140 out_tok=1 cost=$0.000014 latency=7.21s
+2026-03-25 22:31:43,848 [INFO] [idx=173-run1] score=2 raw='2' in_tok=153 out_tok=1 cost=$0.000016 latency=3.99s
+2026-03-25 22:31:48,149 [INFO] [idx=173-run2] score=2 raw='2' in_tok=153 out_tok=1 cost=$0.000016 latency=4.19s
+2026-03-25 22:31:53,197 [INFO] [idx=174-run1] score=3 raw='3' in_tok=204 out_tok=1 cost=$0.000021 latency=4.94s
+2026-03-25 22:31:58,231 [INFO] [idx=174-run2] score=3 raw='3' in_tok=204 out_tok=1 cost=$0.000021 latency=4.93s
+2026-03-25 22:31:59,864 [INFO] [idx=175-run1] score=1 raw='1' in_tok=128 out_tok=1 cost=$0.000013 latency=1.53s
+2026-03-25 22:32:01,562 [INFO] [idx=175-run2] score=1 raw='1' in_tok=128 out_tok=1 cost=$0.000013 latency=1.59s
+2026-03-25 22:32:21,694 [INFO] [idx=176-run1] score=2 raw='2' in_tok=155 out_tok=1 cost=$0.000016 latency=20.03s
+2026-03-25 22:32:38,207 [INFO] [idx=176-run2] score=2 raw='2' in_tok=155 out_tok=1 cost=$0.000016 latency=16.41s
+2026-03-25 22:32:50,392 [INFO] [idx=177-run1] score=2 raw='2' in_tok=159 out_tok=1 cost=$0.000016 latency=12.08s
+2026-03-25 22:33:01,954 [INFO] [idx=177-run2] score=3 raw='3' in_tok=159 out_tok=1 cost=$0.000016 latency=11.45s
+2026-03-25 22:33:09,011 [INFO] [idx=178-run1] score=3 raw='3' in_tok=294 out_tok=1 cost=$0.000030 latency=6.94s
+2026-03-25 22:33:17,187 [INFO] [idx=178-run2] score=3 raw='3' in_tok=294 out_tok=1 cost=$0.000030 latency=8.07s
+2026-03-25 22:33:26,519 [INFO] [idx=179-run1] score=3 raw='3' in_tok=182 out_tok=1 cost=$0.000019 latency=9.22s
+2026-03-25 22:33:27,033 [WARNING] [idx=179-run2] LLM call failed (attempt 1): 429 Your project has exceeded its spending cap.
+2026-03-25 22:33:28,484 [WARNING] [idx=179-run2] LLM call failed (attempt 2): 429 Your project has exceeded its spending cap.
+2026-03-25 22:33:30,934 [WARNING] [idx=179-run2] LLM call failed (attempt 3): 429 Your project has exceeded its spending cap.
+2026-03-25 22:33:34,936 [WARNING] [idx=179-run2] All retries failed, using fallback score of 3
+2026-03-25 22:33:35,456 [WARNING] [idx=180-run1] LLM call failed (attempt 1): 429 Your project has exceeded its spending cap.
+2026-03-25 22:33:36,867 [WARNING] [idx=180-run1] LLM call failed (attempt 2): 429 Your project has exceeded its spending cap.
+2026-03-25 22:33:39,282 [WARNING] [idx=180-run1] LLM call failed (attempt 3): 429 Your project has exceeded its spending cap.
+2026-03-25 22:33:43,284 [WARNING] [idx=180-run1] All retries failed, using fallback score of 3
+2026-03-25 22:33:43,816 [WARNING] [idx=180-run2] LLM call failed (attempt 1): 429 Your project has exceeded its spending cap.
+2026-03-25 22:33:45,245 [WARNING] [idx=180-run2] LLM call failed (attempt 2): 429 Your project has exceeded its spending cap.
+2026-03-25 22:33:47,748 [WARNING] [idx=180-run2] LLM call failed (attempt 3): 429 Your project has exceeded its spending cap.
+2026-03-25 22:33:51,752 [WARNING] [idx=180-run2] All retries failed, using fallback score of 3
+2026-03-25 22:33:52,265 [WARNING] [idx=181-run1] LLM call failed (attempt 1): 429 Your project has exceeded its spending cap.
+2026-03-25 22:33:53,676 [WARNING] [idx=181-run1] LLM call failed (attempt 2): 429 Your project has exceeded its spending cap.
+2026-03-25 22:33:56,063 [WARNING] [idx=181-run1] LLM call failed (attempt 3): 429 Your project has exceeded its spending cap.
+2026-03-25 22:34:00,078 [WARNING] [idx=181-run1] All retries failed, using fallback score of 3
+2026-03-25 22:34:00,565 [WARNING] [idx=181-run2] LLM call failed (attempt 1): 429 Your project has exceeded its spending cap.
+2026-03-25 22:34:01,979 [WARNING] [idx=181-run2] LLM call failed (attempt 2): 429 Your project has exceeded its spending cap.
+2026-03-25 22:34:04,414 [WARNING] [idx=181-run2] LLM call failed (attempt 3): 429 Your project has exceeded its spending cap.
+2026-03-25 22:34:08,422 [WARNING] [idx=181-run2] All retries failed, using fallback score of 3
+2026-03-25 22:34:08,946 [WARNING] [idx=182-run1] LLM call failed (attempt 1): 429 Your project has exceeded its spending cap.
+2026-03-25 22:34:10,399 [WARNING] [idx=182-run1] LLM call failed (attempt 2): 429 Your project has exceeded its spending cap.
+2026-03-25 22:34:12,840 [WARNING] [idx=182-run1] LLM call failed (attempt 3): 429 Your project has exceeded its spending cap.
+2026-03-25 22:34:16,842 [WARNING] [idx=182-run1] All retries failed, using fallback score of 3
+2026-03-25 22:34:17,387 [WARNING] [idx=182-run2] LLM call failed (attempt 1): 429 Your project has exceeded its spending cap.
+2026-03-25 22:34:18,810 [WARNING] [idx=182-run2] LLM call failed (attempt 2): 429 Your project has exceeded its spending cap.
+2026-03-25 22:34:21,246 [WARNING] [idx=182-run2] LLM call failed (attempt 3): 429 Your project has exceeded its spending cap.
+2026-03-25 22:34:25,248 [WARNING] [idx=182-run2] All retries failed, using fallback score of 3
+2026-03-25 22:34:25,845 [WARNING] [idx=183-run1] LLM call failed (attempt 1): 429 Your project has exceeded its spending cap.
+2026-03-25 22:34:27,262 [WARNING] [idx=183-run1] LLM call failed (attempt 2): 429 Your project has exceeded its spending cap.
+2026-03-25 22:34:29,661 [WARNING] [idx=183-run1] LLM call failed (attempt 3): 429 Your project has exceeded its spending cap.
+2026-03-25 22:34:33,666 [WARNING] [idx=183-run1] All retries failed, using fallback score of 3
+2026-03-25 22:34:34,160 [WARNING] [idx=183-run2] LLM call failed (attempt 1): 429 Your project has exceeded its spending cap.
+2026-03-25 22:34:35,624 [WARNING] [idx=183-run2] LLM call failed (attempt 2): 429 Your project has exceeded its spending cap.
+2026-03-25 22:34:38,043 [WARNING] [idx=183-run2] LLM call failed (attempt 3): 429 Your project has exceeded its spending cap.
+2026-03-25 22:34:42,051 [WARNING] [idx=183-run2] All retries failed, using fallback score of 3
+2026-03-25 22:34:42,574 [WARNING] [idx=184-run1] LLM call failed (attempt 1): 429 Your project has exceeded its spending cap.
+2026-03-25 22:34:44,011 [WARNING] [idx=184-run1] LLM call failed (attempt 2): 429 Your project has exceeded its spending cap.
+2026-03-25 22:34:46,422 [WARNING] [idx=184-run1] LLM call failed (attempt 3): 429 Your project has exceeded its spending cap.
+2026-03-25 22:34:50,423 [WARNING] [idx=184-run1] All retries failed, using fallback score of 3
+2026-03-25 22:34:50,918 [WARNING] [idx=184-run2] LLM call failed (attempt 1): 429 Your project has exceeded its spending cap.
+2026-03-25 22:34:52,339 [WARNING] [idx=184-run2] LLM call failed (attempt 2): 429 Your project has exceeded its spending cap.
+2026-03-25 22:34:54,756 [WARNING] [idx=184-run2] LLM call failed (attempt 3): 429 Your project has exceeded its spending cap.
+2026-03-25 22:34:58,770 [WARNING] [idx=184-run2] All retries failed, using fallback score of 3
+2026-03-25 22:34:59,272 [WARNING] [idx=185-run1] LLM call failed (attempt 1): 429 Your project has exceeded its spending cap.
+2026-03-25 22:35:00,690 [WARNING] [idx=185-run1] LLM call failed (attempt 2): 429 Your project has exceeded its spending cap.
+2026-03-25 22:35:03,106 [WARNING] [idx=185-run1] LLM call failed (attempt 3): 429 Your project has exceeded its spending cap.
+2026-03-25 22:35:07,108 [WARNING] [idx=185-run1] All retries failed, using fallback score of 3
+2026-03-25 22:35:07,605 [WARNING] [idx=185-run2] LLM call failed (attempt 1): 429 Your project has exceeded its spending cap.
+2026-03-25 22:35:09,054 [WARNING] [idx=185-run2] LLM call failed (attempt 2): 429 Your project has exceeded its spending cap.
+2026-03-25 22:35:11,487 [WARNING] [idx=185-run2] LLM call failed (attempt 3): 429 Your project has exceeded its spending cap.
+2026-03-25 22:35:15,497 [WARNING] [idx=185-run2] All retries failed, using fallback score of 3
+2026-03-25 22:35:16,019 [WARNING] [idx=186-run1] LLM call failed (attempt 1): 429 Your project has exceeded its spending cap.
+2026-03-25 22:35:17,470 [WARNING] [idx=186-run1] LLM call failed (attempt 2): 429 Your project has exceeded its spending cap.
+2026-03-25 22:35:19,889 [WARNING] [idx=186-run1] LLM call failed (attempt 3): 429 Your project has exceeded its spending cap.
+2026-03-25 22:35:23,891 [WARNING] [idx=186-run1] All retries failed, using fallback score of 3
+2026-03-25 22:35:24,427 [WARNING] [idx=186-run2] LLM call failed (attempt 1): 429 Your project has exceeded its spending cap.
+2026-03-25 22:35:25,870 [WARNING] [idx=186-run2] LLM call failed (attempt 2): 429 Your project has exceeded its spending cap.
+2026-03-25 22:35:28,304 [WARNING] [idx=186-run2] LLM call failed (attempt 3): 429 Your project has exceeded its spending cap.
+2026-03-25 22:35:32,308 [WARNING] [idx=186-run2] All retries failed, using fallback score of 3
+2026-03-25 22:35:32,835 [WARNING] [idx=187-run1] LLM call failed (attempt 1): 429 Your project has exceeded its spending cap.
+2026-03-25 22:35:34,269 [WARNING] [idx=187-run1] LLM call failed (attempt 2): 429 Your project has exceeded its spending cap.
+2026-03-25 22:35:36,719 [WARNING] [idx=187-run1] LLM call failed (attempt 3): 429 Your project has exceeded its spending cap.
+2026-03-25 22:35:40,727 [WARNING] [idx=187-run1] All retries failed, using fallback score of 3
+2026-03-25 22:35:41,265 [WARNING] [idx=187-run2] LLM call failed (attempt 1): 429 Your project has exceeded its spending cap.
+2026-03-25 22:35:42,700 [WARNING] [idx=187-run2] LLM call failed (attempt 2): 429 Your project has exceeded its spending cap.
+2026-03-25 22:35:45,150 [WARNING] [idx=187-run2] LLM call failed (attempt 3): 429 Your project has exceeded its spending cap.
+2026-03-25 22:35:49,154 [WARNING] [idx=187-run2] All retries failed, using fallback score of 3
+2026-03-25 22:35:49,690 [WARNING] [idx=188-run1] LLM call failed (attempt 1): 429 Your project has exceeded its spending cap.
+2026-03-25 22:35:51,087 [WARNING] [idx=188-run1] LLM call failed (attempt 2): 429 Your project has exceeded its spending cap.
+2026-03-25 22:35:53,484 [WARNING] [idx=188-run1] LLM call failed (attempt 3): 429 Your project has exceeded its spending cap.
+2026-03-25 22:35:57,494 [WARNING] [idx=188-run1] All retries failed, using fallback score of 3
+2026-03-25 22:35:57,998 [WARNING] [idx=188-run2] LLM call failed (attempt 1): 429 Your project has exceeded its spending cap.
+2026-03-25 22:35:59,396 [WARNING] [idx=188-run2] LLM call failed (attempt 2): 429 Your project has exceeded its spending cap.
+2026-03-25 22:36:01,797 [WARNING] [idx=188-run2] LLM call failed (attempt 3): 429 Your project has exceeded its spending cap.
+2026-03-25 22:36:05,805 [WARNING] [idx=188-run2] All retries failed, using fallback score of 3
+2026-03-25 22:36:06,347 [WARNING] [idx=189-run1] LLM call failed (attempt 1): 429 Your project has exceeded its spending cap.
+2026-03-25 22:36:07,778 [WARNING] [idx=189-run1] LLM call failed (attempt 2): 429 Your project has exceeded its spending cap.
+2026-03-25 22:36:10,174 [WARNING] [idx=189-run1] LLM call failed (attempt 3): 429 Your project has exceeded its spending cap.
+2026-03-25 22:36:14,176 [WARNING] [idx=189-run1] All retries failed, using fallback score of 3
+2026-03-25 22:36:14,713 [WARNING] [idx=189-run2] LLM call failed (attempt 1): 429 Your project has exceeded its spending cap.
+2026-03-25 22:36:16,163 [WARNING] [idx=189-run2] LLM call failed (attempt 2): 429 Your project has exceeded its spending cap.
+2026-03-25 22:36:18,579 [WARNING] [idx=189-run2] LLM call failed (attempt 3): 429 Your project has exceeded its spending cap.
+2026-03-25 22:36:22,593 [WARNING] [idx=189-run2] All retries failed, using fallback score of 3
+2026-03-25 22:36:23,094 [WARNING] [idx=190-run1] LLM call failed (attempt 1): 429 Your project has exceeded its spending cap.
+2026-03-25 22:36:24,546 [WARNING] [idx=190-run1] LLM call failed (attempt 2): 429 Your project has exceeded its spending cap.
+2026-03-25 22:36:26,943 [WARNING] [idx=190-run1] LLM call failed (attempt 3): 429 Your project has exceeded its spending cap.
+2026-03-25 22:36:30,951 [WARNING] [idx=190-run1] All retries failed, using fallback score of 3
+2026-03-25 22:36:31,561 [WARNING] [idx=190-run2] LLM call failed (attempt 1): 429 Your project has exceeded its spending cap.
+2026-03-25 22:36:32,960 [WARNING] [idx=190-run2] LLM call failed (attempt 2): 429 Your project has exceeded its spending cap.
+2026-03-25 22:36:35,377 [WARNING] [idx=190-run2] LLM call failed (attempt 3): 429 Your project has exceeded its spending cap.
+2026-03-25 22:36:39,391 [WARNING] [idx=190-run2] All retries failed, using fallback score of 3
+2026-03-25 22:36:39,881 [WARNING] [idx=191-run1] LLM call failed (attempt 1): 429 Your project has exceeded its spending cap.
+2026-03-25 22:36:41,309 [WARNING] [idx=191-run1] LLM call failed (attempt 2): 429 Your project has exceeded its spending cap.
+2026-03-25 22:36:43,726 [WARNING] [idx=191-run1] LLM call failed (attempt 3): 429 Your project has exceeded its spending cap.
+2026-03-25 22:36:47,737 [WARNING] [idx=191-run1] All retries failed, using fallback score of 3
+2026-03-25 22:36:48,274 [WARNING] [idx=191-run2] LLM call failed (attempt 1): 429 Your project has exceeded its spending cap.
+2026-03-25 22:36:49,692 [WARNING] [idx=191-run2] LLM call failed (attempt 2): 429 Your project has exceeded its spending cap.
+2026-03-25 22:36:52,124 [WARNING] [idx=191-run2] LLM call failed (attempt 3): 429 Your project has exceeded its spending cap.
+2026-03-25 22:36:56,137 [WARNING] [idx=191-run2] All retries failed, using fallback score of 3
+2026-03-25 22:36:56,641 [WARNING] [idx=192-run1] LLM call failed (attempt 1): 429 Your project has exceeded its spending cap.
+2026-03-25 22:36:58,042 [WARNING] [idx=192-run1] LLM call failed (attempt 2): 429 Your project has exceeded its spending cap.
+2026-03-25 22:37:00,457 [WARNING] [idx=192-run1] LLM call failed (attempt 3): 429 Your project has exceeded its spending cap.
+2026-03-25 22:37:04,471 [WARNING] [idx=192-run1] All retries failed, using fallback score of 3
+2026-03-25 22:37:04,990 [WARNING] [idx=192-run2] LLM call failed (attempt 1): 429 Your project has exceeded its spending cap.
+2026-03-25 22:37:06,400 [WARNING] [idx=192-run2] LLM call failed (attempt 2): 429 Your project has exceeded its spending cap.
+2026-03-25 22:37:08,788 [WARNING] [idx=192-run2] LLM call failed (attempt 3): 429 Your project has exceeded its spending cap.
+2026-03-25 22:37:12,794 [WARNING] [idx=192-run2] All retries failed, using fallback score of 3
+2026-03-25 22:37:13,320 [WARNING] [idx=193-run1] LLM call failed (attempt 1): 429 Your project has exceeded its spending cap.
+2026-03-25 22:37:14,705 [WARNING] [idx=193-run1] LLM call failed (attempt 2): 429 Your project has exceeded its spending cap.
+2026-03-25 22:37:17,105 [WARNING] [idx=193-run1] LLM call failed (attempt 3): 429 Your project has exceeded its spending cap.
+2026-03-25 22:37:21,116 [WARNING] [idx=193-run1] All retries failed, using fallback score of 3
+2026-03-25 22:37:21,642 [WARNING] [idx=193-run2] LLM call failed (attempt 1): 429 Your project has exceeded its spending cap.
+2026-03-25 22:37:23,044 [WARNING] [idx=193-run2] LLM call failed (attempt 2): 429 Your project has exceeded its spending cap.
+2026-03-25 22:37:25,477 [WARNING] [idx=193-run2] LLM call failed (attempt 3): 429 Your project has exceeded its spending cap.
+2026-03-25 22:37:29,484 [WARNING] [idx=193-run2] All retries failed, using fallback score of 3
+2026-03-25 22:37:29,993 [WARNING] [idx=194-run1] LLM call failed (attempt 1): 429 Your project has exceeded its spending cap.
+2026-03-25 22:37:31,436 [WARNING] [idx=194-run1] LLM call failed (attempt 2): 429 Your project has exceeded its spending cap.
+2026-03-25 22:37:33,837 [WARNING] [idx=194-run1] LLM call failed (attempt 3): 429 Your project has exceeded its spending cap.
+2026-03-25 22:37:37,849 [WARNING] [idx=194-run1] All retries failed, using fallback score of 3
+2026-03-25 22:37:38,359 [WARNING] [idx=194-run2] LLM call failed (attempt 1): 429 Your project has exceeded its spending cap.
+2026-03-25 22:37:39,798 [WARNING] [idx=194-run2] LLM call failed (attempt 2): 429 Your project has exceeded its spending cap.
+2026-03-25 22:37:42,218 [WARNING] [idx=194-run2] LLM call failed (attempt 3): 429 Your project has exceeded its spending cap.
+2026-03-25 22:37:46,231 [WARNING] [idx=194-run2] All retries failed, using fallback score of 3
+2026-03-25 22:37:46,868 [WARNING] [idx=195-run1] LLM call failed (attempt 1): 429 Your project has exceeded its spending cap.
+2026-03-25 22:37:48,318 [WARNING] [idx=195-run1] LLM call failed (attempt 2): 429 Your project has exceeded its spending cap.
+2026-03-25 22:37:50,751 [WARNING] [idx=195-run1] LLM call failed (attempt 3): 429 Your project has exceeded its spending cap.
+2026-03-25 22:37:54,756 [WARNING] [idx=195-run1] All retries failed, using fallback score of 3
+2026-03-25 22:37:55,281 [WARNING] [idx=195-run2] LLM call failed (attempt 1): 429 Your project has exceeded its spending cap.
+2026-03-25 22:37:56,682 [WARNING] [idx=195-run2] LLM call failed (attempt 2): 429 Your project has exceeded its spending cap.
+2026-03-25 22:37:59,066 [WARNING] [idx=195-run2] LLM call failed (attempt 3): 429 Your project has exceeded its spending cap.
+2026-03-25 22:38:03,079 [WARNING] [idx=195-run2] All retries failed, using fallback score of 3
+2026-03-25 22:38:03,600 [WARNING] [idx=196-run1] LLM call failed (attempt 1): 429 Your project has exceeded its spending cap.
+2026-03-25 22:38:05,002 [WARNING] [idx=196-run1] LLM call failed (attempt 2): 429 Your project has exceeded its spending cap.
+2026-03-25 22:38:07,423 [WARNING] [idx=196-run1] LLM call failed (attempt 3): 429 Your project has exceeded its spending cap.
+2026-03-25 22:38:11,426 [WARNING] [idx=196-run1] All retries failed, using fallback score of 3
+2026-03-25 22:38:11,926 [WARNING] [idx=196-run2] LLM call failed (attempt 1): 429 Your project has exceeded its spending cap.
+2026-03-25 22:38:13,334 [WARNING] [idx=196-run2] LLM call failed (attempt 2): 429 Your project has exceeded its spending cap.
+2026-03-25 22:38:15,730 [WARNING] [idx=196-run2] LLM call failed (attempt 3): 429 Your project has exceeded its spending cap.
+2026-03-25 22:38:19,732 [WARNING] [idx=196-run2] All retries failed, using fallback score of 3
+2026-03-25 22:38:20,264 [WARNING] [idx=197-run1] LLM call failed (attempt 1): 429 Your project has exceeded its spending cap.
+2026-03-25 22:38:21,678 [WARNING] [idx=197-run1] LLM call failed (attempt 2): 429 Your project has exceeded its spending cap.
+2026-03-25 22:38:24,095 [WARNING] [idx=197-run1] LLM call failed (attempt 3): 429 Your project has exceeded its spending cap.
+2026-03-25 22:38:28,112 [WARNING] [idx=197-run1] All retries failed, using fallback score of 3
+2026-03-25 22:38:28,609 [WARNING] [idx=197-run2] LLM call failed (attempt 1): 429 Your project has exceeded its spending cap.
+2026-03-25 22:38:30,045 [WARNING] [idx=197-run2] LLM call failed (attempt 2): 429 Your project has exceeded its spending cap.
+2026-03-25 22:38:32,479 [WARNING] [idx=197-run2] LLM call failed (attempt 3): 429 Your project has exceeded its spending cap.
+2026-03-25 22:38:36,482 [WARNING] [idx=197-run2] All retries failed, using fallback score of 3
+2026-03-25 22:38:37,015 [WARNING] [idx=198-run1] LLM call failed (attempt 1): 429 Your project has exceeded its spending cap.
+2026-03-25 22:38:38,438 [WARNING] [idx=198-run1] LLM call failed (attempt 2): 429 Your project has exceeded its spending cap.
+2026-03-25 22:38:40,959 [WARNING] [idx=198-run1] LLM call failed (attempt 3): 429 Your project has exceeded its spending cap.
+2026-03-25 22:38:44,968 [WARNING] [idx=198-run1] All retries failed, using fallback score of 3
+2026-03-25 22:38:45,478 [WARNING] [idx=198-run2] LLM call failed (attempt 1): 429 Your project has exceeded its spending cap.
+2026-03-25 22:38:46,914 [WARNING] [idx=198-run2] LLM call failed (attempt 2): 429 Your project has exceeded its spending cap.
+2026-03-25 22:38:49,338 [WARNING] [idx=198-run2] LLM call failed (attempt 3): 429 Your project has exceeded its spending cap.
+2026-03-25 22:38:53,339 [WARNING] [idx=198-run2] All retries failed, using fallback score of 3
+2026-03-25 22:38:53,857 [WARNING] [idx=199-run1] LLM call failed (attempt 1): 429 Your project has exceeded its spending cap.
+2026-03-25 22:38:55,251 [WARNING] [idx=199-run1] LLM call failed (attempt 2): 429 Your project has exceeded its spending cap.
+2026-03-25 22:38:57,657 [WARNING] [idx=199-run1] LLM call failed (attempt 3): 429 Your project has exceeded its spending cap.
+2026-03-25 22:39:01,658 [WARNING] [idx=199-run1] All retries failed, using fallback score of 3
+2026-03-25 22:39:02,141 [WARNING] [idx=199-run2] LLM call failed (attempt 1): 429 Your project has exceeded its spending cap.
+2026-03-25 22:39:03,576 [WARNING] [idx=199-run2] LLM call failed (attempt 2): 429 Your project has exceeded its spending cap.
+2026-03-25 22:39:05,996 [WARNING] [idx=199-run2] LLM call failed (attempt 3): 429 Your project has exceeded its spending cap.
+2026-03-25 22:39:09,998 [WARNING] [idx=199-run2] All retries failed, using fallback score of 3
+2026-03-25 22:39:10,589 [WARNING] [idx=200-run1] LLM call failed (attempt 1): 429 Your project has exceeded its spending cap.
+2026-03-25 22:39:12,032 [WARNING] [idx=200-run1] LLM call failed (attempt 2): 429 Your project has exceeded its spending cap.
+2026-03-25 22:39:14,457 [WARNING] [idx=200-run1] LLM call failed (attempt 3): 429 Your project has exceeded its spending cap.
+2026-03-25 22:39:18,463 [WARNING] [idx=200-run1] All retries failed, using fallback score of 3
+2026-03-25 22:39:18,971 [WARNING] [idx=200-run2] LLM call failed (attempt 1): 429 Your project has exceeded its spending cap.
+2026-03-25 22:39:20,422 [WARNING] [idx=200-run2] LLM call failed (attempt 2): 429 Your project has exceeded its spending cap.
+2026-03-25 22:39:22,832 [WARNING] [idx=200-run2] LLM call failed (attempt 3): 429 Your project has exceeded its spending cap.
+2026-03-25 22:39:26,834 [WARNING] [idx=200-run2] All retries failed, using fallback score of 3
+2026-03-25 22:39:27,337 [WARNING] [idx=201-run1] LLM call failed (attempt 1): 429 Your project has exceeded its spending cap.
+2026-03-25 22:39:28,780 [WARNING] [idx=201-run1] LLM call failed (attempt 2): 429 Your project has exceeded its spending cap.
+2026-03-25 22:39:31,205 [WARNING] [idx=201-run1] LLM call failed (attempt 3): 429 Your project has exceeded its spending cap.
+2026-03-25 22:39:35,209 [WARNING] [idx=201-run1] All retries failed, using fallback score of 3
+2026-03-25 22:39:35,721 [WARNING] [idx=201-run2] LLM call failed (attempt 1): 429 Your project has exceeded its spending cap.
+2026-03-25 22:39:37,124 [WARNING] [idx=201-run2] LLM call failed (attempt 2): 429 Your project has exceeded its spending cap.
+2026-03-25 22:39:39,534 [WARNING] [idx=201-run2] LLM call failed (attempt 3): 429 Your project has exceeded its spending cap.
+2026-03-25 22:39:43,536 [WARNING] [idx=201-run2] All retries failed, using fallback score of 3
+2026-03-25 22:39:44,018 [WARNING] [idx=202-run1] LLM call failed (attempt 1): 429 Your project has exceeded its spending cap.
+2026-03-25 22:39:45,417 [WARNING] [idx=202-run1] LLM call failed (attempt 2): 429 Your project has exceeded its spending cap.
+2026-03-25 22:39:47,802 [WARNING] [idx=202-run1] LLM call failed (attempt 3): 429 Your project has exceeded its spending cap.
+2026-03-25 22:39:51,817 [WARNING] [idx=202-run1] All retries failed, using fallback score of 3
+2026-03-25 22:39:52,340 [WARNING] [idx=202-run2] LLM call failed (attempt 1): 429 Your project has exceeded its spending cap.
+2026-03-25 22:39:53,767 [WARNING] [idx=202-run2] LLM call failed (attempt 2): 429 Your project has exceeded its spending cap.
+2026-03-25 22:39:56,202 [WARNING] [idx=202-run2] LLM call failed (attempt 3): 429 Your project has exceeded its spending cap.
+2026-03-25 22:40:00,211 [WARNING] [idx=202-run2] All retries failed, using fallback score of 3
+2026-03-25 22:40:00,734 [WARNING] [idx=203-run1] LLM call failed (attempt 1): 429 Your project has exceeded its spending cap.
+2026-03-25 22:40:02,131 [WARNING] [idx=203-run1] LLM call failed (attempt 2): 429 Your project has exceeded its spending cap.
+2026-03-25 22:40:04,564 [WARNING] [idx=203-run1] LLM call failed (attempt 3): 429 Your project has exceeded its spending cap.
+2026-03-25 22:40:08,566 [WARNING] [idx=203-run1] All retries failed, using fallback score of 3
+2026-03-25 22:40:09,099 [WARNING] [idx=203-run2] LLM call failed (attempt 1): 429 Your project has exceeded its spending cap.
+2026-03-25 22:40:10,498 [WARNING] [idx=203-run2] LLM call failed (attempt 2): 429 Your project has exceeded its spending cap.
+2026-03-25 22:40:12,932 [WARNING] [idx=203-run2] LLM call failed (attempt 3): 429 Your project has exceeded its spending cap.
+2026-03-25 22:40:16,943 [WARNING] [idx=203-run2] All retries failed, using fallback score of 3
+2026-03-25 22:40:17,464 [WARNING] [idx=204-run1] LLM call failed (attempt 1): 429 Your project has exceeded its spending cap.
+2026-03-25 22:40:18,914 [WARNING] [idx=204-run1] LLM call failed (attempt 2): 429 Your project has exceeded its spending cap.
+2026-03-25 22:40:21,364 [WARNING] [idx=204-run1] LLM call failed (attempt 3): 429 Your project has exceeded its spending cap.
+2026-03-25 22:40:25,371 [WARNING] [idx=204-run1] All retries failed, using fallback score of 3
+2026-03-25 22:40:25,886 [WARNING] [idx=204-run2] LLM call failed (attempt 1): 429 Your project has exceeded its spending cap.
+2026-03-25 22:40:27,297 [WARNING] [idx=204-run2] LLM call failed (attempt 2): 429 Your project has exceeded its spending cap.
+2026-03-25 22:40:29,729 [WARNING] [idx=204-run2] LLM call failed (attempt 3): 429 Your project has exceeded its spending cap.
+2026-03-25 22:40:33,741 [WARNING] [idx=204-run2] All retries failed, using fallback score of 3
+2026-03-25 22:40:34,267 [WARNING] [idx=205-run1] LLM call failed (attempt 1): 429 Your project has exceeded its spending cap.
+2026-03-25 22:40:35,700 [WARNING] [idx=205-run1] LLM call failed (attempt 2): 429 Your project has exceeded its spending cap.
+2026-03-25 22:40:38,128 [WARNING] [idx=205-run1] LLM call failed (attempt 3): 429 Your project has exceeded its spending cap.
+2026-03-25 22:40:42,143 [WARNING] [idx=205-run1] All retries failed, using fallback score of 3
+2026-03-25 22:40:42,670 [WARNING] [idx=205-run2] LLM call failed (attempt 1): 429 Your project has exceeded its spending cap.
+2026-03-25 22:40:44,077 [WARNING] [idx=205-run2] LLM call failed (attempt 2): 429 Your project has exceeded its spending cap.
+2026-03-25 22:40:46,494 [WARNING] [idx=205-run2] LLM call failed (attempt 3): 429 Your project has exceeded its spending cap.
+2026-03-25 22:40:50,495 [WARNING] [idx=205-run2] All retries failed, using fallback score of 3
+2026-03-25 22:40:51,018 [WARNING] [idx=206-run1] LLM call failed (attempt 1): 429 Your project has exceeded its spending cap.
+2026-03-25 22:40:52,460 [WARNING] [idx=206-run1] LLM call failed (attempt 2): 429 Your project has exceeded its spending cap.
+2026-03-25 22:40:54,842 [WARNING] [idx=206-run1] LLM call failed (attempt 3): 429 Your project has exceeded its spending cap.
+2026-03-25 22:40:58,845 [WARNING] [idx=206-run1] All retries failed, using fallback score of 3
+2026-03-25 22:40:59,346 [WARNING] [idx=206-run2] LLM call failed (attempt 1): 429 Your project has exceeded its spending cap.
+2026-03-25 22:41:00,785 [WARNING] [idx=206-run2] LLM call failed (attempt 2): 429 Your project has exceeded its spending cap.
+2026-03-25 22:41:03,175 [WARNING] [idx=206-run2] LLM call failed (attempt 3): 429 Your project has exceeded its spending cap.
+2026-03-25 22:41:07,189 [WARNING] [idx=206-run2] All retries failed, using fallback score of 3
+2026-03-25 22:41:07,693 [WARNING] [idx=207-run1] LLM call failed (attempt 1): 429 Your project has exceeded its spending cap.
+2026-03-25 22:41:09,103 [WARNING] [idx=207-run1] LLM call failed (attempt 2): 429 Your project has exceeded its spending cap.
+2026-03-25 22:41:11,490 [WARNING] [idx=207-run1] LLM call failed (attempt 3): 429 Your project has exceeded its spending cap.
+2026-03-25 22:41:15,506 [WARNING] [idx=207-run1] All retries failed, using fallback score of 3
+2026-03-25 22:41:16,023 [WARNING] [idx=207-run2] LLM call failed (attempt 1): 429 Your project has exceeded its spending cap.
+2026-03-25 22:41:17,441 [WARNING] [idx=207-run2] LLM call failed (attempt 2): 429 Your project has exceeded its spending cap.
+2026-03-25 22:41:19,822 [WARNING] [idx=207-run2] LLM call failed (attempt 3): 429 Your project has exceeded its spending cap.
+2026-03-25 22:41:23,836 [WARNING] [idx=207-run2] All retries failed, using fallback score of 3
+2026-03-25 22:41:24,361 [WARNING] [idx=208-run1] LLM call failed (attempt 1): 429 Your project has exceeded its spending cap.
+2026-03-25 22:41:25,773 [WARNING] [idx=208-run1] LLM call failed (attempt 2): 429 Your project has exceeded its spending cap.
+2026-03-25 22:41:28,206 [WARNING] [idx=208-run1] LLM call failed (attempt 3): 429 Your project has exceeded its spending cap.
+2026-03-25 22:41:32,218 [WARNING] [idx=208-run1] All retries failed, using fallback score of 3
+2026-03-25 22:41:32,738 [WARNING] [idx=208-run2] LLM call failed (attempt 1): 429 Your project has exceeded its spending cap.
+2026-03-25 22:41:34,155 [WARNING] [idx=208-run2] LLM call failed (attempt 2): 429 Your project has exceeded its spending cap.
+2026-03-25 22:41:36,587 [WARNING] [idx=208-run2] LLM call failed (attempt 3): 429 Your project has exceeded its spending cap.
+2026-03-25 22:41:40,598 [WARNING] [idx=208-run2] All retries failed, using fallback score of 3
+2026-03-25 22:41:41,102 [WARNING] [idx=209-run1] LLM call failed (attempt 1): 429 Your project has exceeded its spending cap.
+2026-03-25 22:41:42,621 [WARNING] [idx=209-run1] LLM call failed (attempt 2): 429 Your project has exceeded its spending cap.
+2026-03-25 22:41:45,003 [WARNING] [idx=209-run1] LLM call failed (attempt 3): 429 Your project has exceeded its spending cap.
+2026-03-25 22:41:49,018 [WARNING] [idx=209-run1] All retries failed, using fallback score of 3
+2026-03-25 22:41:49,520 [WARNING] [idx=209-run2] LLM call failed (attempt 1): 429 Your project has exceeded its spending cap.
+2026-03-25 22:41:50,936 [WARNING] [idx=209-run2] LLM call failed (attempt 2): 429 Your project has exceeded its spending cap.
+2026-03-25 22:41:53,339 [WARNING] [idx=209-run2] LLM call failed (attempt 3): 429 Your project has exceeded its spending cap.
+2026-03-25 22:41:57,345 [WARNING] [idx=209-run2] All retries failed, using fallback score of 3
+2026-03-25 22:41:57,868 [WARNING] [idx=210-run1] LLM call failed (attempt 1): 429 Your project has exceeded its spending cap.
+2026-03-25 22:41:59,307 [WARNING] [idx=210-run1] LLM call failed (attempt 2): 429 Your project has exceeded its spending cap.
+2026-03-25 22:42:01,703 [WARNING] [idx=210-run1] LLM call failed (attempt 3): 429 Your project has exceeded its spending cap.
+2026-03-25 22:42:05,707 [WARNING] [idx=210-run1] All retries failed, using fallback score of 3
+2026-03-25 22:42:06,200 [WARNING] [idx=210-run2] LLM call failed (attempt 1): 429 Your project has exceeded its spending cap.
+2026-03-25 22:42:07,618 [WARNING] [idx=210-run2] LLM call failed (attempt 2): 429 Your project has exceeded its spending cap.
+2026-03-25 22:42:10,058 [WARNING] [idx=210-run2] LLM call failed (attempt 3): 429 Your project has exceeded its spending cap.
+2026-03-25 22:42:14,063 [WARNING] [idx=210-run2] All retries failed, using fallback score of 3
+2026-03-25 22:42:14,598 [WARNING] [idx=211-run1] LLM call failed (attempt 1): 429 Your project has exceeded its spending cap.
+2026-03-25 22:42:15,999 [WARNING] [idx=211-run1] LLM call failed (attempt 2): 429 Your project has exceeded its spending cap.
+2026-03-25 22:42:18,436 [WARNING] [idx=211-run1] LLM call failed (attempt 3): 429 Your project has exceeded its spending cap.
+2026-03-25 22:42:22,448 [WARNING] [idx=211-run1] All retries failed, using fallback score of 3
+2026-03-25 22:42:22,981 [WARNING] [idx=211-run2] LLM call failed (attempt 1): 429 Your project has exceeded its spending cap.
+2026-03-25 22:42:24,403 [WARNING] [idx=211-run2] LLM call failed (attempt 2): 429 Your project has exceeded its spending cap.
+2026-03-25 22:42:26,831 [WARNING] [idx=211-run2] LLM call failed (attempt 3): 429 Your project has exceeded its spending cap.
+2026-03-25 22:42:30,836 [WARNING] [idx=211-run2] All retries failed, using fallback score of 3
+2026-03-25 22:42:31,346 [WARNING] [idx=212-run1] LLM call failed (attempt 1): 429 Your project has exceeded its spending cap.
+2026-03-25 22:42:32,748 [WARNING] [idx=212-run1] LLM call failed (attempt 2): 429 Your project has exceeded its spending cap.
+2026-03-25 22:42:35,230 [WARNING] [idx=212-run1] LLM call failed (attempt 3): 429 Your project has exceeded its spending cap.
+2026-03-25 22:42:39,244 [WARNING] [idx=212-run1] All retries failed, using fallback score of 3
+2026-03-25 22:42:39,729 [WARNING] [idx=212-run2] LLM call failed (attempt 1): 429 Your project has exceeded its spending cap.
+2026-03-25 22:42:41,132 [WARNING] [idx=212-run2] LLM call failed (attempt 2): 429 Your project has exceeded its spending cap.
+2026-03-25 22:42:43,545 [WARNING] [idx=212-run2] LLM call failed (attempt 3): 429 Your project has exceeded its spending cap.
+2026-03-25 22:42:47,551 [WARNING] [idx=212-run2] All retries failed, using fallback score of 3
+2026-03-25 22:42:48,061 [WARNING] [idx=213-run1] LLM call failed (attempt 1): 429 Your project has exceeded its spending cap.
+2026-03-25 22:42:49,445 [WARNING] [idx=213-run1] LLM call failed (attempt 2): 429 Your project has exceeded its spending cap.
+2026-03-25 22:42:51,834 [WARNING] [idx=213-run1] LLM call failed (attempt 3): 429 Your project has exceeded its spending cap.
+2026-03-25 22:42:55,841 [WARNING] [idx=213-run1] All retries failed, using fallback score of 3
+2026-03-25 22:42:56,362 [WARNING] [idx=213-run2] LLM call failed (attempt 1): 429 Your project has exceeded its spending cap.
+2026-03-25 22:42:57,778 [WARNING] [idx=213-run2] LLM call failed (attempt 2): 429 Your project has exceeded its spending cap.
+2026-03-25 22:43:00,217 [WARNING] [idx=213-run2] LLM call failed (attempt 3): 429 Your project has exceeded its spending cap.
+2026-03-25 22:43:04,222 [WARNING] [idx=213-run2] All retries failed, using fallback score of 3
+2026-03-25 22:43:04,741 [WARNING] [idx=214-run1] LLM call failed (attempt 1): 429 Your project has exceeded its spending cap.
+2026-03-25 22:43:06,183 [WARNING] [idx=214-run1] LLM call failed (attempt 2): 429 Your project has exceeded its spending cap.
+2026-03-25 22:43:08,610 [WARNING] [idx=214-run1] LLM call failed (attempt 3): 429 Your project has exceeded its spending cap.
+2026-03-25 22:43:12,613 [WARNING] [idx=214-run1] All retries failed, using fallback score of 3
+2026-03-25 22:43:13,107 [WARNING] [idx=214-run2] LLM call failed (attempt 1): 429 Your project has exceeded its spending cap.
+2026-03-25 22:43:14,525 [WARNING] [idx=214-run2] LLM call failed (attempt 2): 429 Your project has exceeded its spending cap.
+2026-03-25 22:43:16,957 [WARNING] [idx=214-run2] LLM call failed (attempt 3): 429 Your project has exceeded its spending cap.
+2026-03-25 22:43:20,962 [WARNING] [idx=214-run2] All retries failed, using fallback score of 3
+2026-03-25 22:43:21,558 [WARNING] [idx=215-run1] LLM call failed (attempt 1): 429 Your project has exceeded its spending cap.
+2026-03-25 22:43:22,973 [WARNING] [idx=215-run1] LLM call failed (attempt 2): 429 Your project has exceeded its spending cap.
+2026-03-25 22:43:25,410 [WARNING] [idx=215-run1] LLM call failed (attempt 3): 429 Your project has exceeded its spending cap.
+2026-03-25 22:43:29,411 [WARNING] [idx=215-run1] All retries failed, using fallback score of 3
+2026-03-25 22:43:29,939 [WARNING] [idx=215-run2] LLM call failed (attempt 1): 429 Your project has exceeded its spending cap.
+2026-03-25 22:43:31,340 [WARNING] [idx=215-run2] LLM call failed (attempt 2): 429 Your project has exceeded its spending cap.
+2026-03-25 22:43:33,757 [WARNING] [idx=215-run2] LLM call failed (attempt 3): 429 Your project has exceeded its spending cap.
+2026-03-25 22:43:37,760 [WARNING] [idx=215-run2] All retries failed, using fallback score of 3
+2026-03-25 22:43:38,406 [WARNING] [idx=216-run1] LLM call failed (attempt 1): 429 Your project has exceeded its spending cap.
+2026-03-25 22:43:39,821 [WARNING] [idx=216-run1] LLM call failed (attempt 2): 429 Your project has exceeded its spending cap.
+2026-03-25 22:43:42,204 [WARNING] [idx=216-run1] LLM call failed (attempt 3): 429 Your project has exceeded its spending cap.
+2026-03-25 22:43:46,211 [WARNING] [idx=216-run1] All retries failed, using fallback score of 3
+2026-03-25 22:43:46,737 [WARNING] [idx=216-run2] LLM call failed (attempt 1): 429 Your project has exceeded its spending cap.
+2026-03-25 22:43:48,131 [WARNING] [idx=216-run2] LLM call failed (attempt 2): 429 Your project has exceeded its spending cap.
+2026-03-25 22:43:50,560 [WARNING] [idx=216-run2] LLM call failed (attempt 3): 429 Your project has exceeded its spending cap.
+2026-03-25 22:43:54,567 [WARNING] [idx=216-run2] All retries failed, using fallback score of 3
+2026-03-25 22:43:55,103 [WARNING] [idx=217-run1] LLM call failed (attempt 1): 429 Your project has exceeded its spending cap.
+2026-03-25 22:43:56,533 [WARNING] [idx=217-run1] LLM call failed (attempt 2): 429 Your project has exceeded its spending cap.
+2026-03-25 22:43:58,935 [WARNING] [idx=217-run1] LLM call failed (attempt 3): 429 Your project has exceeded its spending cap.
+2026-03-25 22:44:02,944 [WARNING] [idx=217-run1] All retries failed, using fallback score of 3
+2026-03-25 22:44:03,436 [WARNING] [idx=217-run2] LLM call failed (attempt 1): 429 Your project has exceeded its spending cap.
+2026-03-25 22:44:04,872 [WARNING] [idx=217-run2] LLM call failed (attempt 2): 429 Your project has exceeded its spending cap.
+2026-03-25 22:44:07,286 [WARNING] [idx=217-run2] LLM call failed (attempt 3): 429 Your project has exceeded its spending cap.
+2026-03-25 22:44:11,297 [WARNING] [idx=217-run2] All retries failed, using fallback score of 3
+2026-03-25 22:44:11,817 [WARNING] [idx=218-run1] LLM call failed (attempt 1): 429 Your project has exceeded its spending cap.
+2026-03-25 22:44:13,200 [WARNING] [idx=218-run1] LLM call failed (attempt 2): 429 Your project has exceeded its spending cap.
+2026-03-25 22:44:15,600 [WARNING] [idx=218-run1] LLM call failed (attempt 3): 429 Your project has exceeded its spending cap.
+2026-03-25 22:44:19,613 [WARNING] [idx=218-run1] All retries failed, using fallback score of 3
+2026-03-25 22:44:20,149 [WARNING] [idx=218-run2] LLM call failed (attempt 1): 429 Your project has exceeded its spending cap.
+2026-03-25 22:44:21,532 [WARNING] [idx=218-run2] LLM call failed (attempt 2): 429 Your project has exceeded its spending cap.
+2026-03-25 22:44:23,931 [WARNING] [idx=218-run2] LLM call failed (attempt 3): 429 Your project has exceeded its spending cap.
+2026-03-25 22:44:27,941 [WARNING] [idx=218-run2] All retries failed, using fallback score of 3
+2026-03-25 22:44:28,464 [WARNING] [idx=219-run1] LLM call failed (attempt 1): 429 Your project has exceeded its spending cap.
+2026-03-25 22:44:29,889 [WARNING] [idx=219-run1] LLM call failed (attempt 2): 429 Your project has exceeded its spending cap.
+2026-03-25 22:44:32,290 [WARNING] [idx=219-run1] LLM call failed (attempt 3): 429 Your project has exceeded its spending cap.
+2026-03-25 22:44:36,292 [WARNING] [idx=219-run1] All retries failed, using fallback score of 3
+2026-03-25 22:44:36,830 [WARNING] [idx=219-run2] LLM call failed (attempt 1): 429 Your project has exceeded its spending cap.
+2026-03-25 22:44:38,247 [WARNING] [idx=219-run2] LLM call failed (attempt 2): 429 Your project has exceeded its spending cap.
+2026-03-25 22:44:40,663 [WARNING] [idx=219-run2] LLM call failed (attempt 3): 429 Your project has exceeded its spending cap.
+2026-03-25 22:44:44,666 [WARNING] [idx=219-run2] All retries failed, using fallback score of 3
+2026-03-25 22:44:45,164 [WARNING] [idx=220-run1] LLM call failed (attempt 1): 429 Your project has exceeded its spending cap.
+2026-03-25 22:44:46,612 [WARNING] [idx=220-run1] LLM call failed (attempt 2): 429 Your project has exceeded its spending cap.
+2026-03-25 22:44:49,012 [WARNING] [idx=220-run1] LLM call failed (attempt 3): 429 Your project has exceeded its spending cap.
+2026-03-25 22:44:53,022 [WARNING] [idx=220-run1] All retries failed, using fallback score of 3
+2026-03-25 22:44:53,533 [WARNING] [idx=220-run2] LLM call failed (attempt 1): 429 Your project has exceeded its spending cap.
+2026-03-25 22:44:55,063 [WARNING] [idx=220-run2] LLM call failed (attempt 2): 429 Your project has exceeded its spending cap.
+2026-03-25 22:44:57,482 [WARNING] [idx=220-run2] LLM call failed (attempt 3): 429 Your project has exceeded its spending cap.
+2026-03-25 22:45:01,488 [WARNING] [idx=220-run2] All retries failed, using fallback score of 3
+2026-03-25 22:45:02,028 [WARNING] [idx=221-run1] LLM call failed (attempt 1): 429 Your project has exceeded its spending cap.
+2026-03-25 22:45:03,456 [WARNING] [idx=221-run1] LLM call failed (attempt 2): 429 Your project has exceeded its spending cap.
+2026-03-25 22:45:05,892 [WARNING] [idx=221-run1] LLM call failed (attempt 3): 429 Your project has exceeded its spending cap.
+2026-03-25 22:45:09,893 [WARNING] [idx=221-run1] All retries failed, using fallback score of 3
+2026-03-25 22:45:10,383 [WARNING] [idx=221-run2] LLM call failed (attempt 1): 429 Your project has exceeded its spending cap.
+2026-03-25 22:45:11,776 [WARNING] [idx=221-run2] LLM call failed (attempt 2): 429 Your project has exceeded its spending cap.
+2026-03-25 22:45:14,176 [WARNING] [idx=221-run2] LLM call failed (attempt 3): 429 Your project has exceeded its spending cap.
+2026-03-25 22:45:18,177 [WARNING] [idx=221-run2] All retries failed, using fallback score of 3
+2026-03-25 22:45:18,674 [WARNING] [idx=222-run1] LLM call failed (attempt 1): 429 Your project has exceeded its spending cap.
+2026-03-25 22:45:20,094 [WARNING] [idx=222-run1] LLM call failed (attempt 2): 429 Your project has exceeded its spending cap.
+2026-03-25 22:45:22,494 [WARNING] [idx=222-run1] LLM call failed (attempt 3): 429 Your project has exceeded its spending cap.
+2026-03-25 22:45:26,496 [WARNING] [idx=222-run1] All retries failed, using fallback score of 3
+2026-03-25 22:45:27,007 [WARNING] [idx=222-run2] LLM call failed (attempt 1): 429 Your project has exceeded its spending cap.
+2026-03-25 22:45:28,416 [WARNING] [idx=222-run2] LLM call failed (attempt 2): 429 Your project has exceeded its spending cap.
+2026-03-25 22:45:30,824 [WARNING] [idx=222-run2] LLM call failed (attempt 3): 429 Your project has exceeded its spending cap.
+2026-03-25 22:45:34,835 [WARNING] [idx=222-run2] All retries failed, using fallback score of 3
+2026-03-25 22:45:35,337 [WARNING] [idx=223-run1] LLM call failed (attempt 1): 429 Your project has exceeded its spending cap.
+2026-03-25 22:45:36,739 [WARNING] [idx=223-run1] LLM call failed (attempt 2): 429 Your project has exceeded its spending cap.
+2026-03-25 22:45:39,140 [WARNING] [idx=223-run1] LLM call failed (attempt 3): 429 Your project has exceeded its spending cap.
+2026-03-25 22:45:43,146 [WARNING] [idx=223-run1] All retries failed, using fallback score of 3
+2026-03-25 22:45:43,738 [WARNING] [idx=223-run2] LLM call failed (attempt 1): 429 Your project has exceeded its spending cap.
+2026-03-25 22:45:45,155 [WARNING] [idx=223-run2] LLM call failed (attempt 2): 429 Your project has exceeded its spending cap.
+2026-03-25 22:45:47,588 [WARNING] [idx=223-run2] LLM call failed (attempt 3): 429 Your project has exceeded its spending cap.
+2026-03-25 22:45:51,589 [WARNING] [idx=223-run2] All retries failed, using fallback score of 3
+2026-03-25 22:45:52,120 [WARNING] [idx=224-run1] LLM call failed (attempt 1): 429 Your project has exceeded its spending cap.
+2026-03-25 22:45:53,545 [WARNING] [idx=224-run1] LLM call failed (attempt 2): 429 Your project has exceeded its spending cap.
+2026-03-25 22:45:55,956 [WARNING] [idx=224-run1] LLM call failed (attempt 3): 429 Your project has exceeded its spending cap.
+2026-03-25 22:45:59,959 [WARNING] [idx=224-run1] All retries failed, using fallback score of 3
+2026-03-25 22:46:00,453 [WARNING] [idx=224-run2] LLM call failed (attempt 1): 429 Your project has exceeded its spending cap.
+2026-03-25 22:46:01,853 [WARNING] [idx=224-run2] LLM call failed (attempt 2): 429 Your project has exceeded its spending cap.
+2026-03-25 22:46:04,273 [WARNING] [idx=224-run2] LLM call failed (attempt 3): 429 Your project has exceeded its spending cap.
+2026-03-25 22:46:08,282 [WARNING] [idx=224-run2] All retries failed, using fallback score of 3
+2026-03-25 22:46:08,769 [WARNING] [idx=225-run1] LLM call failed (attempt 1): 429 Your project has exceeded its spending cap.
+2026-03-25 22:46:10,233 [WARNING] [idx=225-run1] LLM call failed (attempt 2): 429 Your project has exceeded its spending cap.
+2026-03-25 22:46:12,651 [WARNING] [idx=225-run1] LLM call failed (attempt 3): 429 Your project has exceeded its spending cap.
+2026-03-25 22:46:16,652 [WARNING] [idx=225-run1] All retries failed, using fallback score of 3
+2026-03-25 22:46:17,168 [WARNING] [idx=225-run2] LLM call failed (attempt 1): 429 Your project has exceeded its spending cap.
+2026-03-25 22:46:18,585 [WARNING] [idx=225-run2] LLM call failed (attempt 2): 429 Your project has exceeded its spending cap.
+2026-03-25 22:46:21,034 [WARNING] [idx=225-run2] LLM call failed (attempt 3): 429 Your project has exceeded its spending cap.
+2026-03-25 22:46:25,038 [WARNING] [idx=225-run2] All retries failed, using fallback score of 3
+2026-03-25 22:46:25,568 [WARNING] [idx=226-run1] LLM call failed (attempt 1): 429 Your project has exceeded its spending cap.
+2026-03-25 22:46:26,967 [WARNING] [idx=226-run1] LLM call failed (attempt 2): 429 Your project has exceeded its spending cap.
+2026-03-25 22:46:29,381 [WARNING] [idx=226-run1] LLM call failed (attempt 3): 429 Your project has exceeded its spending cap.
+2026-03-25 22:46:33,383 [WARNING] [idx=226-run1] All retries failed, using fallback score of 3
+2026-03-25 22:46:33,914 [WARNING] [idx=226-run2] LLM call failed (attempt 1): 429 Your project has exceeded its spending cap.
+2026-03-25 22:46:35,349 [WARNING] [idx=226-run2] LLM call failed (attempt 2): 429 Your project has exceeded its spending cap.
+2026-03-25 22:46:37,780 [WARNING] [idx=226-run2] LLM call failed (attempt 3): 429 Your project has exceeded its spending cap.
+2026-03-25 22:46:41,781 [WARNING] [idx=226-run2] All retries failed, using fallback score of 3
+2026-03-25 22:46:42,281 [WARNING] [idx=227-run1] LLM call failed (attempt 1): 429 Your project has exceeded its spending cap.
+2026-03-25 22:46:43,718 [WARNING] [idx=227-run1] LLM call failed (attempt 2): 429 Your project has exceeded its spending cap.
+2026-03-25 22:46:46,134 [WARNING] [idx=227-run1] LLM call failed (attempt 3): 429 Your project has exceeded its spending cap.
+2026-03-25 22:46:50,136 [WARNING] [idx=227-run1] All retries failed, using fallback score of 3
+2026-03-25 22:46:50,651 [WARNING] [idx=227-run2] LLM call failed (attempt 1): 429 Your project has exceeded its spending cap.
+2026-03-25 22:46:52,029 [WARNING] [idx=227-run2] LLM call failed (attempt 2): 429 Your project has exceeded its spending cap.
+2026-03-25 22:46:54,461 [WARNING] [idx=227-run2] LLM call failed (attempt 3): 429 Your project has exceeded its spending cap.
+2026-03-25 22:46:58,463 [WARNING] [idx=227-run2] All retries failed, using fallback score of 3
+2026-03-25 22:46:58,954 [WARNING] [idx=228-run1] LLM call failed (attempt 1): 429 Your project has exceeded its spending cap.
+2026-03-25 22:47:00,362 [WARNING] [idx=228-run1] LLM call failed (attempt 2): 429 Your project has exceeded its spending cap.
+2026-03-25 22:47:02,792 [WARNING] [idx=228-run1] LLM call failed (attempt 3): 429 Your project has exceeded its spending cap.
+2026-03-25 22:47:06,794 [WARNING] [idx=228-run1] All retries failed, using fallback score of 3
+2026-03-25 22:47:07,295 [WARNING] [idx=228-run2] LLM call failed (attempt 1): 429 Your project has exceeded its spending cap.
+2026-03-25 22:47:08,766 [WARNING] [idx=228-run2] LLM call failed (attempt 2): 429 Your project has exceeded its spending cap.
+2026-03-25 22:47:11,127 [WARNING] [idx=228-run2] LLM call failed (attempt 3): 429 Your project has exceeded its spending cap.
+2026-03-25 22:47:15,130 [WARNING] [idx=228-run2] All retries failed, using fallback score of 3
+2026-03-25 22:47:15,627 [WARNING] [idx=229-run1] LLM call failed (attempt 1): 429 Your project has exceeded its spending cap.
+2026-03-25 22:47:17,036 [WARNING] [idx=229-run1] LLM call failed (attempt 2): 429 Your project has exceeded its spending cap.
+2026-03-25 22:47:19,444 [WARNING] [idx=229-run1] LLM call failed (attempt 3): 429 Your project has exceeded its spending cap.
+2026-03-25 22:47:23,453 [WARNING] [idx=229-run1] All retries failed, using fallback score of 3
+2026-03-25 22:47:23,926 [WARNING] [idx=229-run2] LLM call failed (attempt 1): 429 Your project has exceeded its spending cap.
+2026-03-25 22:47:25,374 [WARNING] [idx=229-run2] LLM call failed (attempt 2): 429 Your project has exceeded its spending cap.
+2026-03-25 22:47:27,808 [WARNING] [idx=229-run2] LLM call failed (attempt 3): 429 Your project has exceeded its spending cap.
+2026-03-25 22:47:31,809 [WARNING] [idx=229-run2] All retries failed, using fallback score of 3
+2026-03-25 22:47:32,291 [WARNING] [idx=230-run1] LLM call failed (attempt 1): 429 Your project has exceeded its spending cap.
+2026-03-25 22:47:33,665 [WARNING] [idx=230-run1] LLM call failed (attempt 2): 429 Your project has exceeded its spending cap.
+2026-03-25 22:47:36,041 [WARNING] [idx=230-run1] LLM call failed (attempt 3): 429 Your project has exceeded its spending cap.
+2026-03-25 22:47:40,042 [WARNING] [idx=230-run1] All retries failed, using fallback score of 3
+2026-03-25 22:47:40,525 [WARNING] [idx=230-run2] LLM call failed (attempt 1): 429 Your project has exceeded its spending cap.
+2026-03-25 22:47:41,939 [WARNING] [idx=230-run2] LLM call failed (attempt 2): 429 Your project has exceeded its spending cap.
+2026-03-25 22:47:44,324 [WARNING] [idx=230-run2] LLM call failed (attempt 3): 429 Your project has exceeded its spending cap.
+2026-03-25 22:47:48,334 [WARNING] [idx=230-run2] All retries failed, using fallback score of 3
+2026-03-25 22:47:48,796 [WARNING] [idx=231-run1] LLM call failed (attempt 1): 429 Your project has exceeded its spending cap.
+2026-03-25 22:47:50,239 [WARNING] [idx=231-run1] LLM call failed (attempt 2): 429 Your project has exceeded its spending cap.
+2026-03-25 22:47:52,658 [WARNING] [idx=231-run1] LLM call failed (attempt 3): 429 Your project has exceeded its spending cap.
+2026-03-25 22:47:56,667 [WARNING] [idx=231-run1] All retries failed, using fallback score of 3
+2026-03-25 22:47:57,156 [WARNING] [idx=231-run2] LLM call failed (attempt 1): 429 Your project has exceeded its spending cap.
+2026-03-25 22:47:58,589 [WARNING] [idx=231-run2] LLM call failed (attempt 2): 429 Your project has exceeded its spending cap.
+2026-03-25 22:48:01,004 [WARNING] [idx=231-run2] LLM call failed (attempt 3): 429 Your project has exceeded its spending cap.
+2026-03-25 22:48:05,011 [WARNING] [idx=231-run2] All retries failed, using fallback score of 3
+2026-03-25 22:48:05,505 [WARNING] [idx=232-run1] LLM call failed (attempt 1): 429 Your project has exceeded its spending cap.
+2026-03-25 22:48:06,882 [WARNING] [idx=232-run1] LLM call failed (attempt 2): 429 Your project has exceeded its spending cap.
+2026-03-25 22:48:09,303 [WARNING] [idx=232-run1] LLM call failed (attempt 3): 429 Your project has exceeded its spending cap.
+2026-03-25 22:48:13,307 [WARNING] [idx=232-run1] All retries failed, using fallback score of 3
+2026-03-25 22:48:13,753 [WARNING] [idx=232-run2] LLM call failed (attempt 1): 429 Your project has exceeded its spending cap.
+2026-03-25 22:48:15,175 [WARNING] [idx=232-run2] LLM call failed (attempt 2): 429 Your project has exceeded its spending cap.
+2026-03-25 22:48:17,520 [WARNING] [idx=232-run2] LLM call failed (attempt 3): 429 Your project has exceeded its spending cap.
+2026-03-25 22:48:21,527 [WARNING] [idx=232-run2] All retries failed, using fallback score of 3
+2026-03-25 22:48:22,050 [WARNING] [idx=233-run1] LLM call failed (attempt 1): 429 Your project has exceeded its spending cap.
+2026-03-25 22:48:23,458 [WARNING] [idx=233-run1] LLM call failed (attempt 2): 429 Your project has exceeded its spending cap.
+2026-03-25 22:48:25,851 [WARNING] [idx=233-run1] LLM call failed (attempt 3): 429 Your project has exceeded its spending cap.
+2026-03-25 22:48:29,859 [WARNING] [idx=233-run1] All retries failed, using fallback score of 3
+2026-03-25 22:48:30,377 [WARNING] [idx=233-run2] LLM call failed (attempt 1): 429 Your project has exceeded its spending cap.
+2026-03-25 22:48:31,768 [WARNING] [idx=233-run2] LLM call failed (attempt 2): 429 Your project has exceeded its spending cap.
+2026-03-25 22:48:34,116 [WARNING] [idx=233-run2] LLM call failed (attempt 3): 429 Your project has exceeded its spending cap.
+2026-03-25 22:48:38,117 [WARNING] [idx=233-run2] All retries failed, using fallback score of 3
+2026-03-25 22:48:38,651 [WARNING] [idx=234-run1] LLM call failed (attempt 1): 429 Your project has exceeded its spending cap.
+2026-03-25 22:48:40,167 [WARNING] [idx=234-run1] LLM call failed (attempt 2): 429 Your project has exceeded its spending cap.
+2026-03-25 22:48:42,607 [WARNING] [idx=234-run1] LLM call failed (attempt 3): 429 Your project has exceeded its spending cap.
+2026-03-25 22:48:46,608 [WARNING] [idx=234-run1] All retries failed, using fallback score of 3
+2026-03-25 22:48:47,047 [WARNING] [idx=234-run2] LLM call failed (attempt 1): 429 Your project has exceeded its spending cap.
+2026-03-25 22:48:48,495 [WARNING] [idx=234-run2] LLM call failed (attempt 2): 429 Your project has exceeded its spending cap.
+2026-03-25 22:48:50,894 [WARNING] [idx=234-run2] LLM call failed (attempt 3): 429 Your project has exceeded its spending cap.
+2026-03-25 22:48:54,895 [WARNING] [idx=234-run2] All retries failed, using fallback score of 3
+2026-03-25 22:48:55,426 [WARNING] [idx=235-run1] LLM call failed (attempt 1): 429 Your project has exceeded its spending cap.
+2026-03-25 22:48:56,848 [WARNING] [idx=235-run1] LLM call failed (attempt 2): 429 Your project has exceeded its spending cap.
+2026-03-25 22:48:59,286 [WARNING] [idx=235-run1] LLM call failed (attempt 3): 429 Your project has exceeded its spending cap.
+2026-03-25 22:49:03,289 [WARNING] [idx=235-run1] All retries failed, using fallback score of 3
+2026-03-25 22:49:03,762 [WARNING] [idx=235-run2] LLM call failed (attempt 1): 429 Your project has exceeded its spending cap.
+2026-03-25 22:49:05,117 [WARNING] [idx=235-run2] LLM call failed (attempt 2): 429 Your project has exceeded its spending cap.
+2026-03-25 22:49:07,547 [WARNING] [idx=235-run2] LLM call failed (attempt 3): 429 Your project has exceeded its spending cap.
+2026-03-25 22:49:11,548 [WARNING] [idx=235-run2] All retries failed, using fallback score of 3
+2026-03-25 22:49:12,091 [WARNING] [idx=236-run1] LLM call failed (attempt 1): 429 Your project has exceeded its spending cap.
+2026-03-25 22:49:13,445 [WARNING] [idx=236-run1] LLM call failed (attempt 2): 429 Your project has exceeded its spending cap.
+2026-03-25 22:49:15,827 [WARNING] [idx=236-run1] LLM call failed (attempt 3): 429 Your project has exceeded its spending cap.
+2026-03-25 22:49:19,836 [WARNING] [idx=236-run1] All retries failed, using fallback score of 3
+2026-03-25 22:49:20,326 [WARNING] [idx=236-run2] LLM call failed (attempt 1): 429 Your project has exceeded its spending cap.
+2026-03-25 22:49:21,826 [WARNING] [idx=236-run2] LLM call failed (attempt 2): 429 Your project has exceeded its spending cap.
+2026-03-25 22:49:24,194 [WARNING] [idx=236-run2] LLM call failed (attempt 3): 429 Your project has exceeded its spending cap.
+2026-03-25 22:49:28,207 [WARNING] [idx=236-run2] All retries failed, using fallback score of 3
+2026-03-25 22:49:28,730 [WARNING] [idx=237-run1] LLM call failed (attempt 1): 429 Your project has exceeded its spending cap.
+2026-03-25 22:49:30,219 [WARNING] [idx=237-run1] LLM call failed (attempt 2): 429 Your project has exceeded its spending cap.
+2026-03-25 22:49:32,608 [WARNING] [idx=237-run1] LLM call failed (attempt 3): 429 Your project has exceeded its spending cap.
+2026-03-25 22:49:36,620 [WARNING] [idx=237-run1] All retries failed, using fallback score of 3
+2026-03-25 22:49:37,143 [WARNING] [idx=237-run2] LLM call failed (attempt 1): 429 Your project has exceeded its spending cap.
+2026-03-25 22:49:38,508 [WARNING] [idx=237-run2] LLM call failed (attempt 2): 429 Your project has exceeded its spending cap.
+2026-03-25 22:49:41,023 [WARNING] [idx=237-run2] LLM call failed (attempt 3): 429 Your project has exceeded its spending cap.
+2026-03-25 22:49:45,024 [WARNING] [idx=237-run2] All retries failed, using fallback score of 3
+2026-03-25 22:49:45,558 [WARNING] [idx=238-run1] LLM call failed (attempt 1): 429 Your project has exceeded its spending cap.
+2026-03-25 22:49:46,923 [WARNING] [idx=238-run1] LLM call failed (attempt 2): 429 Your project has exceeded its spending cap.
+2026-03-25 22:49:49,290 [WARNING] [idx=238-run1] LLM call failed (attempt 3): 429 Your project has exceeded its spending cap.
+2026-03-25 22:49:53,304 [WARNING] [idx=238-run1] All retries failed, using fallback score of 3
+2026-03-25 22:49:53,824 [WARNING] [idx=238-run2] LLM call failed (attempt 1): 429 Your project has exceeded its spending cap.
+2026-03-25 22:49:55,282 [WARNING] [idx=238-run2] LLM call failed (attempt 2): 429 Your project has exceeded its spending cap.
+2026-03-25 22:49:57,704 [WARNING] [idx=238-run2] LLM call failed (attempt 3): 429 Your project has exceeded its spending cap.
+2026-03-25 22:50:01,706 [WARNING] [idx=238-run2] All retries failed, using fallback score of 3
+2026-03-25 22:50:02,227 [WARNING] [idx=239-run1] LLM call failed (attempt 1): 429 Your project has exceeded its spending cap.
+2026-03-25 22:50:03,655 [WARNING] [idx=239-run1] LLM call failed (attempt 2): 429 Your project has exceeded its spending cap.
+2026-03-25 22:50:06,070 [WARNING] [idx=239-run1] LLM call failed (attempt 3): 429 Your project has exceeded its spending cap.
+2026-03-25 22:50:10,074 [WARNING] [idx=239-run1] All retries failed, using fallback score of 3
+2026-03-25 22:50:10,566 [WARNING] [idx=239-run2] LLM call failed (attempt 1): 429 Your project has exceeded its spending cap.
+2026-03-25 22:50:11,936 [WARNING] [idx=239-run2] LLM call failed (attempt 2): 429 Your project has exceeded its spending cap.
+2026-03-25 22:50:14,370 [WARNING] [idx=239-run2] LLM call failed (attempt 3): 429 Your project has exceeded its spending cap.
+2026-03-25 22:50:18,372 [WARNING] [idx=239-run2] All retries failed, using fallback score of 3
+2026-03-25 22:50:18,886 [WARNING] [idx=240-run1] LLM call failed (attempt 1): 429 Your project has exceeded its spending cap.
+2026-03-25 22:50:20,271 [WARNING] [idx=240-run1] LLM call failed (attempt 2): 429 Your project has exceeded its spending cap.
+2026-03-25 22:50:22,670 [WARNING] [idx=240-run1] LLM call failed (attempt 3): 429 Your project has exceeded its spending cap.
+2026-03-25 22:50:26,674 [WARNING] [idx=240-run1] All retries failed, using fallback score of 3
+2026-03-25 22:50:27,170 [WARNING] [idx=240-run2] LLM call failed (attempt 1): 429 Your project has exceeded its spending cap.
+2026-03-25 22:50:28,572 [WARNING] [idx=240-run2] LLM call failed (attempt 2): 429 Your project has exceeded its spending cap.
+2026-03-25 22:50:31,035 [WARNING] [idx=240-run2] LLM call failed (attempt 3): 429 Your project has exceeded its spending cap.
+2026-03-25 22:50:35,045 [WARNING] [idx=240-run2] All retries failed, using fallback score of 3
+2026-03-25 22:50:35,569 [WARNING] [idx=241-run1] LLM call failed (attempt 1): 429 Your project has exceeded its spending cap.
+2026-03-25 22:50:36,998 [WARNING] [idx=241-run1] LLM call failed (attempt 2): 429 Your project has exceeded its spending cap.
+2026-03-25 22:50:39,417 [WARNING] [idx=241-run1] LLM call failed (attempt 3): 429 Your project has exceeded its spending cap.
+2026-03-25 22:50:43,432 [WARNING] [idx=241-run1] All retries failed, using fallback score of 3
+2026-03-25 22:50:43,932 [WARNING] [idx=241-run2] LLM call failed (attempt 1): 429 Your project has exceeded its spending cap.
+2026-03-25 22:50:45,334 [WARNING] [idx=241-run2] LLM call failed (attempt 2): 429 Your project has exceeded its spending cap.
+2026-03-25 22:50:47,739 [WARNING] [idx=241-run2] LLM call failed (attempt 3): 429 Your project has exceeded its spending cap.
+2026-03-25 22:50:51,741 [WARNING] [idx=241-run2] All retries failed, using fallback score of 3
+2026-03-25 22:50:52,233 [WARNING] [idx=242-run1] LLM call failed (attempt 1): 429 Your project has exceeded its spending cap.
+2026-03-25 22:50:53,686 [WARNING] [idx=242-run1] LLM call failed (attempt 2): 429 Your project has exceeded its spending cap.
+2026-03-25 22:50:56,098 [WARNING] [idx=242-run1] LLM call failed (attempt 3): 429 Your project has exceeded its spending cap.
+2026-03-25 22:51:00,109 [WARNING] [idx=242-run1] All retries failed, using fallback score of 3
+2026-03-25 22:51:00,615 [WARNING] [idx=242-run2] LLM call failed (attempt 1): 429 Your project has exceeded its spending cap.
+2026-03-25 22:51:02,039 [WARNING] [idx=242-run2] LLM call failed (attempt 2): 429 Your project has exceeded its spending cap.
+2026-03-25 22:51:04,440 [WARNING] [idx=242-run2] LLM call failed (attempt 3): 429 Your project has exceeded its spending cap.
+2026-03-25 22:51:08,443 [WARNING] [idx=242-run2] All retries failed, using fallback score of 3
+2026-03-25 22:51:08,929 [WARNING] [idx=243-run1] LLM call failed (attempt 1): 429 Your project has exceeded its spending cap.
+2026-03-25 22:51:10,346 [WARNING] [idx=243-run1] LLM call failed (attempt 2): 429 Your project has exceeded its spending cap.
+2026-03-25 22:51:12,757 [WARNING] [idx=243-run1] LLM call failed (attempt 3): 429 Your project has exceeded its spending cap.
+2026-03-25 22:51:16,760 [WARNING] [idx=243-run1] All retries failed, using fallback score of 3
+2026-03-25 22:51:17,279 [WARNING] [idx=243-run2] LLM call failed (attempt 1): 429 Your project has exceeded its spending cap.
+2026-03-25 22:51:18,687 [WARNING] [idx=243-run2] LLM call failed (attempt 2): 429 Your project has exceeded its spending cap.
+2026-03-25 22:51:21,158 [WARNING] [idx=243-run2] LLM call failed (attempt 3): 429 Your project has exceeded its spending cap.
+2026-03-25 22:51:25,160 [WARNING] [idx=243-run2] All retries failed, using fallback score of 3
+2026-03-25 22:51:25,683 [WARNING] [idx=244-run1] LLM call failed (attempt 1): 429 Your project has exceeded its spending cap.
+2026-03-25 22:51:27,083 [WARNING] [idx=244-run1] LLM call failed (attempt 2): 429 Your project has exceeded its spending cap.
+2026-03-25 22:51:29,506 [WARNING] [idx=244-run1] LLM call failed (attempt 3): 429 Your project has exceeded its spending cap.
+2026-03-25 22:51:33,518 [WARNING] [idx=244-run1] All retries failed, using fallback score of 3
+2026-03-25 22:51:34,131 [WARNING] [idx=244-run2] LLM call failed (attempt 1): 429 Your project has exceeded its spending cap.
+2026-03-25 22:51:35,542 [WARNING] [idx=244-run2] LLM call failed (attempt 2): 429 Your project has exceeded its spending cap.
+2026-03-25 22:51:37,947 [WARNING] [idx=244-run2] LLM call failed (attempt 3): 429 Your project has exceeded its spending cap.
+2026-03-25 22:51:41,950 [WARNING] [idx=244-run2] All retries failed, using fallback score of 3
+2026-03-25 22:51:42,456 [WARNING] [idx=245-run1] LLM call failed (attempt 1): 429 Your project has exceeded its spending cap.
+2026-03-25 22:51:43,886 [WARNING] [idx=245-run1] LLM call failed (attempt 2): 429 Your project has exceeded its spending cap.
+2026-03-25 22:51:46,288 [WARNING] [idx=245-run1] LLM call failed (attempt 3): 429 Your project has exceeded its spending cap.
+2026-03-25 22:51:50,289 [WARNING] [idx=245-run1] All retries failed, using fallback score of 3
+2026-03-25 22:51:50,794 [WARNING] [idx=245-run2] LLM call failed (attempt 1): 429 Your project has exceeded its spending cap.
+2026-03-25 22:51:52,215 [WARNING] [idx=245-run2] LLM call failed (attempt 2): 429 Your project has exceeded its spending cap.
+2026-03-25 22:51:54,621 [WARNING] [idx=245-run2] LLM call failed (attempt 3): 429 Your project has exceeded its spending cap.
+2026-03-25 22:51:58,623 [WARNING] [idx=245-run2] All retries failed, using fallback score of 3
+2026-03-25 22:51:59,078 [WARNING] [idx=246-run1] LLM call failed (attempt 1): 429 Your project has exceeded its spending cap.
+2026-03-25 22:52:00,421 [WARNING] [idx=246-run1] LLM call failed (attempt 2): 429 Your project has exceeded its spending cap.
+2026-03-25 22:52:02,860 [WARNING] [idx=246-run1] LLM call failed (attempt 3): 429 Your project has exceeded its spending cap.
+2026-03-25 22:52:06,861 [WARNING] [idx=246-run1] All retries failed, using fallback score of 3
+2026-03-25 22:52:10,813 [INFO] [idx=246-run2] score=3 raw='3' in_tok=325 out_tok=1 cost=$0.000033 latency=3.85s
+2026-03-25 22:52:16,697 [INFO] [idx=247-run1] score=3 raw='3' in_tok=151 out_tok=1 cost=$0.000016 latency=5.78s
+2026-03-25 22:52:27,151 [INFO] [idx=247-run2] score=3 raw='3' in_tok=151 out_tok=1 cost=$0.000016 latency=10.35s
+2026-03-25 22:52:32,195 [INFO] [idx=248-run1] score=2 raw='2' in_tok=148 out_tok=1 cost=$0.000015 latency=4.94s
+2026-03-25 22:52:36,924 [INFO] [idx=248-run2] score=2 raw='2' in_tok=148 out_tok=1 cost=$0.000015 latency=4.63s
+2026-03-25 22:52:39,908 [INFO] [idx=249-run1] score=2 raw='2' in_tok=161 out_tok=1 cost=$0.000017 latency=2.88s
+2026-03-25 22:52:42,783 [INFO] [idx=249-run2] score=2 raw='2' in_tok=161 out_tok=1 cost=$0.000017 latency=2.77s
+2026-03-25 22:52:48,878 [INFO] [idx=250-run1] score=2 raw='2' in_tok=136 out_tok=1 cost=$0.000014 latency=5.99s
+2026-03-25 22:52:55,010 [INFO] [idx=250-run2] score=2 raw='2' in_tok=136 out_tok=1 cost=$0.000014 latency=6.03s
+2026-03-25 22:52:58,407 [INFO] [idx=251-run1] score=1 raw='1' in_tok=136 out_tok=1 cost=$0.000014 latency=3.27s
+2026-03-25 22:53:03,077 [INFO] [idx=251-run2] score=1 raw='1' in_tok=136 out_tok=1 cost=$0.000014 latency=4.57s
+2026-03-25 22:53:05,471 [INFO] [idx=252-run1] score=2 raw='2' in_tok=151 out_tok=1 cost=$0.000016 latency=2.28s
+2026-03-25 22:53:08,164 [INFO] [idx=252-run2] score=2 raw='2' in_tok=151 out_tok=1 cost=$0.000016 latency=2.59s
+2026-03-25 22:53:15,308 [INFO] [idx=253-run1] score=2 raw='2' in_tok=141 out_tok=1 cost=$0.000015 latency=7.04s
+2026-03-25 22:53:22,304 [INFO] [idx=253-run2] score=2 raw='2' in_tok=141 out_tok=1 cost=$0.000015 latency=6.89s
+2026-03-25 22:53:26,250 [INFO] [idx=254-run1] score=1 raw='1' in_tok=149 out_tok=1 cost=$0.000015 latency=3.84s
+2026-03-25 22:53:30,508 [INFO] [idx=254-run2] score=1 raw='1' in_tok=149 out_tok=1 cost=$0.000015 latency=4.15s
+2026-03-25 22:53:35,039 [INFO] [idx=255-run1] score=3 raw='3' in_tok=197 out_tok=1 cost=$0.000020 latency=4.43s
+2026-03-25 22:53:43,138 [INFO] [idx=255-run2] score=3 raw='3' in_tok=197 out_tok=1 cost=$0.000020 latency=8.00s

@@ -1,0 +1,92 @@
+{
+  "config": {
+    "model": "qwen3-coder",
+    "temperature": 0.2,
+    "top_p": 0.9,
+    "num_predict": 512,
+    "exec_timeout": 10,
+    "prompt_template": {
+      "instruction": 0,
+      "output_constraint": 0,
+      "reasoning_scaffold": 0,
+      "format_rule": 0
+    }
+  },
+  "num_tasks": 3,
+  "average_pass@1": 1.0,
+  "average_runtime": 63.3395,
+  "results": [
+    {
+      "task_id": "t1",
+      "config": {
+        "model": "qwen3-coder",
+        "temperature": 0.2,
+        "top_p": 0.9,
+        "num_predict": 512,
+        "exec_timeout": 10,
+        "prompt_template": {
+          "instruction": 0,
+          "output_constraint": 0,
+          "reasoning_scaffold": 0,
+          "format_rule": 0
+        }
+      },
+      "passed": 1,
+      "pass@1": 1,
+      "generation_time": 123.5805,
+      "test_time": 0.3462,
+      "total_runtime": 123.9267,
+      "error": null,
+      "raw_output": "def square(x):\n    return x * x",
+      "generated_code": "def square(x):\n    return x * x"
+    },
+    {
+      "task_id": "t2",
+      "config": {
+        "model": "qwen3-coder",
+        "temperature": 0.2,
+        "top_p": 0.9,
+        "num_predict": 512,
+        "exec_timeout": 10,
+        "prompt_template": {
+          "instruction": 0,
+          "output_constraint": 0,
+          "reasoning_scaffold": 0,
+          "format_rule": 0
+        }
+      },
+      "passed": 1,
+      "pass@1": 1,
+      "generation_time": 35.4211,
+      "test_time": 0.4567,
+      "total_runtime": 35.8778,
+      "error": null,
+      "raw_output": "```python\ndef is_even(n):\n    return n % 2 == 0\n```",
+      "generated_code": "def is_even(n):\n    return n % 2 == 0"
+    },
+    {
+      "task_id": "t3",
+      "config": {
+        "model": "qwen3-coder",
+        "temperature": 0.2,
+        "top_p": 0.9,
+        "num_predict": 512,
+        "exec_timeout": 10,
+        "prompt_template": {
+          "instruction": 0,
+          "output_constraint": 0,
+          "reasoning_scaffold": 0,
+          "format_rule": 0
+        }
+      },
+      "passed": 1,
+      "pass@1": 1,
+      "generation_time": 29.8755,
+      "test_time": 0.3385,
+      "total_runtime": 30.214,
+      "error": null,
+      "raw_output": "```python\ndef reverse_string(s):\n    return s[::-1]\n```",
+      "generated_code": "def reverse_string(s):\n    return s[::-1]"
+    }
+  ]
+}

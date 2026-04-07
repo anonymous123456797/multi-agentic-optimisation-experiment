@@ -1,0 +1,1814 @@
+{
+  "config": {
+    "model": "qwen3-coder",
+    "temperature": 0.2,
+    "top_p": 0.9,
+    "num_predict": 512,
+    "exec_timeout": 10
+  },
+  "num_tasks": 100,
+  "average_pass@1": 0.1,
+  "average_runtime": 7.4283,
+  "results": [
+    {
+      "task_id": "1",
+      "config": {
+        "model": "qwen3-coder",
+        "temperature": 0.2,
+        "top_p": 0.9,
+        "num_predict": 512,
+        "exec_timeout": 10
+      },
+      "passed": 0,
+      "pass@1": 0,
+      "generation_time": 33.3939,
+      "test_time": 0.0082,
+      "total_runtime": 33.4022,
+      "error": "NameError: name 'min_cost' is not defined",
+      "raw_output": "def min_cost_path(cost, m, n):\n    # Create a 2D array to store minimum cost\n    dp = [[0 for _ in range(len(cost[0]))] for _ in range(len(cost))]\n    \n    # Initialize the first cell\n    dp[0][0] = cost[0][0]\n    \n    # Initialize first row\n    for i in range(1, len(cost[0])):\n        dp[0][i] = dp[0][i-1] + cost[0][i]\n    \n    # Initialize first column\n    for i in range(1, len(cost)):\n        dp[i][0] = dp[i-1][0] + cost[i][0]\n    \n    # Fill the dp array\n    for i in range(1, len(cost)):\n        for j in range(1, len(cost[0])):\n            dp[i][j] = cost[i][j] + min(dp[i-1][j], dp[i][j-1], dp[i-1][j-1])\n    \n    return dp[m][n]",
+      "generated_code": "def min_cost_path(cost, m, n):\n    # Create a 2D array to store minimum cost\n    dp = [[0 for _ in range(len(cost[0]))] for _ in range(len(cost))]\n    \n    # Initialize the first cell\n    dp[0][0] = cost[0][0]\n    \n    # Initialize first row\n    for i in range(1, len(cost[0])):\n        dp[0][i] = dp[0][i-1] + cost[0][i]\n    \n    # Initialize first column\n    for i in range(1, len(cost)):\n        dp[i][0] = dp[i-1][0] + cost[i][0]\n    \n    # Fill the dp array\n    for i in range(1, len(cost)):\n        for j in range(1, len(cost[0])):\n            dp[i][j] = cost[i][j] + min(dp[i-1][j], dp[i][j-1], dp[i-1][j-1])\n    \n    return dp[m][n]"
+    },
+    {
+      "task_id": "2",
+      "config": {
+        "model": "qwen3-coder",
+        "temperature": 0.2,
+        "top_p": 0.9,
+        "num_predict": 512,
+        "exec_timeout": 10
+      },
+      "passed": 0,
+      "pass@1": 0,
+      "generation_time": 8.2079,
+      "test_time": 0.0064,
+      "total_runtime": 8.2143,
+      "error": "NameError: name 'similar_elements' is not defined",
+      "raw_output": "def find_similar_elements(list1, list2):\n    \"\"\"\n    Find similar elements from two tuple lists.\n    \n    Args:\n        list1: First tuple list\n        list2: Second tuple list\n    \n    Returns:\n        List of tuples containing similar elements\n    \"\"\"\n    set1 = set(list1)\n    set2 = set(list2)\n    similar = set1.intersection(set2)\n    return list(similar)",
+      "generated_code": "def find_similar_elements(list1, list2):\n    \"\"\"\n    Find similar elements from two tuple lists.\n    \n    Args:\n        list1: First tuple list\n        list2: Second tuple list\n    \n    Returns:\n        List of tuples containing similar elements\n    \"\"\"\n    set1 = set(list1)\n    set2 = set(list2)\n    similar = set1.intersection(set2)\n    return list(similar)"
+    },
+    {
+      "task_id": "3",
+      "config": {
+        "model": "qwen3-coder",
+        "temperature": 0.2,
+        "top_p": 0.9,
+        "num_predict": 512,
+        "exec_timeout": 10
+      },
+      "passed": 0,
+      "pass@1": 0,
+      "generation_time": 10.0763,
+      "test_time": 0.0087,
+      "total_runtime": 10.085,
+      "error": "NameError: name 'is_not_prime' is not defined",
+      "raw_output": "def is_prime(n):\n    if n < 2:\n        return False\n    if n == 2:\n        return True\n    if n % 2 == 0:\n        return False\n    for i in range(3, int(n**0.5) + 1, 2):\n        if n % i == 0:\n            return False\n    return True\n\ndef identify_non_primes(numbers):\n    non_primes = []\n    for num in numbers:\n        if not is_prime(num):\n            non_primes.append(num)\n    return non_primes",
+      "generated_code": "def is_prime(n):\n    if n < 2:\n        return False\n    if n == 2:\n        return True\n    if n % 2 == 0:\n        return False\n    for i in range(3, int(n**0.5) + 1, 2):\n        if n % i == 0:\n            return False\n    return True\n\ndef identify_non_primes(numbers):\n    non_primes = []\n    for num in numbers:\n        if not is_prime(num):\n            non_primes.append(num)\n    return non_primes"
+    },
+    {
+      "task_id": "4",
+      "config": {
+        "model": "qwen3-coder",
+        "temperature": 0.2,
+        "top_p": 0.9,
+        "num_predict": 512,
+        "exec_timeout": 10
+      },
+      "passed": 0,
+      "pass@1": 0,
+      "generation_time": 10.4185,
+      "test_time": 0.0048,
+      "total_runtime": 10.4232,
+      "error": "NameError: name 'heap_queue_largest' is not defined",
+      "raw_output": "import heapq\n\ndef find_largest_integers(numbers, k):\n    \"\"\"\n    Find the k largest integers from a given list of numbers using heap queue algorithm.\n    \n    Args:\n        numbers: List of integers\n        k: Number of largest integers to return\n    \n    Returns:\n        List of k largest integers in descending order\n    \"\"\"\n    if not numbers or k <= 0:\n        return []\n    \n    if k >= len(numbers):\n        return sorted(numbers, reverse=True)\n    \n    # Use heapq.nlargest to find k largest elements\n    return heapq.nlargest(k, numbers)",
+      "generated_code": "import heapq\n\ndef find_largest_integers(numbers, k):\n    \"\"\"\n    Find the k largest integers from a given list of numbers using heap queue algorithm.\n    \n    Args:\n        numbers: List of integers\n        k: Number of largest integers to return\n    \n    Returns:\n        List of k largest integers in descending order\n    \"\"\"\n    if not numbers or k <= 0:\n        return []\n    \n    if k >= len(numbers):\n        return sorted(numbers, reverse=True)\n    \n    # Use heapq.nlargest to find k largest elements\n    return heapq.nlargest(k, numbers)"
+    },
+    {
+      "task_id": "5",
+      "config": {
+        "model": "qwen3-coder",
+        "temperature": 0.2,
+        "top_p": 0.9,
+        "num_predict": 512,
+        "exec_timeout": 10
+      },
+      "passed": 0,
+      "pass@1": 0,
+      "generation_time": 12.7036,
+      "test_time": 0.0082,
+      "total_runtime": 12.7118,
+      "error": "NameError: name 'count_ways' is not defined",
+      "raw_output": "def count_ways_to_fill_dominoes(n):\n    if n == 0:\n        return 1\n    if n == 1:\n        return 1\n    if n == 2:\n        return 3\n    \n    # dp[i] represents number of ways to fill 3 x i board\n    dp = [0] * (n + 1)\n    dp[0] = 1\n    dp[1] = 1\n    dp[2] = 3\n    \n    for i in range(3, n + 1):\n        dp[i] = dp[i-1] + 2 * dp[i-2]\n    \n    return dp[n]",
+      "generated_code": "def count_ways_to_fill_dominoes(n):\n    if n == 0:\n        return 1\n    if n == 1:\n        return 1\n    if n == 2:\n        return 3\n    \n    # dp[i] represents number of ways to fill 3 x i board\n    dp = [0] * (n + 1)\n    dp[0] = 1\n    dp[1] = 1\n    dp[2] = 3\n    \n    for i in range(3, n + 1):\n        dp[i] = dp[i-1] + 2 * dp[i-2]\n    \n    return dp[n]"
+    },
+    {
+      "task_id": "6",
+      "config": {
+        "model": "qwen3-coder",
+        "temperature": 0.2,
+        "top_p": 0.9,
+        "num_predict": 512,
+        "exec_timeout": 10
+      },
+      "passed": 0,
+      "pass@1": 0,
+      "generation_time": 12.3075,
+      "test_time": 0.0091,
+      "total_runtime": 12.3166,
+      "error": "NameError: name 'differ_At_One_Bit_Pos' is not defined",
+      "raw_output": "def differ_at_one_bit(a, b):\n    \"\"\"\n    Check whether two numbers differ at exactly one bit position.\n    \n    Args:\n        a (int): First number\n        b (int): Second number\n    \n    Returns:\n        bool: True if numbers differ at exactly one bit position, False otherwise\n    \"\"\"\n    # XOR the numbers to find differing bits\n    xor_result = a ^ b\n    \n    # Check if xor_result has exactly one bit set\n    # This can be done by checking if xor_result & (xor_result - 1) equals 0\n    # and xor_result is not 0\n    return xor_result != 0 and (xor_result & (xor_result - 1)) == 0",
+      "generated_code": "def differ_at_one_bit(a, b):\n    \"\"\"\n    Check whether two numbers differ at exactly one bit position.\n    \n    Args:\n        a (int): First number\n        b (int): Second number\n    \n    Returns:\n        bool: True if numbers differ at exactly one bit position, False otherwise\n    \"\"\"\n    # XOR the numbers to find differing bits\n    xor_result = a ^ b\n    \n    # Check if xor_result has exactly one bit set\n    # This can be done by checking if xor_result & (xor_result - 1) equals 0\n    # and xor_result is not 0\n    return xor_result != 0 and (xor_result & (xor_result - 1)) == 0"
+    },
+    {
+      "task_id": "7",
+      "config": {
+        "model": "qwen3-coder",
+        "temperature": 0.2,
+        "top_p": 0.9,
+        "num_predict": 512,
+        "exec_timeout": 10
+      },
+      "passed": 0,
+      "pass@1": 0,
+      "generation_time": 3.0392,
+      "test_time": 0.006,
+      "total_runtime": 3.0452,
+      "error": "NameError: name 'find_char_long' is not defined",
+      "raw_output": "import re\n\ndef find_long_words(text):\n    pattern = r'\\b\\w{4,}\\b'\n    return re.findall(pattern, text)",
+      "generated_code": "import re\n\ndef find_long_words(text):\n    pattern = r'\\b\\w{4,}\\b'\n    return re.findall(pattern, text)"
+    },
+    {
+      "task_id": "8",
+      "config": {
+        "model": "qwen3-coder",
+        "temperature": 0.2,
+        "top_p": 0.9,
+        "num_predict": 512,
+        "exec_timeout": 10
+      },
+      "passed": 0,
+      "pass@1": 0,
+      "generation_time": 1.9839,
+      "test_time": 0.0068,
+      "total_runtime": 1.9907,
+      "error": "NameError: name 'square_nums' is not defined",
+      "raw_output": "def square_elements(lst):\n    return list(map(lambda x: x**2, lst))",
+      "generated_code": "def square_elements(lst):\n    return list(map(lambda x: x**2, lst))"
+    },
+    {
+      "task_id": "9",
+      "config": {
+        "model": "qwen3-coder",
+        "temperature": 0.2,
+        "top_p": 0.9,
+        "num_predict": 512,
+        "exec_timeout": 10
+      },
+      "passed": 0,
+      "pass@1": 0,
+      "generation_time": 12.8533,
+      "test_time": 0.0078,
+      "total_runtime": 12.8611,
+      "error": "NameError: name 'find_Rotations' is not defined",
+      "raw_output": "def min_rotations(s):\n    if not s:\n        return 0\n    \n    # Find the minimum rotation by checking all possible rotations\n    n = len(s)\n    for i in range(1, n):\n        if s[i:] + s[:i] == s:\n            return i\n    \n    # If no rotation found, return n (full rotation)\n    return n\n\n# Alternative approach using string matching\ndef min_rotations_v2(s):\n    if not s:\n        return 0\n    \n    # Double the string and find where original string appears\n    doubled = s + s\n    for i in range(len(s)):\n        if doubled[i:i+len(s)] == s:\n            return i\n    \n    return len(s)",
+      "generated_code": "def min_rotations(s):\n    if not s:\n        return 0\n    \n    # Find the minimum rotation by checking all possible rotations\n    n = len(s)\n    for i in range(1, n):\n        if s[i:] + s[:i] == s:\n            return i\n    \n    # If no rotation found, return n (full rotation)\n    return n\n\n# Alternative approach using string matching\ndef min_rotations_v2(s):\n    if not s:\n        return 0\n    \n    # Double the string and find where original string appears\n    doubled = s + s\n    for i in range(len(s)):\n        if doubled[i:i+len(s)] == s:\n            return i\n    \n    return len(s)"
+    },
+    {
+      "task_id": "10",
+      "config": {
+        "model": "qwen3-coder",
+        "temperature": 0.2,
+        "top_p": 0.9,
+        "num_predict": 512,
+        "exec_timeout": 10
+      },
+      "passed": 0,
+      "pass@1": 0,
+      "generation_time": 1.7366,
+      "test_time": 0.0079,
+      "total_runtime": 1.7445,
+      "error": "NameError: name 'small_nnum' is not defined",
+      "raw_output": "def n_smallest(n, dataset):\n    return sorted(dataset)[:n]",
+      "generated_code": "def n_smallest(n, dataset):\n    return sorted(dataset)[:n]"
+    },
+    {
+      "task_id": "11",
+      "config": {
+        "model": "qwen3-coder",
+        "temperature": 0.2,
+        "top_p": 0.9,
+        "num_predict": 512,
+        "exec_timeout": 10
+      },
+      "passed": 0,
+      "pass@1": 0,
+      "generation_time": 7.69,
+      "test_time": 0.0085,
+      "total_runtime": 7.6985,
+      "error": "NameError: name 'remove_Occ' is not defined",
+      "raw_output": "def remove_first_last_char(s, char):\n    if not s:\n        return s\n    \n    # Find first occurrence\n    first = s.find(char)\n    if first == -1:\n        return s\n    \n    # Find last occurrence\n    last = s.rfind(char)\n    \n    # Remove first and last occurrence\n    result = s[:first] + s[first+1:last] + s[last+1:]\n    \n    return result",
+      "generated_code": "def remove_first_last_char(s, char):\n    if not s:\n        return s\n    \n    # Find first occurrence\n    first = s.find(char)\n    if first == -1:\n        return s\n    \n    # Find last occurrence\n    last = s.rfind(char)\n    \n    # Remove first and last occurrence\n    result = s[:first] + s[first+1:last] + s[last+1:]\n    \n    return result"
+    },
+    {
+      "task_id": "12",
+      "config": {
+        "model": "qwen3-coder",
+        "temperature": 0.2,
+        "top_p": 0.9,
+        "num_predict": 512,
+        "exec_timeout": 10
+      },
+      "passed": 0,
+      "pass@1": 0,
+      "generation_time": 1.9207,
+      "test_time": 0.0066,
+      "total_runtime": 1.9273,
+      "error": "NameError: name 'sort_matrix' is not defined",
+      "raw_output": "def sort_matrix_by_row_sum(matrix):\n    return sorted(matrix, key=sum)",
+      "generated_code": "def sort_matrix_by_row_sum(matrix):\n    return sorted(matrix, key=sum)"
+    },
+    {
+      "task_id": "13",
+      "config": {
+        "model": "qwen3-coder",
+        "temperature": 0.2,
+        "top_p": 0.9,
+        "num_predict": 512,
+        "exec_timeout": 10
+      },
+      "passed": 0,
+      "pass@1": 0,
+      "generation_time": 15.4183,
+      "test_time": 0.0061,
+      "total_runtime": 15.4244,
+      "error": "NameError: name 'count_common' is not defined",
+      "raw_output": "def count_most_common_words(word_dict):\n    \"\"\"\n    Count the most common words in a dictionary.\n    \n    Args:\n        word_dict (dict): Dictionary with words as keys and their frequencies as values\n        \n    Returns:\n        list: List of tuples (word, frequency) sorted by frequency (most common first)\n    \"\"\"\n    # Sort the dictionary by frequency in descending order\n    sorted_words = sorted(word_dict.items(), key=lambda x: x[1], reverse=True)\n    return sorted_words\n\n# Example usage:\n# word_frequencies = {'the': 10, 'and': 5, 'to': 8, 'of': 12}\n# result = count_most_common_words(word_frequencies)\n# print(result)  # [('of', 12), ('the', 10), ('to', 8), ('and', 5)]",
+      "generated_code": "def count_most_common_words(word_dict):\n    \"\"\"\n    Count the most common words in a dictionary.\n    \n    Args:\n        word_dict (dict): Dictionary with words as keys and their frequencies as values\n        \n    Returns:\n        list: List of tuples (word, frequency) sorted by frequency (most common first)\n    \"\"\"\n    # Sort the dictionary by frequency in descending order\n    sorted_words = sorted(word_dict.items(), key=lambda x: x[1], reverse=True)\n    return sorted_words\n\n# Example usage:\n# word_frequencies = {'the': 10, 'and': 5, 'to': 8, 'of': 12}\n# result = count_most_common_words(word_frequencies)\n# print(result)  # [('of', 12), ('the', 10), ('to', 8), ('and', 5)]"
+    },
+    {
+      "task_id": "14",
+      "config": {
+        "model": "qwen3-coder",
+        "temperature": 0.2,
+        "top_p": 0.9,
+        "num_predict": 512,
+        "exec_timeout": 10
+      },
+      "passed": 0,
+      "pass@1": 0,
+      "generation_time": 9.1798,
+      "test_time": 0.0083,
+      "total_runtime": 9.1881,
+      "error": "NameError: name 'find_Volume' is not defined",
+      "raw_output": "def triangular_prism_volume(base, height, length):\n    \"\"\"\n    Calculate the volume of a triangular prism.\n    \n    Formula: Volume = (1/2) * base * height * length\n    \n    Args:\n        base (float): The base of the triangular face\n        height (float): The height of the triangular face\n        length (float): The length of the prism\n    \n    Returns:\n        float: The volume of the triangular prism\n    \"\"\"\n    return 0.5 * base * height * length",
+      "generated_code": "def triangular_prism_volume(base, height, length):\n    \"\"\"\n    Calculate the volume of a triangular prism.\n    \n    Formula: Volume = (1/2) * base * height * length\n    \n    Args:\n        base (float): The base of the triangular face\n        height (float): The height of the triangular face\n        length (float): The length of the prism\n    \n    Returns:\n        float: The volume of the triangular prism\n    \"\"\"\n    return 0.5 * base * height * length"
+    },
+    {
+      "task_id": "15",
+      "config": {
+        "model": "qwen3-coder",
+        "temperature": 0.2,
+        "top_p": 0.9,
+        "num_predict": 512,
+        "exec_timeout": 10
+      },
+      "passed": 0,
+      "pass@1": 0,
+      "generation_time": 5.7294,
+      "test_time": 0.0068,
+      "total_runtime": 5.7362,
+      "error": "NameError: name 'split_lowerstring' is not defined",
+      "raw_output": "def split_at_lowercase(text):\n    result = []\n    current = \"\"\n    \n    for char in text:\n        if char.islower():\n            if current:\n                result.append(current)\n            current = char\n        else:\n            current += char\n    \n    if current:\n        result.append(current)\n    \n    return result",
+      "generated_code": "def split_at_lowercase(text):\n    result = []\n    current = \"\"\n    \n    for char in text:\n        if char.islower():\n            if current:\n                result.append(current)\n            current = char\n        else:\n            current += char\n    \n    if current:\n        result.append(current)\n    \n    return result"
+    },
+    {
+      "task_id": "16",
+      "config": {
+        "model": "qwen3-coder",
+        "temperature": 0.2,
+        "top_p": 0.9,
+        "num_predict": 512,
+        "exec_timeout": 10
+      },
+      "passed": 0,
+      "pass@1": 0,
+      "generation_time": 4.066,
+      "test_time": 0.0051,
+      "total_runtime": 4.0712,
+      "error": "NameError: name 'text_lowercase_underscore' is not defined",
+      "raw_output": "import re\n\ndef find_lowercase_underscore(text):\n    pattern = r'[a-z]+_[a-z]+'\n    return re.findall(pattern, text)",
+      "generated_code": "import re\n\ndef find_lowercase_underscore(text):\n    pattern = r'[a-z]+_[a-z]+'\n    return re.findall(pattern, text)"
+    },
+    {
+      "task_id": "17",
+      "config": {
+        "model": "qwen3-coder",
+        "temperature": 0.2,
+        "top_p": 0.9,
+        "num_predict": 512,
+        "exec_timeout": 10
+      },
+      "passed": 1,
+      "pass@1": 1,
+      "generation_time": 1.8768,
+      "test_time": 0.0072,
+      "total_runtime": 1.884,
+      "error": null,
+      "raw_output": "def square_perimeter(side):\n    return 4 * side",
+      "generated_code": "def square_perimeter(side):\n    return 4 * side"
+    },
+    {
+      "task_id": "18",
+      "config": {
+        "model": "qwen3-coder",
+        "temperature": 0.2,
+        "top_p": 0.9,
+        "num_predict": 512,
+        "exec_timeout": 10
+      },
+      "passed": 0,
+      "pass@1": 0,
+      "generation_time": 4.5091,
+      "test_time": 0.009,
+      "total_runtime": 4.5181,
+      "error": "NameError: name 'remove_dirty_chars' is not defined",
+      "raw_output": "def remove_chars(str1, str2):\n    char_set = set(str2)\n    result = []\n    for char in str1:\n        if char not in char_set:\n            result.append(char)\n    return ''.join(result)",
+      "generated_code": "def remove_chars(str1, str2):\n    char_set = set(str2)\n    result = []\n    for char in str1:\n        if char not in char_set:\n            result.append(char)\n    return ''.join(result)"
+    },
+    {
+      "task_id": "19",
+      "config": {
+        "model": "qwen3-coder",
+        "temperature": 0.2,
+        "top_p": 0.9,
+        "num_predict": 512,
+        "exec_timeout": 10
+      },
+      "passed": 0,
+      "pass@1": 0,
+      "generation_time": 3.056,
+      "test_time": 0.0081,
+      "total_runtime": 3.0641,
+      "error": "NameError: name 'test_duplicate' is not defined",
+      "raw_output": "def contains_duplicate(nums):\n    seen = set()\n    for num in nums:\n        if num in seen:\n            return True\n        seen.add(num)\n    return False",
+      "generated_code": "def contains_duplicate(nums):\n    seen = set()\n    for num in nums:\n        if num in seen:\n            return True\n        seen.add(num)\n    return False"
+    },
+    {
+      "task_id": "20",
+      "config": {
+        "model": "qwen3-coder",
+        "temperature": 0.2,
+        "top_p": 0.9,
+        "num_predict": 512,
+        "exec_timeout": 10
+      },
+      "passed": 0,
+      "pass@1": 0,
+      "generation_time": 6.1045,
+      "test_time": 0.0072,
+      "total_runtime": 6.1117,
+      "error": "NameError: name 'is_woodall' is not defined",
+      "raw_output": "def is_woodball(n):\n    if n < 0:\n        return False\n    \n    # Convert number to string to check each digit\n    str_n = str(n)\n    \n    # Check if all digits are the same\n    first_digit = str_n[0]\n    for digit in str_n:\n        if digit != first_digit:\n            return False\n    \n    return True",
+      "generated_code": "def is_woodball(n):\n    if n < 0:\n        return False\n    \n    # Convert number to string to check each digit\n    str_n = str(n)\n    \n    # Check if all digits are the same\n    first_digit = str_n[0]\n    for digit in str_n:\n        if digit != first_digit:\n            return False\n    \n    return True"
+    },
+    {
+      "task_id": "21",
+      "config": {
+        "model": "qwen3-coder",
+        "temperature": 0.2,
+        "top_p": 0.9,
+        "num_predict": 512,
+        "exec_timeout": 10
+      },
+      "passed": 0,
+      "pass@1": 0,
+      "generation_time": 2.4711,
+      "test_time": 0.0097,
+      "total_runtime": 2.4807,
+      "error": "NameError: name 'multiples_of_num' is not defined",
+      "raw_output": "def find_multiples(n, m):\n    return [n * i for i in range(1, m + 1)]",
+      "generated_code": "def find_multiples(n, m):\n    return [n * i for i in range(1, m + 1)]"
+    },
+    {
+      "task_id": "22",
+      "config": {
+        "model": "qwen3-coder",
+        "temperature": 0.2,
+        "top_p": 0.9,
+        "num_predict": 512,
+        "exec_timeout": 10
+      },
+      "passed": 0,
+      "pass@1": 0,
+      "generation_time": 3.3631,
+      "test_time": 0.0066,
+      "total_runtime": 3.3697,
+      "error": "NameError: name 'find_first_duplicate' is not defined",
+      "raw_output": "def first_duplicate(arr):\n    seen = set()\n    for num in arr:\n        if num in seen:\n            return num\n        seen.add(num)\n    return -1",
+      "generated_code": "def first_duplicate(arr):\n    seen = set()\n    for num in arr:\n        if num in seen:\n            return num\n        seen.add(num)\n    return -1"
+    },
+    {
+      "task_id": "23",
+      "config": {
+        "model": "qwen3-coder",
+        "temperature": 0.2,
+        "top_p": 0.9,
+        "num_predict": 512,
+        "exec_timeout": 10
+      },
+      "passed": 0,
+      "pass@1": 0,
+      "generation_time": 7.2053,
+      "test_time": 0.0067,
+      "total_runtime": 7.212,
+      "error": "NameError: name 'maximum_Sum' is not defined",
+      "raw_output": "def max_sum_of_lists(list_of_lists):\n    if not list_of_lists:\n        return 0\n    \n    max_sum = float('-inf')\n    \n    for lst in list_of_lists:\n        if lst:  # Check if list is not empty\n            current_sum = sum(lst)\n            max_sum = max(max_sum, current_sum)\n    \n    return max_sum if max_sum != float('-inf') else 0",
+      "generated_code": "def max_sum_of_lists(list_of_lists):\n    if not list_of_lists:\n        return 0\n    \n    max_sum = float('-inf')\n    \n    for lst in list_of_lists:\n        if lst:  # Check if list is not empty\n            current_sum = sum(lst)\n            max_sum = max(max_sum, current_sum)\n    \n    return max_sum if max_sum != float('-inf') else 0"
+    },
+    {
+      "task_id": "24",
+      "config": {
+        "model": "qwen3-coder",
+        "temperature": 0.2,
+        "top_p": 0.9,
+        "num_predict": 512,
+        "exec_timeout": 10
+      },
+      "passed": 0,
+      "pass@1": 0,
+      "generation_time": 4.2186,
+      "test_time": 0.0084,
+      "total_runtime": 4.227,
+      "error": "TypeError: 'int' object is not reversible",
+      "raw_output": "def binary_to_decimal(binary):\n    decimal = 0\n    power = 0\n    for digit in reversed(binary):\n        if digit == '1':\n            decimal += 2 ** power\n        power += 1\n    return decimal",
+      "generated_code": "def binary_to_decimal(binary):\n    decimal = 0\n    power = 0\n    for digit in reversed(binary):\n        if digit == '1':\n            decimal += 2 ** power\n        power += 1\n    return decimal"
+    },
+    {
+      "task_id": "25",
+      "config": {
+        "model": "qwen3-coder",
+        "temperature": 0.2,
+        "top_p": 0.9,
+        "num_predict": 512,
+        "exec_timeout": 10
+      },
+      "passed": 0,
+      "pass@1": 0,
+      "generation_time": 21.4352,
+      "test_time": 0.0082,
+      "total_runtime": 21.4435,
+      "error": "NameError: name 'find_Product' is not defined",
+      "raw_output": "def product_of_non_repeated_elements(arr):\n    \"\"\"\n    Find the product of all non-repeated elements in the array.\n    \n    Args:\n        arr: List of integers\n        \n    Returns:\n        Product of all non-repeated elements\n    \"\"\"\n    # Count frequency of each element\n    frequency = {}\n    for num in arr:\n        frequency[num] = frequency.get(num, 0) + 1\n    \n    # Calculate product of elements that appear only once\n    product = 1\n    found_non_repeated = False\n    \n    for num, count in frequency.items():\n        if count == 1:\n            product *= num\n            found_non_repeated = True\n    \n    # Return 0 if no non-repeated elements found\n    return product if found_non_repeated else 0\n\n# Alternative implementation using collections.Counter\nfrom collections import Counter\n\ndef product_of_non_repeated_elements_v2(arr):\n    \"\"\"\n    Find the product of all non-repeated elements in the array.\n    \n    Args:\n        arr: List of integers\n        \n    Returns:\n        Product of all non-repeated elements\n    \"\"\"\n    counter = Counter(arr)\n    product = 1\n    found_non_repeated = False\n    \n    for num, count in counter.items():\n        if count == 1:\n            product *= num\n            found_non_repeated = True\n    \n    return product if found_non_repeated else 0",
+      "generated_code": "def product_of_non_repeated_elements(arr):\n    \"\"\"\n    Find the product of all non-repeated elements in the array.\n    \n    Args:\n        arr: List of integers\n        \n    Returns:\n        Product of all non-repeated elements\n    \"\"\"\n    # Count frequency of each element\n    frequency = {}\n    for num in arr:\n        frequency[num] = frequency.get(num, 0) + 1\n    \n    # Calculate product of elements that appear only once\n    product = 1\n    found_non_repeated = False\n    \n    for num, count in frequency.items():\n        if count == 1:\n            product *= num\n            found_non_repeated = True\n    \n    # Return 0 if no non-repeated elements found\n    return product if found_non_repeated else 0\n\n# Alternative implementation using collections.Counter\nfrom collections import Counter\n\ndef product_of_non_repeated_elements_v2(arr):\n    \"\"\"\n    Find the product of all non-repeated elements in the array.\n    \n    Args:\n        arr: List of integers\n        \n    Returns:\n        Product of all non-repeated elements\n    \"\"\"\n    counter = Counter(arr)\n    product = 1\n    found_non_repeated = False\n    \n    for num, count in counter.items():\n        if count == 1:\n            product *= num\n            found_non_repeated = True\n    \n    return product if found_non_repeated else 0"
+    },
+    {
+      "task_id": "26",
+      "config": {
+        "model": "qwen3-coder",
+        "temperature": 0.2,
+        "top_p": 0.9,
+        "num_predict": 512,
+        "exec_timeout": 10
+      },
+      "passed": 0,
+      "pass@1": 0,
+      "generation_time": 8.2409,
+      "test_time": 0.0068,
+      "total_runtime": 8.2477,
+      "error": "NameError: name 'check_k_elements' is not defined",
+      "raw_output": "def has_all_k_elements(tuple_list, k):\n    \"\"\"\n    Check if the given tuple list has all k elements.\n    \n    Args:\n        tuple_list: List of tuples\n        k: Number of elements to check for\n    \n    Returns:\n        bool: True if all tuples have exactly k elements, False otherwise\n    \"\"\"\n    if not tuple_list:\n        return True\n    \n    for tuple_item in tuple_list:\n        if len(tuple_item) != k:\n            return False\n    \n    return True",
+      "generated_code": "def has_all_k_elements(tuple_list, k):\n    \"\"\"\n    Check if the given tuple list has all k elements.\n    \n    Args:\n        tuple_list: List of tuples\n        k: Number of elements to check for\n    \n    Returns:\n        bool: True if all tuples have exactly k elements, False otherwise\n    \"\"\"\n    if not tuple_list:\n        return True\n    \n    for tuple_item in tuple_list:\n        if len(tuple_item) != k:\n            return False\n    \n    return True"
+    },
+    {
+      "task_id": "27",
+      "config": {
+        "model": "qwen3-coder",
+        "temperature": 0.2,
+        "top_p": 0.9,
+        "num_predict": 512,
+        "exec_timeout": 10
+      },
+      "passed": 0,
+      "pass@1": 0,
+      "generation_time": 3.477,
+      "test_time": 0.0085,
+      "total_runtime": 3.4855,
+      "error": "NameError: name 'remove' is not defined",
+      "raw_output": "def remove_digits(string_list):\n    result = []\n    for string in string_list:\n        new_string = ''.join(char for char in string if not char.isdigit())\n        result.append(new_string)\n    return result",
+      "generated_code": "def remove_digits(string_list):\n    result = []\n    for string in string_list:\n        new_string = ''.join(char for char in string if not char.isdigit())\n        result.append(new_string)\n    return result"
+    },
+    {
+      "task_id": "28",
+      "config": {
+        "model": "qwen3-coder",
+        "temperature": 0.2,
+        "top_p": 0.9,
+        "num_predict": 512,
+        "exec_timeout": 10
+      },
+      "passed": 0,
+      "pass@1": 0,
+      "generation_time": 7.8095,
+      "test_time": 0.0074,
+      "total_runtime": 7.8169,
+      "error": "NameError: name 'binomial_Coeff' is not defined",
+      "raw_output": "def binomial_coefficient(n, k):\n    if k > n or k < 0:\n        return 0\n    if k == 0 or k == n:\n        return 1\n    \n    # Use the more efficient calculation\n    k = min(k, n - k)\n    result = 1\n    for i in range(k):\n        result = result * (n - i) // (i + 1)\n    \n    return result",
+      "generated_code": "def binomial_coefficient(n, k):\n    if k > n or k < 0:\n        return 0\n    if k == 0 or k == n:\n        return 1\n    \n    # Use the more efficient calculation\n    k = min(k, n - k)\n    result = 1\n    for i in range(k):\n        result = result * (n - i) // (i + 1)\n    \n    return result"
+    },
+    {
+      "task_id": "29",
+      "config": {
+        "model": "qwen3-coder",
+        "temperature": 0.2,
+        "top_p": 0.9,
+        "num_predict": 512,
+        "exec_timeout": 10
+      },
+      "passed": 0,
+      "pass@1": 0,
+      "generation_time": 2.4274,
+      "test_time": 0.01,
+      "total_runtime": 2.4374,
+      "error": "NameError: name 'get_Odd_Occurrence' is not defined",
+      "raw_output": "def find_odd_occurrence(arr):\n    result = 0\n    for num in arr:\n        result ^= num\n    return result",
+      "generated_code": "def find_odd_occurrence(arr):\n    result = 0\n    for num in arr:\n        result ^= num\n    return result"
+    },
+    {
+      "task_id": "30",
+      "config": {
+        "model": "qwen3-coder",
+        "temperature": 0.2,
+        "top_p": 0.9,
+        "num_predict": 512,
+        "exec_timeout": 10
+      },
+      "passed": 0,
+      "pass@1": 0,
+      "generation_time": 4.7668,
+      "test_time": 0.0065,
+      "total_runtime": 4.7733,
+      "error": "NameError: name 'count_Substring_With_Equal_Ends' is not defined",
+      "raw_output": "def count_substrings_same_ends(s):\n    count = 0\n    n = len(s)\n    \n    for i in range(n):\n        for j in range(i, n):\n            if s[i] == s[j]:\n                count += 1\n    \n    return count",
+      "generated_code": "def count_substrings_same_ends(s):\n    count = 0\n    n = len(s)\n    \n    for i in range(n):\n        for j in range(i, n):\n            if s[i] == s[j]:\n                count += 1\n    \n    return count"
+    },
+    {
+      "task_id": "31",
+      "config": {
+        "model": "qwen3-coder",
+        "temperature": 0.2,
+        "top_p": 0.9,
+        "num_predict": 512,
+        "exec_timeout": 10
+      },
+      "passed": 0,
+      "pass@1": 0,
+      "generation_time": 13.5636,
+      "test_time": 0.0094,
+      "total_runtime": 13.573,
+      "error": "NameError: name 'func' is not defined",
+      "raw_output": "import heapq\nfrom collections import Counter\n\ndef top_k_frequent(nums, k):\n    \"\"\"\n    Find the top k integers that occur most frequently from given lists of sorted and distinct integers.\n    \n    Args:\n        nums: List of lists containing sorted and distinct integers\n        k: Number of top frequent integers to return\n    \n    Returns:\n        List of top k frequent integers\n    \"\"\"\n    # Flatten all lists into one\n    flattened = []\n    for lst in nums:\n        flattened.extend(lst)\n    \n    # Count frequency of each integer\n    freq_counter = Counter(flattened)\n    \n    # Use heap to find top k frequent elements\n    # heapq.nlargest returns the k largest elements based on the key function\n    top_k = heapq.nlargest(k, freq_counter.keys(), key=freq_counter.get)\n    \n    return top_k",
+      "generated_code": "import heapq\nfrom collections import Counter\n\ndef top_k_frequent(nums, k):\n    \"\"\"\n    Find the top k integers that occur most frequently from given lists of sorted and distinct integers.\n    \n    Args:\n        nums: List of lists containing sorted and distinct integers\n        k: Number of top frequent integers to return\n    \n    Returns:\n        List of top k frequent integers\n    \"\"\"\n    # Flatten all lists into one\n    flattened = []\n    for lst in nums:\n        flattened.extend(lst)\n    \n    # Count frequency of each integer\n    freq_counter = Counter(flattened)\n    \n    # Use heap to find top k frequent elements\n    # heapq.nlargest returns the k largest elements based on the key function\n    top_k = heapq.nlargest(k, freq_counter.keys(), key=freq_counter.get)\n    \n    return top_k"
+    },
+    {
+      "task_id": "32",
+      "config": {
+        "model": "qwen3-coder",
+        "temperature": 0.2,
+        "top_p": 0.9,
+        "num_predict": 512,
+        "exec_timeout": 10
+      },
+      "passed": 0,
+      "pass@1": 0,
+      "generation_time": 10.5066,
+      "test_time": 0.0064,
+      "total_runtime": 10.513,
+      "error": "NameError: name 'max_Prime_Factors' is not defined",
+      "raw_output": "def largest_prime_factor(n):\n    if n <= 1:\n        return None\n    \n    largest_factor = 1\n    \n    # Check for factor 2\n    while n % 2 == 0:\n        largest_factor = 2\n        n = n // 2\n    \n    # Check for odd factors from 3 onwards\n    factor = 3\n    while factor * factor <= n:\n        while n % factor == 0:\n            largest_factor = factor\n            n = n // factor\n        factor += 2\n    \n    # If n is still greater than 1, then it's a prime factor\n    if n > 1:\n        largest_factor = n\n    \n    return largest_factor",
+      "generated_code": "def largest_prime_factor(n):\n    if n <= 1:\n        return None\n    \n    largest_factor = 1\n    \n    # Check for factor 2\n    while n % 2 == 0:\n        largest_factor = 2\n        n = n // 2\n    \n    # Check for odd factors from 3 onwards\n    factor = 3\n    while factor * factor <= n:\n        while n % factor == 0:\n            largest_factor = factor\n            n = n // factor\n        factor += 2\n    \n    # If n is still greater than 1, then it's a prime factor\n    if n > 1:\n        largest_factor = n\n    \n    return largest_factor"
+    },
+    {
+      "task_id": "33",
+      "config": {
+        "model": "qwen3-coder",
+        "temperature": 0.2,
+        "top_p": 0.9,
+        "num_predict": 512,
+        "exec_timeout": 10
+      },
+      "passed": 0,
+      "pass@1": 0,
+      "generation_time": 5.4448,
+      "test_time": 0.0075,
+      "total_runtime": 5.4523,
+      "error": "NameError: name 'decimal_To_Binary' is not defined",
+      "raw_output": "def decimal_to_binary(decimal_num):\n    if decimal_num == 0:\n        return \"0\"\n    \n    binary_str = \"\"\n    while decimal_num > 0:\n        remainder = decimal_num % 2\n        binary_str = str(remainder) + binary_str\n        decimal_num = decimal_num // 2\n    \n    return binary_str",
+      "generated_code": "def decimal_to_binary(decimal_num):\n    if decimal_num == 0:\n        return \"0\"\n    \n    binary_str = \"\"\n    while decimal_num > 0:\n        remainder = decimal_num % 2\n        binary_str = str(remainder) + binary_str\n        decimal_num = decimal_num // 2\n    \n    return binary_str"
+    },
+    {
+      "task_id": "34",
+      "config": {
+        "model": "qwen3-coder",
+        "temperature": 0.2,
+        "top_p": 0.9,
+        "num_predict": 512,
+        "exec_timeout": 10
+      },
+      "passed": 0,
+      "pass@1": 0,
+      "generation_time": 12.8167,
+      "test_time": 0.0093,
+      "total_runtime": 12.826,
+      "error": "NameError: name 'find_missing' is not defined",
+      "raw_output": "def find_missing_number(arr):\n    \"\"\"\n    Find the missing number in a sorted array of consecutive integers.\n    \n    Args:\n        arr: A sorted list of integers with one missing number\n        \n    Returns:\n        The missing integer\n    \"\"\"\n    left, right = 0, len(arr) - 1\n    \n    while left <= right:\n        mid = (left + right) // 2\n        \n        # If arr[mid] == mid + 1, then all elements to the left are in correct position\n        if arr[mid] == mid + 1:\n            left = mid + 1\n        else:\n            # If arr[mid] != mid + 1, then the missing number is in the left half\n            right = mid - 1\n    \n    return left + 1",
+      "generated_code": "def find_missing_number(arr):\n    \"\"\"\n    Find the missing number in a sorted array of consecutive integers.\n    \n    Args:\n        arr: A sorted list of integers with one missing number\n        \n    Returns:\n        The missing integer\n    \"\"\"\n    left, right = 0, len(arr) - 1\n    \n    while left <= right:\n        mid = (left + right) // 2\n        \n        # If arr[mid] == mid + 1, then all elements to the left are in correct position\n        if arr[mid] == mid + 1:\n            left = mid + 1\n        else:\n            # If arr[mid] != mid + 1, then the missing number is in the left half\n            right = mid - 1\n    \n    return left + 1"
+    },
+    {
+      "task_id": "35",
+      "config": {
+        "model": "qwen3-coder",
+        "temperature": 0.2,
+        "top_p": 0.9,
+        "num_predict": 512,
+        "exec_timeout": 10
+      },
+      "passed": 0,
+      "pass@1": 0,
+      "generation_time": 7.3382,
+      "test_time": 0.0087,
+      "total_runtime": 7.3468,
+      "error": "NameError: name 'find_rect_num' is not defined",
+      "raw_output": "def rectangular_number(n):\n    \"\"\"\n    Find the n-th rectangular number.\n    \n    Rectangular numbers are numbers that can be arranged in a rectangular grid.\n    The n-th rectangular number is given by the formula: n * (n + 1)\n    \n    Args:\n        n (int): The position of the rectangular number to find\n        \n    Returns:\n        int: The n-th rectangular number\n    \"\"\"\n    return n * (n + 1)",
+      "generated_code": "def rectangular_number(n):\n    \"\"\"\n    Find the n-th rectangular number.\n    \n    Rectangular numbers are numbers that can be arranged in a rectangular grid.\n    The n-th rectangular number is given by the formula: n * (n + 1)\n    \n    Args:\n        n (int): The position of the rectangular number to find\n        \n    Returns:\n        int: The n-th rectangular number\n    \"\"\"\n    return n * (n + 1)"
+    },
+    {
+      "task_id": "36",
+      "config": {
+        "model": "qwen3-coder",
+        "temperature": 0.2,
+        "top_p": 0.9,
+        "num_predict": 512,
+        "exec_timeout": 10
+      },
+      "passed": 0,
+      "pass@1": 0,
+      "generation_time": 38.2357,
+      "test_time": 0.0088,
+      "total_runtime": 38.2445,
+      "error": "IndentationError: expected an indented block after 'if' statement on line 83 (<string>, line 83)",
+      "raw_output": "def nth_digit_fraction(numerator, denominator, n):\n    if n <= 0:\n        return None\n    \n    # Handle the case where numerator is larger than denominator\n    if numerator >= denominator:\n        remainder = numerator % denominator\n        if remainder == 0:\n            # Whole number, no fractional part\n            return None\n        else:\n            # Continue with remainder\n            numerator = remainder\n    \n    # Find the nth digit in the decimal expansion\n    decimal_digits = []\n    seen_remainders = {}\n    \n    remainder = numerator\n    position = 0\n    \n    while remainder != 0:\n        if remainder in seen_remainders:\n            # We've found a repeating cycle\n            break\n            \n        seen_remainders[remainder] = position\n        remainder *= 10\n        digit = remainder // denominator\n        decimal_digits.append(digit)\n        remainder = remainder % denominator\n        position += 1\n        \n        if position == n:\n            return digit\n    \n    # If we haven't found the nth digit yet, we need to handle the repeating part\n    if position < n:\n        # Find the start of the repeating cycle\n        cycle_start = seen_remainders[remainder]\n        cycle_length = position - cycle_start\n        \n        # Calculate which digit in the cycle we need\n        if n > position:\n            # We're in the repeating part\n            offset = (n - position) % cycle_length\n            if offset == 0:\n                offset = cycle_length\n            return decimal_digits[cycle_start + offset - 1]\n    \n    return None\n\n# Simpler approach for basic cases\ndef nth_digit_fraction_simple(numerator, denominator, n):\n    if n <= 0:\n        return None\n    \n    # Calculate the decimal expansion up to n digits\n    result = \"\"\n    remainder = numerator\n    seen_remainders = {}\n    \n    for i in range(n + 10):  # Extra digits to ensure we have enough\n        if remainder == 0:\n            break\n        if remainder in seen_remainders:\n            # Found repeating pattern\n            break\n            \n        seen_remainders[remainder] = len(result)\n        remainder *= 10\n        digit = remainder // denominator\n        result += str(digit)\n        remainder = remainder % denominator\n    \n    if len(result) >= n:\n        return int(result[n-1])\n    else:\n        return None\n\n# Most straightforward approach\ndef nth_digit_fraction(numerator, denominator, n):\n    if n <= 0:",
+      "generated_code": "def nth_digit_fraction(numerator, denominator, n):\n    if n <= 0:\n        return None\n    \n    # Handle the case where numerator is larger than denominator\n    if numerator >= denominator:\n        remainder = numerator % denominator\n        if remainder == 0:\n            # Whole number, no fractional part\n            return None\n        else:\n            # Continue with remainder\n            numerator = remainder\n    \n    # Find the nth digit in the decimal expansion\n    decimal_digits = []\n    seen_remainders = {}\n    \n    remainder = numerator\n    position = 0\n    \n    while remainder != 0:\n        if remainder in seen_remainders:\n            # We've found a repeating cycle\n            break\n            \n        seen_remainders[remainder] = position\n        remainder *= 10\n        digit = remainder // denominator\n        decimal_digits.append(digit)\n        remainder = remainder % denominator\n        position += 1\n        \n        if position == n:\n            return digit\n    \n    # If we haven't found the nth digit yet, we need to handle the repeating part\n    if position < n:\n        # Find the start of the repeating cycle\n        cycle_start = seen_remainders[remainder]\n        cycle_length = position - cycle_start\n        \n        # Calculate which digit in the cycle we need\n        if n > position:\n            # We're in the repeating part\n            offset = (n - position) % cycle_length\n            if offset == 0:\n                offset = cycle_length\n            return decimal_digits[cycle_start + offset - 1]\n    \n    return None\n\n# Simpler approach for basic cases\ndef nth_digit_fraction_simple(numerator, denominator, n):\n    if n <= 0:\n        return None\n    \n    # Calculate the decimal expansion up to n digits\n    result = \"\"\n    remainder = numerator\n    seen_remainders = {}\n    \n    for i in range(n + 10):  # Extra digits to ensure we have enough\n        if remainder == 0:\n            break\n        if remainder in seen_remainders:\n            # Found repeating pattern\n            break\n            \n        seen_remainders[remainder] = len(result)\n        remainder *= 10\n        digit = remainder // denominator\n        result += str(digit)\n        remainder = remainder % denominator\n    \n    if len(result) >= n:\n        return int(result[n-1])\n    else:\n        return None\n\n# Most straightforward approach\ndef nth_digit_fraction(numerator, denominator, n):\n    if n <= 0:"
+    },
+    {
+      "task_id": "37",
+      "config": {
+        "model": "qwen3-coder",
+        "temperature": 0.2,
+        "top_p": 0.9,
+        "num_predict": 512,
+        "exec_timeout": 10
+      },
+      "passed": 1,
+      "pass@1": 1,
+      "generation_time": 8.9709,
+      "test_time": 0.2128,
+      "total_runtime": 9.1837,
+      "error": null,
+      "raw_output": "def sort_mixed_list(mixed_list):\n    \"\"\"\n    Sort a mixed list of integers and strings.\n    \n    Args:\n        mixed_list: A list containing integers and strings\n        \n    Returns:\n        A sorted list with integers first, then strings\n    \"\"\"\n    # Separate integers and strings\n    integers = [x for x in mixed_list if isinstance(x, int)]\n    strings = [x for x in mixed_list if isinstance(x, str)]\n    \n    # Sort each group separately\n    integers.sort()\n    strings.sort()\n    \n    # Combine the sorted groups\n    return integers + strings",
+      "generated_code": "def sort_mixed_list(mixed_list):\n    \"\"\"\n    Sort a mixed list of integers and strings.\n    \n    Args:\n        mixed_list: A list containing integers and strings\n        \n    Returns:\n        A sorted list with integers first, then strings\n    \"\"\"\n    # Separate integers and strings\n    integers = [x for x in mixed_list if isinstance(x, int)]\n    strings = [x for x in mixed_list if isinstance(x, str)]\n    \n    # Sort each group separately\n    integers.sort()\n    strings.sort()\n    \n    # Combine the sorted groups\n    return integers + strings"
+    },
+    {
+      "task_id": "38",
+      "config": {
+        "model": "qwen3-coder",
+        "temperature": 0.2,
+        "top_p": 0.9,
+        "num_predict": 512,
+        "exec_timeout": 10
+      },
+      "passed": 0,
+      "pass@1": 0,
+      "generation_time": 18.1662,
+      "test_time": 0.0067,
+      "total_runtime": 18.1729,
+      "error": "NameError: name 'div_even_odd' is not defined",
+      "raw_output": "def divide_first_even_odd(numbers):\n    even = None\n    odd = None\n    \n    for num in numbers:\n        if num % 2 == 0:\n            if even is None:\n                even = num\n        else:\n            if odd is None:\n                odd = num\n        \n        if even is not None and odd is not None:\n            return even / odd\n    \n    return None\n\n# Test cases\nprint(divide_first_even_odd([1, 2, 3, 4, 5]))  # Expected: 2/1 = 2.0\nprint(divide_first_even_odd([2, 4, 6, 8]))     # Expected: None (no odd numbers)\nprint(divide_first_even_odd([1, 3, 5, 7]))     # Expected: None (no even numbers)\nprint(divide_first_even_odd([10, 3, 8, 5]))    # Expected: 10/3 = 3.333...",
+      "generated_code": "def divide_first_even_odd(numbers):\n    even = None\n    odd = None\n    \n    for num in numbers:\n        if num % 2 == 0:\n            if even is None:\n                even = num\n        else:\n            if odd is None:\n                odd = num\n        \n        if even is not None and odd is not None:\n            return even / odd\n    \n    return None\n\n# Test cases\nprint(divide_first_even_odd([1, 2, 3, 4, 5]))  # Expected: 2/1 = 2.0\nprint(divide_first_even_odd([2, 4, 6, 8]))     # Expected: None (no odd numbers)\nprint(divide_first_even_odd([1, 3, 5, 7]))     # Expected: None (no even numbers)\nprint(divide_first_even_odd([10, 3, 8, 5]))    # Expected: 10/3 = 3.333..."
+    },
+    {
+      "task_id": "39",
+      "config": {
+        "model": "qwen3-coder",
+        "temperature": 0.2,
+        "top_p": 0.9,
+        "num_predict": 512,
+        "exec_timeout": 10
+      },
+      "passed": 0,
+      "pass@1": 0,
+      "generation_time": 10.1009,
+      "test_time": 0.0069,
+      "total_runtime": 10.1078,
+      "error": "NameError: name 'rearange_string' is not defined",
+      "raw_output": "def can_rearrange_alternating(s):\n    if not s:\n        return True\n    \n    # Count frequency of each character\n    char_count = {}\n    for char in s:\n        char_count[char] = char_count.get(char, 0) + 1\n    \n    # Check if any character appears more than (n+1)//2 times\n    n = len(s)\n    for count in char_count.values():\n        if count > (n + 1) // 2:\n            return False\n    \n    return True",
+      "generated_code": "def can_rearrange_alternating(s):\n    if not s:\n        return True\n    \n    # Count frequency of each character\n    char_count = {}\n    for char in s:\n        char_count[char] = char_count.get(char, 0) + 1\n    \n    # Check if any character appears more than (n+1)//2 times\n    n = len(s)\n    for count in char_count.values():\n        if count > (n + 1) // 2:\n            return False\n    \n    return True"
+    },
+    {
+      "task_id": "40",
+      "config": {
+        "model": "qwen3-coder",
+        "temperature": 0.2,
+        "top_p": 0.9,
+        "num_predict": 512,
+        "exec_timeout": 10
+      },
+      "passed": 0,
+      "pass@1": 0,
+      "generation_time": 4.6521,
+      "test_time": 0.0067,
+      "total_runtime": 4.6589,
+      "error": "NameError: name 'freq_element' is not defined",
+      "raw_output": "from collections import Counter\n\ndef find_frequency(list_of_lists):\n    # Flatten the list of lists\n    flattened = [item for sublist in list_of_lists for item in sublist]\n    # Count frequency of each element\n    frequency = Counter(flattened)\n    return dict(frequency)",
+      "generated_code": "from collections import Counter\n\ndef find_frequency(list_of_lists):\n    # Flatten the list of lists\n    flattened = [item for sublist in list_of_lists for item in sublist]\n    # Count frequency of each element\n    frequency = Counter(flattened)\n    return dict(frequency)"
+    },
+    {
+      "task_id": "41",
+      "config": {
+        "model": "qwen3-coder",
+        "temperature": 0.2,
+        "top_p": 0.9,
+        "num_predict": 512,
+        "exec_timeout": 10
+      },
+      "passed": 0,
+      "pass@1": 0,
+      "generation_time": 2.1697,
+      "test_time": 0.0068,
+      "total_runtime": 2.1765,
+      "error": "NameError: name 'filter_evennumbers' is not defined",
+      "raw_output": "def filter_even_numbers(numbers):\n    return list(filter(lambda x: x % 2 == 0, numbers))",
+      "generated_code": "def filter_even_numbers(numbers):\n    return list(filter(lambda x: x % 2 == 0, numbers))"
+    },
+    {
+      "task_id": "42",
+      "config": {
+        "model": "qwen3-coder",
+        "temperature": 0.2,
+        "top_p": 0.9,
+        "num_predict": 512,
+        "exec_timeout": 10
+      },
+      "passed": 0,
+      "pass@1": 0,
+      "generation_time": 8.198,
+      "test_time": 0.0065,
+      "total_runtime": 8.2045,
+      "error": "NameError: name 'find_Sum' is not defined",
+      "raw_output": "def sum_of_repeated_elements(arr):\n    element_count = {}\n    repeated_sum = 0\n    \n    # Count occurrences of each element\n    for element in arr:\n        element_count[element] = element_count.get(element, 0) + 1\n    \n    # Sum elements that appear more than once\n    for element, count in element_count.items():\n        if count > 1:\n            repeated_sum += element\n    \n    return repeated_sum",
+      "generated_code": "def sum_of_repeated_elements(arr):\n    element_count = {}\n    repeated_sum = 0\n    \n    # Count occurrences of each element\n    for element in arr:\n        element_count[element] = element_count.get(element, 0) + 1\n    \n    # Sum elements that appear more than once\n    for element, count in element_count.items():\n        if count > 1:\n            repeated_sum += element\n    \n    return repeated_sum"
+    },
+    {
+      "task_id": "43",
+      "config": {
+        "model": "qwen3-coder",
+        "temperature": 0.2,
+        "top_p": 0.9,
+        "num_predict": 512,
+        "exec_timeout": 10
+      },
+      "passed": 0,
+      "pass@1": 0,
+      "generation_time": 2.7951,
+      "test_time": 0.0082,
+      "total_runtime": 2.8033,
+      "error": "NameError: name 'text_match' is not defined",
+      "raw_output": "import re\n\ndef find_lowercase_underscore_sequences(text):\n    pattern = r'[a-z]+_[a-z]+'\n    return re.findall(pattern, text)",
+      "generated_code": "import re\n\ndef find_lowercase_underscore_sequences(text):\n    pattern = r'[a-z]+_[a-z]+'\n    return re.findall(pattern, text)"
+    },
+    {
+      "task_id": "44",
+      "config": {
+        "model": "qwen3-coder",
+        "temperature": 0.2,
+        "top_p": 0.9,
+        "num_predict": 512,
+        "exec_timeout": 10
+      },
+      "passed": 0,
+      "pass@1": 0,
+      "generation_time": 10.4189,
+      "test_time": 0.0093,
+      "total_runtime": 10.4282,
+      "error": "NameError: name 'text_match_string' is not defined",
+      "raw_output": "def match_word_at_beginning(text, word):\n    \"\"\"\n    Matches a word at the beginning of a string.\n    \n    Args:\n        text (str): The input string to search\n        word (str): The word to match at the beginning\n        \n    Returns:\n        bool: True if word matches at the beginning of text, False otherwise\n    \"\"\"\n    if not text or not word:\n        return False\n    \n    # Check if text starts with the word followed by a space or end of string\n    if text == word:\n        return True\n    elif text.startswith(word + \" \"):\n        return True\n    else:\n        return False",
+      "generated_code": "def match_word_at_beginning(text, word):\n    \"\"\"\n    Matches a word at the beginning of a string.\n    \n    Args:\n        text (str): The input string to search\n        word (str): The word to match at the beginning\n        \n    Returns:\n        bool: True if word matches at the beginning of text, False otherwise\n    \"\"\"\n    if not text or not word:\n        return False\n    \n    # Check if text starts with the word followed by a space or end of string\n    if text == word:\n        return True\n    elif text.startswith(word + \" \"):\n        return True\n    else:\n        return False"
+    },
+    {
+      "task_id": "45",
+      "config": {
+        "model": "qwen3-coder",
+        "temperature": 0.2,
+        "top_p": 0.9,
+        "num_predict": 512,
+        "exec_timeout": 10
+      },
+      "passed": 0,
+      "pass@1": 0,
+      "generation_time": 5.8257,
+      "test_time": 0.0088,
+      "total_runtime": 5.8345,
+      "error": "NameError: name 'get_gcd' is not defined",
+      "raw_output": "def gcd_array(arr):\n    def gcd(a, b):\n        while b:\n            a, b = b, a % b\n        return a\n    \n    if not arr:\n        return 0\n    \n    result = arr[0]\n    for i in range(1, len(arr)):\n        result = gcd(result, arr[i])\n    \n    return result",
+      "generated_code": "def gcd_array(arr):\n    def gcd(a, b):\n        while b:\n            a, b = b, a % b\n        return a\n    \n    if not arr:\n        return 0\n    \n    result = arr[0]\n    for i in range(1, len(arr)):\n        result = gcd(result, arr[i])\n    \n    return result"
+    },
+    {
+      "task_id": "46",
+      "config": {
+        "model": "qwen3-coder",
+        "temperature": 0.2,
+        "top_p": 0.9,
+        "num_predict": 512,
+        "exec_timeout": 10
+      },
+      "passed": 0,
+      "pass@1": 0,
+      "generation_time": 1.7679,
+      "test_time": 0.0064,
+      "total_runtime": 1.7742,
+      "error": "NameError: name 'test_distinct' is not defined",
+      "raw_output": "def all_different(numbers):\n    return len(numbers) == len(set(numbers))",
+      "generated_code": "def all_different(numbers):\n    return len(numbers) == len(set(numbers))"
+    },
+    {
+      "task_id": "47",
+      "config": {
+        "model": "qwen3-coder",
+        "temperature": 0.2,
+        "top_p": 0.9,
+        "num_predict": 512,
+        "exec_timeout": 10
+      },
+      "passed": 0,
+      "pass@1": 0,
+      "generation_time": 10.478,
+      "test_time": 0.0068,
+      "total_runtime": 10.4849,
+      "error": "NameError: name 'compute_Last_Digit' is not defined",
+      "raw_output": "def last_digit_factorial_division(a, b):\n    if a > b:\n        return 0\n    \n    if a == b:\n        return 1\n    \n    # If b >= 10, then b! will have trailing zeros\n    # and since a! will also have trailing zeros (a <= b),\n    # the result will be 0\n    if b >= 10:\n        return 0\n    \n    # Calculate b! / a!\n    result = 1\n    for i in range(a + 1, b + 1):\n        result *= i\n    \n    # Return last digit\n    return result % 10",
+      "generated_code": "def last_digit_factorial_division(a, b):\n    if a > b:\n        return 0\n    \n    if a == b:\n        return 1\n    \n    # If b >= 10, then b! will have trailing zeros\n    # and since a! will also have trailing zeros (a <= b),\n    # the result will be 0\n    if b >= 10:\n        return 0\n    \n    # Calculate b! / a!\n    result = 1\n    for i in range(a + 1, b + 1):\n        result *= i\n    \n    # Return last digit\n    return result % 10"
+    },
+    {
+      "task_id": "48",
+      "config": {
+        "model": "qwen3-coder",
+        "temperature": 0.2,
+        "top_p": 0.9,
+        "num_predict": 512,
+        "exec_timeout": 10
+      },
+      "passed": 0,
+      "pass@1": 0,
+      "generation_time": 15.0754,
+      "test_time": 0.019,
+      "total_runtime": 15.0944,
+      "error": "NameError: name 'odd_bit_set_number' is not defined",
+      "raw_output": "def set_odd_bits(n):\n    \"\"\"\n    Set all odd bits (1st, 3rd, 5th, etc. from right, 0-indexed)\n    of a given number n.\n    \n    Args:\n        n: integer\n        \n    Returns:\n        integer with all odd bits set to 1\n    \"\"\"\n    # Create a mask with all odd bits set to 1\n    # Odd bits are at positions 1, 3, 5, 7, ... (0-indexed from right)\n    # This pattern is 0b10101010... which is 0xAAAAAAAA in hex\n    # For 32-bit integers, we use 0xAAAAAAAA\n    # For 64-bit integers, we use 0xAAAAAAAAAAAAAAAA\n    \n    # Assuming 32-bit integers\n    mask = 0xAAAAAAAA\n    \n    # Set all odd bits to 1\n    return n | mask",
+      "generated_code": "def set_odd_bits(n):\n    \"\"\"\n    Set all odd bits (1st, 3rd, 5th, etc. from right, 0-indexed)\n    of a given number n.\n    \n    Args:\n        n: integer\n        \n    Returns:\n        integer with all odd bits set to 1\n    \"\"\"\n    # Create a mask with all odd bits set to 1\n    # Odd bits are at positions 1, 3, 5, 7, ... (0-indexed from right)\n    # This pattern is 0b10101010... which is 0xAAAAAAAA in hex\n    # For 32-bit integers, we use 0xAAAAAAAA\n    # For 64-bit integers, we use 0xAAAAAAAAAAAAAAAA\n    \n    # Assuming 32-bit integers\n    mask = 0xAAAAAAAA\n    \n    # Set all odd bits to 1\n    return n | mask"
+    },
+    {
+      "task_id": "49",
+      "config": {
+        "model": "qwen3-coder",
+        "temperature": 0.2,
+        "top_p": 0.9,
+        "num_predict": 512,
+        "exec_timeout": 10
+      },
+      "passed": 0,
+      "pass@1": 0,
+      "generation_time": 6.5067,
+      "test_time": 0.0061,
+      "total_runtime": 6.5128,
+      "error": "NameError: name 'specified_element' is not defined",
+      "raw_output": "def extract_elements(two_d_list, index=0):\n    \"\"\"\n    Extract every first or specified element from a given two-dimensional list.\n    \n    Args:\n        two_d_list: A two-dimensional list\n        index: The index of the element to extract (default is 0 for first element)\n    \n    Returns:\n        A list containing the extracted elements\n    \"\"\"\n    return [row[index] for row in two_d_list]",
+      "generated_code": "def extract_elements(two_d_list, index=0):\n    \"\"\"\n    Extract every first or specified element from a given two-dimensional list.\n    \n    Args:\n        two_d_list: A two-dimensional list\n        index: The index of the element to extract (default is 0 for first element)\n    \n    Returns:\n        A list containing the extracted elements\n    \"\"\"\n    return [row[index] for row in two_d_list]"
+    },
+    {
+      "task_id": "50",
+      "config": {
+        "model": "qwen3-coder",
+        "temperature": 0.2,
+        "top_p": 0.9,
+        "num_predict": 512,
+        "exec_timeout": 10
+      },
+      "passed": 0,
+      "pass@1": 0,
+      "generation_time": 2.0084,
+      "test_time": 0.0068,
+      "total_runtime": 2.0153,
+      "error": "NameError: name 'min_length_list' is not defined",
+      "raw_output": "def find_min_length_list(*lists):\n    return min(lists, key=lambda x: len(x))",
+      "generated_code": "def find_min_length_list(*lists):\n    return min(lists, key=lambda x: len(x))"
+    },
+    {
+      "task_id": "51",
+      "config": {
+        "model": "qwen3-coder",
+        "temperature": 0.2,
+        "top_p": 0.9,
+        "num_predict": 512,
+        "exec_timeout": 10
+      },
+      "passed": 0,
+      "pass@1": 0,
+      "generation_time": 10.4342,
+      "test_time": 0.009,
+      "total_runtime": 10.4432,
+      "error": "NameError: name 'check_equilateral' is not defined",
+      "raw_output": "def is_equilateral(a, b, c):\n    \"\"\"\n    Check if a triangle with sides a, b, c is equilateral\n    \n    Args:\n        a, b, c: lengths of the three sides of the triangle\n    \n    Returns:\n        bool: True if the triangle is equilateral, False otherwise\n    \"\"\"\n    return a == b == c and a > 0\n\n# Example usage:\n# print(is_equilateral(5, 5, 5))  # True\n# print(is_equilateral(5, 5, 3))  # False\n# print(is_equilateral(0, 0, 0))  # False (not a valid triangle)",
+      "generated_code": "def is_equilateral(a, b, c):\n    \"\"\"\n    Check if a triangle with sides a, b, c is equilateral\n    \n    Args:\n        a, b, c: lengths of the three sides of the triangle\n    \n    Returns:\n        bool: True if the triangle is equilateral, False otherwise\n    \"\"\"\n    return a == b == c and a > 0\n\n# Example usage:\n# print(is_equilateral(5, 5, 5))  # True\n# print(is_equilateral(5, 5, 3))  # False\n# print(is_equilateral(0, 0, 0))  # False (not a valid triangle)"
+    },
+    {
+      "task_id": "52",
+      "config": {
+        "model": "qwen3-coder",
+        "temperature": 0.2,
+        "top_p": 0.9,
+        "num_predict": 512,
+        "exec_timeout": 10
+      },
+      "passed": 1,
+      "pass@1": 1,
+      "generation_time": 8.3809,
+      "test_time": 0.0064,
+      "total_runtime": 8.3872,
+      "error": null,
+      "raw_output": "def parallelogram_area(base, height):\n    \"\"\"\n    Calculate the area of a parallelogram.\n    \n    Args:\n        base (float): The length of the base of the parallelogram\n        height (float): The height of the parallelogram (perpendicular distance from base to opposite side)\n    \n    Returns:\n        float: The area of the parallelogram\n    \n    Formula: Area = base \u00d7 height\n    \"\"\"\n    return base * height",
+      "generated_code": "def parallelogram_area(base, height):\n    \"\"\"\n    Calculate the area of a parallelogram.\n    \n    Args:\n        base (float): The length of the base of the parallelogram\n        height (float): The height of the parallelogram (perpendicular distance from base to opposite side)\n    \n    Returns:\n        float: The area of the parallelogram\n    \n    Formula: Area = base \u00d7 height\n    \"\"\"\n    return base * height"
+    },
+    {
+      "task_id": "53",
+      "config": {
+        "model": "qwen3-coder",
+        "temperature": 0.2,
+        "top_p": 0.9,
+        "num_predict": 512,
+        "exec_timeout": 10
+      },
+      "passed": 0,
+      "pass@1": 0,
+      "generation_time": 2.7384,
+      "test_time": 0.0058,
+      "total_runtime": 2.7442,
+      "error": "NameError: name 'check_Equality' is not defined",
+      "raw_output": "def check_first_last_equal(string):\n    if len(string) == 0:\n        return True\n    return string[0] == string[-1]",
+      "generated_code": "def check_first_last_equal(string):\n    if len(string) == 0:\n        return True\n    return string[0] == string[-1]"
+    },
+    {
+      "task_id": "54",
+      "config": {
+        "model": "qwen3-coder",
+        "temperature": 0.2,
+        "top_p": 0.9,
+        "num_predict": 512,
+        "exec_timeout": 10
+      },
+      "passed": 1,
+      "pass@1": 1,
+      "generation_time": 8.9516,
+      "test_time": 0.0079,
+      "total_runtime": 8.9594,
+      "error": null,
+      "raw_output": "def counting_sort(arr):\n    if not arr:\n        return arr\n    \n    # Find the range of elements\n    max_val = max(arr)\n    min_val = min(arr)\n    range_val = max_val - min_val + 1\n    \n    # Create count array\n    count = [0] * range_val\n    \n    # Count occurrences\n    for num in arr:\n        count[num - min_val] += 1\n    \n    # Reconstruct sorted array\n    result = []\n    for i in range(range_val):\n        result.extend([i + min_val] * count[i])\n    \n    return result",
+      "generated_code": "def counting_sort(arr):\n    if not arr:\n        return arr\n    \n    # Find the range of elements\n    max_val = max(arr)\n    min_val = min(arr)\n    range_val = max_val - min_val + 1\n    \n    # Create count array\n    count = [0] * range_val\n    \n    # Count occurrences\n    for num in arr:\n        count[num - min_val] += 1\n    \n    # Reconstruct sorted array\n    result = []\n    for i in range(range_val):\n        result.extend([i + min_val] * count[i])\n    \n    return result"
+    },
+    {
+      "task_id": "55",
+      "config": {
+        "model": "qwen3-coder",
+        "temperature": 0.2,
+        "top_p": 0.9,
+        "num_predict": 512,
+        "exec_timeout": 10
+      },
+      "passed": 0,
+      "pass@1": 0,
+      "generation_time": 6.3223,
+      "test_time": 0.0059,
+      "total_runtime": 6.3282,
+      "error": "NameError: name 'tn_gp' is not defined",
+      "raw_output": "def geometric_term(a, r, n):\n    \"\"\"\n    Find the nth term of a geometric series.\n    \n    Parameters:\n    a (float): First term of the series\n    r (float): Common ratio\n    n (int): Term position (1-indexed)\n    \n    Returns:\n    float: The nth term of the geometric series\n    \"\"\"\n    return a * (r ** (n - 1))",
+      "generated_code": "def geometric_term(a, r, n):\n    \"\"\"\n    Find the nth term of a geometric series.\n    \n    Parameters:\n    a (float): First term of the series\n    r (float): Common ratio\n    n (int): Term position (1-indexed)\n    \n    Returns:\n    float: The nth term of the geometric series\n    \"\"\"\n    return a * (r ** (n - 1))"
+    },
+    {
+      "task_id": "56",
+      "config": {
+        "model": "qwen3-coder",
+        "temperature": 0.2,
+        "top_p": 0.9,
+        "num_predict": 512,
+        "exec_timeout": 10
+      },
+      "passed": 0,
+      "pass@1": 0,
+      "generation_time": 8.4968,
+      "test_time": 0.006,
+      "total_runtime": 8.5029,
+      "error": "NameError: name 'check' is not defined",
+      "raw_output": "def is_one_less_than_twice_reverse(n):\n    # Convert number to string to easily reverse it\n    str_n = str(n)\n    # Reverse the string\n    reversed_str = str_n[::-1]\n    # Convert back to integer\n    reversed_n = int(reversed_str)\n    # Check if n is one less than twice its reverse\n    return n == 2 * reversed_n - 1",
+      "generated_code": "def is_one_less_than_twice_reverse(n):\n    # Convert number to string to easily reverse it\n    str_n = str(n)\n    # Reverse the string\n    reversed_str = str_n[::-1]\n    # Convert back to integer\n    reversed_n = int(reversed_str)\n    # Check if n is one less than twice its reverse\n    return n == 2 * reversed_n - 1"
+    },
+    {
+      "task_id": "57",
+      "config": {
+        "model": "qwen3-coder",
+        "temperature": 0.2,
+        "top_p": 0.9,
+        "num_predict": 512,
+        "exec_timeout": 10
+      },
+      "passed": 0,
+      "pass@1": 0,
+      "generation_time": 15.2228,
+      "test_time": 0.0075,
+      "total_runtime": 15.2303,
+      "error": "NameError: name 'find_Max_Num' is not defined",
+      "raw_output": "def largest_number(digits):\n    if not digits:\n        return 0\n    \n    # Convert all digits to strings\n    str_digits = [str(d) for d in digits]\n    \n    # Sort using custom comparator\n    # For two numbers a and b, if a+b > b+a (lexicographically), then a should come before b\n    from functools import cmp_to_key\n    \n    def compare(x, y):\n        if x + y > y + x:\n            return -1  # x should come before y\n        elif x + y < y + x:\n            return 1   # y should come before x\n        else:\n            return 0   # equal\n    \n    str_digits.sort(key=cmp_to_key(compare))\n    \n    # Join all sorted digits\n    result = ''.join(str_digits)\n    \n    # Handle edge case where result is all zeros\n    return int(result) if result else 0",
+      "generated_code": "def largest_number(digits):\n    if not digits:\n        return 0\n    \n    # Convert all digits to strings\n    str_digits = [str(d) for d in digits]\n    \n    # Sort using custom comparator\n    # For two numbers a and b, if a+b > b+a (lexicographically), then a should come before b\n    from functools import cmp_to_key\n    \n    def compare(x, y):\n        if x + y > y + x:\n            return -1  # x should come before y\n        elif x + y < y + x:\n            return 1   # y should come before x\n        else:\n            return 0   # equal\n    \n    str_digits.sort(key=cmp_to_key(compare))\n    \n    # Join all sorted digits\n    result = ''.join(str_digits)\n    \n    # Handle edge case where result is all zeros\n    return int(result) if result else 0"
+    },
+    {
+      "task_id": "58",
+      "config": {
+        "model": "qwen3-coder",
+        "temperature": 0.2,
+        "top_p": 0.9,
+        "num_predict": 512,
+        "exec_timeout": 10
+      },
+      "passed": 0,
+      "pass@1": 0,
+      "generation_time": 2.251,
+      "test_time": 0.0063,
+      "total_runtime": 2.2573,
+      "error": "NameError: name 'opposite_Signs' is not defined",
+      "raw_output": "def have_opposite_signs(a, b):\n    return (a ^ b) < 0",
+      "generated_code": "def have_opposite_signs(a, b):\n    return (a ^ b) < 0"
+    },
+    {
+      "task_id": "59",
+      "config": {
+        "model": "qwen3-coder",
+        "temperature": 0.2,
+        "top_p": 0.9,
+        "num_predict": 512,
+        "exec_timeout": 10
+      },
+      "passed": 0,
+      "pass@1": 0,
+      "generation_time": 7.6624,
+      "test_time": 0.0059,
+      "total_runtime": 7.6683,
+      "error": "NameError: name 'is_octagonal' is not defined",
+      "raw_output": "def nth_octagonal_number(n):\n    \"\"\"\n    Find the nth octagonal number.\n    \n    Octagonal numbers follow the formula: O(n) = n(3n-2)\n    \n    Args:\n        n (int): The position of the octagonal number to find\n        \n    Returns:\n        int: The nth octagonal number\n    \"\"\"\n    return n * (3 * n - 2)",
+      "generated_code": "def nth_octagonal_number(n):\n    \"\"\"\n    Find the nth octagonal number.\n    \n    Octagonal numbers follow the formula: O(n) = n(3n-2)\n    \n    Args:\n        n (int): The position of the octagonal number to find\n        \n    Returns:\n        int: The nth octagonal number\n    \"\"\"\n    return n * (3 * n - 2)"
+    },
+    {
+      "task_id": "60",
+      "config": {
+        "model": "qwen3-coder",
+        "temperature": 0.2,
+        "top_p": 0.9,
+        "num_predict": 512,
+        "exec_timeout": 10
+      },
+      "passed": 0,
+      "pass@1": 0,
+      "generation_time": 8.5873,
+      "test_time": 0.006,
+      "total_runtime": 8.5934,
+      "error": "NameError: name 'max_len_sub' is not defined",
+      "raw_output": "def max_subsequence_length(arr):\n    if not arr:\n        return 0\n    \n    n = len(arr)\n    if n == 1:\n        return 1\n    \n    # dp[i] represents the maximum length of subsequence ending at index i\n    dp = [1] * n\n    \n    for i in range(1, n):\n        for j in range(i):\n            if abs(arr[i] - arr[j]) <= 1:\n                dp[i] = max(dp[i], dp[j] + 1)\n    \n    return max(dp)",
+      "generated_code": "def max_subsequence_length(arr):\n    if not arr:\n        return 0\n    \n    n = len(arr)\n    if n == 1:\n        return 1\n    \n    # dp[i] represents the maximum length of subsequence ending at index i\n    dp = [1] * n\n    \n    for i in range(1, n):\n        for j in range(i):\n            if abs(arr[i] - arr[j]) <= 1:\n                dp[i] = max(dp[i], dp[j] + 1)\n    \n    return max(dp)"
+    },
+    {
+      "task_id": "61",
+      "config": {
+        "model": "qwen3-coder",
+        "temperature": 0.2,
+        "top_p": 0.9,
+        "num_predict": 512,
+        "exec_timeout": 10
+      },
+      "passed": 0,
+      "pass@1": 0,
+      "generation_time": 5.9705,
+      "test_time": 0.0076,
+      "total_runtime": 5.9781,
+      "error": "NameError: name 'count_Substrings' is not defined",
+      "raw_output": "def count_substrings(s):\n    count = 0\n    n = len(s)\n    \n    for i in range(n):\n        digit_sum = 0\n        for j in range(i, n):\n            digit_sum += int(s[j])\n            length = j - i + 1\n            if digit_sum == length:\n                count += 1\n    \n    return count",
+      "generated_code": "def count_substrings(s):\n    count = 0\n    n = len(s)\n    \n    for i in range(n):\n        digit_sum = 0\n        for j in range(i, n):\n            digit_sum += int(s[j])\n            length = j - i + 1\n            if digit_sum == length:\n                count += 1\n    \n    return count"
+    },
+    {
+      "task_id": "62",
+      "config": {
+        "model": "qwen3-coder",
+        "temperature": 0.2,
+        "top_p": 0.9,
+        "num_predict": 512,
+        "exec_timeout": 10
+      },
+      "passed": 0,
+      "pass@1": 0,
+      "generation_time": 4.3549,
+      "test_time": 0.0075,
+      "total_runtime": 4.3625,
+      "error": "NameError: name 'smallest_num' is not defined",
+      "raw_output": "def find_smallest(numbers):\n    if not numbers:\n        return None\n    smallest = numbers[0]\n    for num in numbers[1:]:\n        if num < smallest:\n            smallest = num\n    return smallest",
+      "generated_code": "def find_smallest(numbers):\n    if not numbers:\n        return None\n    smallest = numbers[0]\n    for num in numbers[1:]:\n        if num < smallest:\n            smallest = num\n    return smallest"
+    },
+    {
+      "task_id": "63",
+      "config": {
+        "model": "qwen3-coder",
+        "temperature": 0.2,
+        "top_p": 0.9,
+        "num_predict": 512,
+        "exec_timeout": 10
+      },
+      "passed": 0,
+      "pass@1": 0,
+      "generation_time": 9.2709,
+      "test_time": 0.0064,
+      "total_runtime": 9.2773,
+      "error": "AssertionError: ",
+      "raw_output": "def max_difference(pairs):\n    if not pairs or len(pairs) < 2:\n        return 0\n    \n    max_diff = 0\n    for i in range(len(pairs)):\n        for j in range(i + 1, len(pairs)):\n            diff = abs(pairs[i][0] - pairs[j][0]) + abs(pairs[i][1] - pairs[j][1])\n            max_diff = max(max_diff, diff)\n    \n    return max_diff",
+      "generated_code": "def max_difference(pairs):\n    if not pairs or len(pairs) < 2:\n        return 0\n    \n    max_diff = 0\n    for i in range(len(pairs)):\n        for j in range(i + 1, len(pairs)):\n            diff = abs(pairs[i][0] - pairs[j][0]) + abs(pairs[i][1] - pairs[j][1])\n            max_diff = max(max_diff, diff)\n    \n    return max_diff"
+    },
+    {
+      "task_id": "64",
+      "config": {
+        "model": "qwen3-coder",
+        "temperature": 0.2,
+        "top_p": 0.9,
+        "num_predict": 512,
+        "exec_timeout": 10
+      },
+      "passed": 0,
+      "pass@1": 0,
+      "generation_time": 2.1388,
+      "test_time": 0.0057,
+      "total_runtime": 2.1445,
+      "error": "NameError: name 'subject_marks' is not defined",
+      "raw_output": "def sort_tuples(tuple_list, index=0):\n    return sorted(tuple_list, key=lambda x: x[index])",
+      "generated_code": "def sort_tuples(tuple_list, index=0):\n    return sorted(tuple_list, key=lambda x: x[index])"
+    },
+    {
+      "task_id": "65",
+      "config": {
+        "model": "qwen3-coder",
+        "temperature": 0.2,
+        "top_p": 0.9,
+        "num_predict": 512,
+        "exec_timeout": 10
+      },
+      "passed": 0,
+      "pass@1": 0,
+      "generation_time": 2.5655,
+      "test_time": 0.0067,
+      "total_runtime": 2.5723,
+      "error": "TypeError: can only concatenate list (not \"int\") to list",
+      "raw_output": "def recursive_list_sum(lst):\n    if not lst:\n        return 0\n    return lst[0] + recursive_list_sum(lst[1:])",
+      "generated_code": "def recursive_list_sum(lst):\n    if not lst:\n        return 0\n    return lst[0] + recursive_list_sum(lst[1:])"
+    },
+    {
+      "task_id": "66",
+      "config": {
+        "model": "qwen3-coder",
+        "temperature": 0.2,
+        "top_p": 0.9,
+        "num_predict": 512,
+        "exec_timeout": 10
+      },
+      "passed": 0,
+      "pass@1": 0,
+      "generation_time": 2.8397,
+      "test_time": 0.0077,
+      "total_runtime": 2.8474,
+      "error": "NameError: name 'pos_count' is not defined",
+      "raw_output": "def count_positive(numbers):\n    count = 0\n    for num in numbers:\n        if num > 0:\n            count += 1\n    return count",
+      "generated_code": "def count_positive(numbers):\n    count = 0\n    for num in numbers:\n        if num > 0:\n            count += 1\n    return count"
+    },
+    {
+      "task_id": "67",
+      "config": {
+        "model": "qwen3-coder",
+        "temperature": 0.2,
+        "top_p": 0.9,
+        "num_predict": 512,
+        "exec_timeout": 10
+      },
+      "passed": 1,
+      "pass@1": 1,
+      "generation_time": 15.6921,
+      "test_time": 0.0071,
+      "total_runtime": 15.6992,
+      "error": null,
+      "raw_output": "def bell_number(n):\n    if n == 0:\n        return 1\n    \n    # Create a table to store Bell numbers\n    bell = [[0 for _ in range(n + 1)] for _ in range(n + 1)]\n    \n    # Base case\n    bell[0][0] = 1\n    \n    # Fill the Bell table\n    for i in range(1, n + 1):\n        # Explicitly fill for j = 0\n        bell[i][0] = bell[i - 1][i - 1]\n        \n        # Fill for remaining values\n        for j in range(1, i + 1):\n            bell[i][j] = bell[i - 1][j - 1] + bell[i][j - 1]\n    \n    return bell[n][0]\n\ndef count_partitions(n):\n    \"\"\"Return the number of ways to partition a set of n elements\"\"\"\n    return bell_number(n)",
+      "generated_code": "def bell_number(n):\n    if n == 0:\n        return 1\n    \n    # Create a table to store Bell numbers\n    bell = [[0 for _ in range(n + 1)] for _ in range(n + 1)]\n    \n    # Base case\n    bell[0][0] = 1\n    \n    # Fill the Bell table\n    for i in range(1, n + 1):\n        # Explicitly fill for j = 0\n        bell[i][0] = bell[i - 1][i - 1]\n        \n        # Fill for remaining values\n        for j in range(1, i + 1):\n            bell[i][j] = bell[i - 1][j - 1] + bell[i][j - 1]\n    \n    return bell[n][0]\n\ndef count_partitions(n):\n    \"\"\"Return the number of ways to partition a set of n elements\"\"\"\n    return bell_number(n)"
+    },
+    {
+      "task_id": "68",
+      "config": {
+        "model": "qwen3-coder",
+        "temperature": 0.2,
+        "top_p": 0.9,
+        "num_predict": 512,
+        "exec_timeout": 10
+      },
+      "passed": 0,
+      "pass@1": 0,
+      "generation_time": 9.336,
+      "test_time": 0.0062,
+      "total_runtime": 9.3422,
+      "error": "NameError: name 'is_Monotonic' is not defined",
+      "raw_output": "def is_monotonic(arr):\n    if len(arr) <= 1:\n        return True\n    \n    is_increasing = None\n    \n    for i in range(1, len(arr)):\n        if arr[i] > arr[i-1]:\n            if is_increasing is False:\n                return False\n            is_increasing = True\n        elif arr[i] < arr[i-1]:\n            if is_increasing is True:\n                return False\n            is_increasing = False\n    \n    return True",
+      "generated_code": "def is_monotonic(arr):\n    if len(arr) <= 1:\n        return True\n    \n    is_increasing = None\n    \n    for i in range(1, len(arr)):\n        if arr[i] > arr[i-1]:\n            if is_increasing is False:\n                return False\n            is_increasing = True\n        elif arr[i] < arr[i-1]:\n            if is_increasing is True:\n                return False\n            is_increasing = False\n    \n    return True"
+    },
+    {
+      "task_id": "69",
+      "config": {
+        "model": "qwen3-coder",
+        "temperature": 0.2,
+        "top_p": 0.9,
+        "num_predict": 512,
+        "exec_timeout": 10
+      },
+      "passed": 0,
+      "pass@1": 0,
+      "generation_time": 5.7311,
+      "test_time": 0.0089,
+      "total_runtime": 5.74,
+      "error": "NameError: name 'is_sublist' is not defined",
+      "raw_output": "def contains_sublist(main_list, sublist):\n    if not sublist:\n        return True\n    if not main_list:\n        return False\n    \n    for i in range(len(main_list) - len(sublist) + 1):\n        if main_list[i:i + len(sublist)] == sublist:\n            return True\n    return False",
+      "generated_code": "def contains_sublist(main_list, sublist):\n    if not sublist:\n        return True\n    if not main_list:\n        return False\n    \n    for i in range(len(main_list) - len(sublist) + 1):\n        if main_list[i:i + len(sublist)] == sublist:\n            return True\n    return False"
+    },
+    {
+      "task_id": "70",
+      "config": {
+        "model": "qwen3-coder",
+        "temperature": 0.2,
+        "top_p": 0.9,
+        "num_predict": 512,
+        "exec_timeout": 10
+      },
+      "passed": 0,
+      "pass@1": 0,
+      "generation_time": 5.0054,
+      "test_time": 0.0064,
+      "total_runtime": 5.0118,
+      "error": "NameError: name 'get_equal' is not defined",
+      "raw_output": "def all_tuples_equal_length(tuples_list):\n    if not tuples_list:\n        return True\n    \n    first_length = len(tuples_list[0])\n    return all(len(t) == first_length for t in tuples_list)",
+      "generated_code": "def all_tuples_equal_length(tuples_list):\n    if not tuples_list:\n        return True\n    \n    first_length = len(tuples_list[0])\n    return all(len(t) == first_length for t in tuples_list)"
+    },
+    {
+      "task_id": "71",
+      "config": {
+        "model": "qwen3-coder",
+        "temperature": 0.2,
+        "top_p": 0.9,
+        "num_predict": 512,
+        "exec_timeout": 10
+      },
+      "passed": 1,
+      "pass@1": 1,
+      "generation_time": 8.0662,
+      "test_time": 0.0079,
+      "total_runtime": 8.0741,
+      "error": null,
+      "raw_output": "def comb_sort(arr):\n    n = len(arr)\n    gap = n\n    shrink = 1.3\n    sorted = False\n    \n    while not sorted:\n        gap = int(gap / shrink)\n        if gap <= 1:\n            gap = 1\n            sorted = True\n        \n        for i in range(n - gap):\n            if arr[i] > arr[i + gap]:\n                arr[i], arr[i + gap] = arr[i + gap], arr[i]\n                sorted = False\n    \n    return arr",
+      "generated_code": "def comb_sort(arr):\n    n = len(arr)\n    gap = n\n    shrink = 1.3\n    sorted = False\n    \n    while not sorted:\n        gap = int(gap / shrink)\n        if gap <= 1:\n            gap = 1\n            sorted = True\n        \n        for i in range(n - gap):\n            if arr[i] > arr[i + gap]:\n                arr[i], arr[i + gap] = arr[i + gap], arr[i]\n                sorted = False\n    \n    return arr"
+    },
+    {
+      "task_id": "72",
+      "config": {
+        "model": "qwen3-coder",
+        "temperature": 0.2,
+        "top_p": 0.9,
+        "num_predict": 512,
+        "exec_timeout": 10
+      },
+      "passed": 0,
+      "pass@1": 0,
+      "generation_time": 16.461,
+      "test_time": 0.0074,
+      "total_runtime": 16.4684,
+      "error": "NameError: name 'dif_Square' is not defined",
+      "raw_output": "def can_be_difference_of_squares(n):\n    \"\"\"\n    Check whether the given number can be represented as difference of two squares.\n    \n    A number can be represented as difference of two squares if and only if\n    it is not of the form 4k+2 for any integer k.\n    \n    Args:\n        n (int): The number to check\n        \n    Returns:\n        bool: True if n can be represented as difference of two squares, False otherwise\n    \"\"\"\n    return n % 4 != 2\n\n# Test cases\nif __name__ == \"__main__\":\n    # Test cases\n    test_cases = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16]\n    \n    for num in test_cases:\n        result = can_be_difference_of_squares(num)\n        print(f\"{num}: {result}\")",
+      "generated_code": "def can_be_difference_of_squares(n):\n    \"\"\"\n    Check whether the given number can be represented as difference of two squares.\n    \n    A number can be represented as difference of two squares if and only if\n    it is not of the form 4k+2 for any integer k.\n    \n    Args:\n        n (int): The number to check\n        \n    Returns:\n        bool: True if n can be represented as difference of two squares, False otherwise\n    \"\"\"\n    return n % 4 != 2\n\n# Test cases\nif __name__ == \"__main__\":\n    # Test cases\n    test_cases = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16]\n    \n    for num in test_cases:\n        result = can_be_difference_of_squares(num)\n        print(f\"{num}: {result}\")"
+    },
+    {
+      "task_id": "73",
+      "config": {
+        "model": "qwen3-coder",
+        "temperature": 0.2,
+        "top_p": 0.9,
+        "num_predict": 512,
+        "exec_timeout": 10
+      },
+      "passed": 0,
+      "pass@1": 0,
+      "generation_time": 10.7845,
+      "test_time": 0.0067,
+      "total_runtime": 10.7912,
+      "error": "NameError: name 'multiple_split' is not defined",
+      "raw_output": "import re\n\ndef split_string_regex(text, delimiters):\n    \"\"\"\n    Split a string using multiple delimiters with regex\n    \n    Args:\n        text (str): The string to split\n        delimiters (list): List of delimiter strings\n    \n    Returns:\n        list: List of substrings after splitting\n    \"\"\"\n    # Escape special regex characters in delimiters\n    escaped_delimiters = [re.escape(d) for d in delimiters]\n    \n    # Create regex pattern with all delimiters\n    pattern = '|'.join(escaped_delimiters)\n    \n    # Split the string\n    result = re.split(pattern, text)\n    \n    # Remove empty strings from result\n    return [item for item in result if item]",
+      "generated_code": "import re\n\ndef split_string_regex(text, delimiters):\n    \"\"\"\n    Split a string using multiple delimiters with regex\n    \n    Args:\n        text (str): The string to split\n        delimiters (list): List of delimiter strings\n    \n    Returns:\n        list: List of substrings after splitting\n    \"\"\"\n    # Escape special regex characters in delimiters\n    escaped_delimiters = [re.escape(d) for d in delimiters]\n    \n    # Create regex pattern with all delimiters\n    pattern = '|'.join(escaped_delimiters)\n    \n    # Split the string\n    result = re.split(pattern, text)\n    \n    # Remove empty strings from result\n    return [item for item in result if item]"
+    },
+    {
+      "task_id": "74",
+      "config": {
+        "model": "qwen3-coder",
+        "temperature": 0.2,
+        "top_p": 0.9,
+        "num_predict": 512,
+        "exec_timeout": 10
+      },
+      "passed": 0,
+      "pass@1": 0,
+      "generation_time": 9.5005,
+      "test_time": 0.0079,
+      "total_runtime": 9.5084,
+      "error": "NameError: name 'is_samepatterns' is not defined",
+      "raw_output": "def follows_pattern(pattern, strings):\n    if len(pattern) != len(strings):\n        return False\n    \n    pattern_to_string = {}\n    string_to_pattern = {}\n    \n    for p, s in zip(pattern, strings):\n        if p in pattern_to_string:\n            if pattern_to_string[p] != s:\n                return False\n        else:\n            pattern_to_string[p] = s\n            \n        if s in string_to_pattern:\n            if string_to_pattern[s] != p:\n                return False\n        else:\n            string_to_pattern[s] = p\n    \n    return True",
+      "generated_code": "def follows_pattern(pattern, strings):\n    if len(pattern) != len(strings):\n        return False\n    \n    pattern_to_string = {}\n    string_to_pattern = {}\n    \n    for p, s in zip(pattern, strings):\n        if p in pattern_to_string:\n            if pattern_to_string[p] != s:\n                return False\n        else:\n            pattern_to_string[p] = s\n            \n        if s in string_to_pattern:\n            if string_to_pattern[s] != p:\n                return False\n        else:\n            string_to_pattern[s] = p\n    \n    return True"
+    },
+    {
+      "task_id": "75",
+      "config": {
+        "model": "qwen3-coder",
+        "temperature": 0.2,
+        "top_p": 0.9,
+        "num_predict": 512,
+        "exec_timeout": 10
+      },
+      "passed": 0,
+      "pass@1": 0,
+      "generation_time": 4.2622,
+      "test_time": 0.0062,
+      "total_runtime": 4.2684,
+      "error": "NameError: name 'find_tuples' is not defined",
+      "raw_output": "def find_divisible_tuples(tuple_list, k):\n    result = []\n    for tup in tuple_list:\n        if all(element % k == 0 for element in tup):\n            result.append(tup)\n    return result",
+      "generated_code": "def find_divisible_tuples(tuple_list, k):\n    result = []\n    for tup in tuple_list:\n        if all(element % k == 0 for element in tup):\n            result.append(tup)\n    return result"
+    },
+    {
+      "task_id": "76",
+      "config": {
+        "model": "qwen3-coder",
+        "temperature": 0.2,
+        "top_p": 0.9,
+        "num_predict": 512,
+        "exec_timeout": 10
+      },
+      "passed": 0,
+      "pass@1": 0,
+      "generation_time": 13.4314,
+      "test_time": 0.0075,
+      "total_runtime": 13.4388,
+      "error": "NameError: name 'count_Squares' is not defined",
+      "raw_output": "def count_squares_in_rectangle(width, height):\n    \"\"\"\n    Count the number of squares that can fit in a rectangle of given width and height.\n    \n    Args:\n        width (int): The width of the rectangle\n        height (int): The height of the rectangle\n    \n    Returns:\n        int: The total number of squares that can fit in the rectangle\n    \"\"\"\n    if width <= 0 or height <= 0:\n        return 0\n    \n    count = 0\n    min_dimension = min(width, height)\n    \n    for square_size in range(1, min_dimension + 1):\n        # Count how many squares of this size fit horizontally and vertically\n        horizontal_count = width - square_size + 1\n        vertical_count = height - square_size + 1\n        count += horizontal_count * vertical_count\n    \n    return count",
+      "generated_code": "def count_squares_in_rectangle(width, height):\n    \"\"\"\n    Count the number of squares that can fit in a rectangle of given width and height.\n    \n    Args:\n        width (int): The width of the rectangle\n        height (int): The height of the rectangle\n    \n    Returns:\n        int: The total number of squares that can fit in the rectangle\n    \"\"\"\n    if width <= 0 or height <= 0:\n        return 0\n    \n    count = 0\n    min_dimension = min(width, height)\n    \n    for square_size in range(1, min_dimension + 1):\n        # Count how many squares of this size fit horizontally and vertically\n        horizontal_count = width - square_size + 1\n        vertical_count = height - square_size + 1\n        count += horizontal_count * vertical_count\n    \n    return count"
+    },
+    {
+      "task_id": "77",
+      "config": {
+        "model": "qwen3-coder",
+        "temperature": 0.2,
+        "top_p": 0.9,
+        "num_predict": 512,
+        "exec_timeout": 10
+      },
+      "passed": 0,
+      "pass@1": 0,
+      "generation_time": 7.0587,
+      "test_time": 0.007,
+      "total_runtime": 7.0656,
+      "error": "NameError: name 'is_Diff' is not defined",
+      "raw_output": "def difference_even_odd_digits(n):\n    even_sum = 0\n    odd_sum = 0\n    \n    for digit in str(abs(n)):\n        if int(digit) % 2 == 0:\n            even_sum += int(digit)\n        else:\n            odd_sum += int(digit)\n    \n    return even_sum - odd_sum",
+      "generated_code": "def difference_even_odd_digits(n):\n    even_sum = 0\n    odd_sum = 0\n    \n    for digit in str(abs(n)):\n        if int(digit) % 2 == 0:\n            even_sum += int(digit)\n        else:\n            odd_sum += int(digit)\n    \n    return even_sum - odd_sum"
+    },
+    {
+      "task_id": "78",
+      "config": {
+        "model": "qwen3-coder",
+        "temperature": 0.2,
+        "top_p": 0.9,
+        "num_predict": 512,
+        "exec_timeout": 10
+      },
+      "passed": 0,
+      "pass@1": 0,
+      "generation_time": 7.5465,
+      "test_time": 0.0047,
+      "total_runtime": 7.5512,
+      "error": "NameError: name 'count_With_Odd_SetBits' is not defined",
+      "raw_output": "def count_odd_set_bits(numbers):\n    def count_set_bits(n):\n        count = 0\n        while n:\n            count += n & 1\n            n >>= 1\n        return count\n    \n    count = 0\n    for num in numbers:\n        if count_set_bits(num) % 2 == 1:\n            count += 1\n    return count",
+      "generated_code": "def count_odd_set_bits(numbers):\n    def count_set_bits(n):\n        count = 0\n        while n:\n            count += n & 1\n            n >>= 1\n        return count\n    \n    count = 0\n    for num in numbers:\n        if count_set_bits(num) % 2 == 1:\n            count += 1\n    return count"
+    },
+    {
+      "task_id": "79",
+      "config": {
+        "model": "qwen3-coder",
+        "temperature": 0.2,
+        "top_p": 0.9,
+        "num_predict": 512,
+        "exec_timeout": 10
+      },
+      "passed": 0,
+      "pass@1": 0,
+      "generation_time": 1.9672,
+      "test_time": 0.0056,
+      "total_runtime": 1.9728,
+      "error": "NameError: name 'word_len' is not defined",
+      "raw_output": "def is_odd_length(word):\n    return len(word) % 2 == 1",
+      "generated_code": "def is_odd_length(word):\n    return len(word) % 2 == 1"
+    },
+    {
+      "task_id": "80",
+      "config": {
+        "model": "qwen3-coder",
+        "temperature": 0.2,
+        "top_p": 0.9,
+        "num_predict": 512,
+        "exec_timeout": 10
+      },
+      "passed": 1,
+      "pass@1": 1,
+      "generation_time": 8.6887,
+      "test_time": 0.008,
+      "total_runtime": 8.6967,
+      "error": null,
+      "raw_output": "def tetrahedral_number(n):\n    \"\"\"\n    Find the nth tetrahedral number.\n    \n    A tetrahedral number is the sum of the first n triangular numbers.\n    The nth tetrahedral number is given by the formula: n(n+1)(n+2)/6\n    \n    Args:\n        n (int): The position of the tetrahedral number to find (1-indexed)\n        \n    Returns:\n        int: The nth tetrahedral number\n    \"\"\"\n    return n * (n + 1) * (n + 2) // 6",
+      "generated_code": "def tetrahedral_number(n):\n    \"\"\"\n    Find the nth tetrahedral number.\n    \n    A tetrahedral number is the sum of the first n triangular numbers.\n    The nth tetrahedral number is given by the formula: n(n+1)(n+2)/6\n    \n    Args:\n        n (int): The position of the tetrahedral number to find (1-indexed)\n        \n    Returns:\n        int: The nth tetrahedral number\n    \"\"\"\n    return n * (n + 1) * (n + 2) // 6"
+    },
+    {
+      "task_id": "81",
+      "config": {
+        "model": "qwen3-coder",
+        "temperature": 0.2,
+        "top_p": 0.9,
+        "num_predict": 512,
+        "exec_timeout": 10
+      },
+      "passed": 0,
+      "pass@1": 0,
+      "generation_time": 2.3178,
+      "test_time": 0.0057,
+      "total_runtime": 2.3235,
+      "error": "AssertionError: ",
+      "raw_output": "def zip_tuples(tuple1, tuple2):\n    return tuple(zip(tuple1, tuple2))",
+      "generated_code": "def zip_tuples(tuple1, tuple2):\n    return tuple(zip(tuple1, tuple2))"
+    },
+    {
+      "task_id": "82",
+      "config": {
+        "model": "qwen3-coder",
+        "temperature": 0.2,
+        "top_p": 0.9,
+        "num_predict": 512,
+        "exec_timeout": 10
+      },
+      "passed": 0,
+      "pass@1": 0,
+      "generation_time": 2.4126,
+      "test_time": 0.008,
+      "total_runtime": 2.4206,
+      "error": "NameError: name 'volume_sphere' is not defined",
+      "raw_output": "def sphere_volume(radius):\n    import math\n    return (4/3) * math.pi * (radius ** 3)",
+      "generated_code": "def sphere_volume(radius):\n    import math\n    return (4/3) * math.pi * (radius ** 3)"
+    },
+    {
+      "task_id": "83",
+      "config": {
+        "model": "qwen3-coder",
+        "temperature": 0.2,
+        "top_p": 0.9,
+        "num_predict": 512,
+        "exec_timeout": 10
+      },
+      "passed": 0,
+      "pass@1": 0,
+      "generation_time": 2.8809,
+      "test_time": 0.0075,
+      "total_runtime": 2.8885,
+      "error": "NameError: name 'get_Char' is not defined",
+      "raw_output": "def sum_characters(s):\n    total = 0\n    for char in s:\n        total += ord(char)\n    return chr(total % 256)",
+      "generated_code": "def sum_characters(s):\n    total = 0\n    for char in s:\n        total += ord(char)\n    return chr(total % 256)"
+    },
+    {
+      "task_id": "84",
+      "config": {
+        "model": "qwen3-coder",
+        "temperature": 0.2,
+        "top_p": 0.9,
+        "num_predict": 512,
+        "exec_timeout": 10
+      },
+      "passed": 0,
+      "pass@1": 0,
+      "generation_time": 8.7485,
+      "test_time": 0.0093,
+      "total_runtime": 8.7578,
+      "error": "NameError: name 'sequence' is not defined",
+      "raw_output": "def newman_conway(n):\n    if n == 1 or n == 2:\n        return 1\n    \n    # Create array to store the sequence\n    seq = [0] * (n + 1)\n    seq[1] = 1\n    seq[2] = 1\n    \n    # Fill the array using the recurrence relation\n    for i in range(3, n + 1):\n        seq[i] = seq[seq[i - 1]] + seq[i - seq[i - 1]]\n    \n    return seq[n]",
+      "generated_code": "def newman_conway(n):\n    if n == 1 or n == 2:\n        return 1\n    \n    # Create array to store the sequence\n    seq = [0] * (n + 1)\n    seq[1] = 1\n    seq[2] = 1\n    \n    # Fill the array using the recurrence relation\n    for i in range(3, n + 1):\n        seq[i] = seq[seq[i - 1]] + seq[i - seq[i - 1]]\n    \n    return seq[n]"
+    },
+    {
+      "task_id": "85",
+      "config": {
+        "model": "qwen3-coder",
+        "temperature": 0.2,
+        "top_p": 0.9,
+        "num_predict": 512,
+        "exec_timeout": 10
+      },
+      "passed": 0,
+      "pass@1": 0,
+      "generation_time": 2.0627,
+      "test_time": 0.0063,
+      "total_runtime": 2.069,
+      "error": "NameError: name 'surfacearea_sphere' is not defined",
+      "raw_output": "def surface_area_sphere(radius):\n    return 4 * 3.14159 * radius ** 2",
+      "generated_code": "def surface_area_sphere(radius):\n    return 4 * 3.14159 * radius ** 2"
+    },
+    {
+      "task_id": "86",
+      "config": {
+        "model": "qwen3-coder",
+        "temperature": 0.2,
+        "top_p": 0.9,
+        "num_predict": 512,
+        "exec_timeout": 10
+      },
+      "passed": 1,
+      "pass@1": 1,
+      "generation_time": 9.8196,
+      "test_time": 0.0066,
+      "total_runtime": 9.8263,
+      "error": null,
+      "raw_output": "def centered_hexagonal_number(n):\n    \"\"\"\n    Find the nth centered hexagonal number.\n    \n    A centered hexagonal number is a number that can be represented as a hexagon\n    with a dot in the center and all other dots surrounding the center dot\n    in a hexagonal lattice.\n    \n    The formula for the nth centered hexagonal number is: 3n(n-1) + 1\n    \n    Args:\n        n (int): The position of the centered hexagonal number to find\n        \n    Returns:\n        int: The nth centered hexagonal number\n    \"\"\"\n    return 3 * n * (n - 1) + 1",
+      "generated_code": "def centered_hexagonal_number(n):\n    \"\"\"\n    Find the nth centered hexagonal number.\n    \n    A centered hexagonal number is a number that can be represented as a hexagon\n    with a dot in the center and all other dots surrounding the center dot\n    in a hexagonal lattice.\n    \n    The formula for the nth centered hexagonal number is: 3n(n-1) + 1\n    \n    Args:\n        n (int): The position of the centered hexagonal number to find\n        \n    Returns:\n        int: The nth centered hexagonal number\n    \"\"\"\n    return 3 * n * (n - 1) + 1"
+    },
+    {
+      "task_id": "87",
+      "config": {
+        "model": "qwen3-coder",
+        "temperature": 0.2,
+        "top_p": 0.9,
+        "num_predict": 512,
+        "exec_timeout": 10
+      },
+      "passed": 0,
+      "pass@1": 0,
+      "generation_time": 2.8194,
+      "test_time": 0.0057,
+      "total_runtime": 2.8251,
+      "error": "NameError: name 'merge_dictionaries_three' is not defined",
+      "raw_output": "def merge_three_dicts(dict1, dict2, dict3):\n    return {**dict1, **dict2, **dict3}",
+      "generated_code": "def merge_three_dicts(dict1, dict2, dict3):\n    return {**dict1, **dict2, **dict3}"
+    },
+    {
+      "task_id": "88",
+      "config": {
+        "model": "qwen3-coder",
+        "temperature": 0.2,
+        "top_p": 0.9,
+        "num_predict": 512,
+        "exec_timeout": 10
+      },
+      "passed": 0,
+      "pass@1": 0,
+      "generation_time": 3.5058,
+      "test_time": 0.008,
+      "total_runtime": 3.5138,
+      "error": "NameError: name 'freq_count' is not defined",
+      "raw_output": "def get_frequency(lst):\n    frequency = {}\n    for element in lst:\n        if element in frequency:\n            frequency[element] += 1\n        else:\n            frequency[element] = 1\n    return frequency",
+      "generated_code": "def get_frequency(lst):\n    frequency = {}\n    for element in lst:\n        if element in frequency:\n            frequency[element] += 1\n        else:\n            frequency[element] = 1\n    return frequency"
+    },
+    {
+      "task_id": "89",
+      "config": {
+        "model": "qwen3-coder",
+        "temperature": 0.2,
+        "top_p": 0.9,
+        "num_predict": 512,
+        "exec_timeout": 10
+      },
+      "passed": 0,
+      "pass@1": 0,
+      "generation_time": 2.099,
+      "test_time": 0.0072,
+      "total_runtime": 2.1062,
+      "error": "NameError: name 'closest_num' is not defined",
+      "raw_output": "def closest_smaller(n):\n    if n <= 0:\n        return None\n    return n - 1",
+      "generated_code": "def closest_smaller(n):\n    if n <= 0:\n        return None\n    return n - 1"
+    },
+    {
+      "task_id": "90",
+      "config": {
+        "model": "qwen3-coder",
+        "temperature": 0.2,
+        "top_p": 0.9,
+        "num_predict": 512,
+        "exec_timeout": 10
+      },
+      "passed": 0,
+      "pass@1": 0,
+      "generation_time": 2.4037,
+      "test_time": 0.0103,
+      "total_runtime": 2.414,
+      "error": "NameError: name 'len_log' is not defined",
+      "raw_output": "def longest_word_length(words):\n    if not words:\n        return 0\n    return max(len(word) for word in words)",
+      "generated_code": "def longest_word_length(words):\n    if not words:\n        return 0\n    return max(len(word) for word in words)"
+    },
+    {
+      "task_id": "91",
+      "config": {
+        "model": "qwen3-coder",
+        "temperature": 0.2,
+        "top_p": 0.9,
+        "num_predict": 512,
+        "exec_timeout": 10
+      },
+      "passed": 0,
+      "pass@1": 0,
+      "generation_time": 6.9746,
+      "test_time": 0.0088,
+      "total_runtime": 6.9834,
+      "error": "NameError: name 'find_substring' is not defined",
+      "raw_output": "def is_substring_present(substring, string_list):\n    \"\"\"\n    Check if a substring is present in any string within a list of strings.\n    \n    Args:\n        substring (str): The substring to search for\n        string_list (list): List of strings to search in\n    \n    Returns:\n        bool: True if substring is found in any string, False otherwise\n    \"\"\"\n    return any(substring in string for string in string_list)",
+      "generated_code": "def is_substring_present(substring, string_list):\n    \"\"\"\n    Check if a substring is present in any string within a list of strings.\n    \n    Args:\n        substring (str): The substring to search for\n        string_list (list): List of strings to search in\n    \n    Returns:\n        bool: True if substring is found in any string, False otherwise\n    \"\"\"\n    return any(substring in string for string in string_list)"
+    },
+    {
+      "task_id": "92",
+      "config": {
+        "model": "qwen3-coder",
+        "temperature": 0.2,
+        "top_p": 0.9,
+        "num_predict": 512,
+        "exec_timeout": 10
+      },
+      "passed": 0,
+      "pass@1": 0,
+      "generation_time": 6.2974,
+      "test_time": 0.0089,
+      "total_runtime": 6.3063,
+      "error": "TypeError: '<' not supported between instances of 'str' and 'int'",
+      "raw_output": "def is_undulating(n):\n    if n < 100:\n        return False\n    \n    s = str(n)\n    if len(s) % 2 == 0:\n        return False\n    \n    # Check if pattern is alternating\n    for i in range(len(s) - 2):\n        if s[i] != s[i + 2]:\n            return False\n    \n    return True",
+      "generated_code": "def is_undulating(n):\n    if n < 100:\n        return False\n    \n    s = str(n)\n    if len(s) % 2 == 0:\n        return False\n    \n    # Check if pattern is alternating\n    for i in range(len(s) - 2):\n        if s[i] != s[i + 2]:\n            return False\n    \n    return True"
+    },
+    {
+      "task_id": "93",
+      "config": {
+        "model": "qwen3-coder",
+        "temperature": 0.2,
+        "top_p": 0.9,
+        "num_predict": 512,
+        "exec_timeout": 10
+      },
+      "passed": 1,
+      "pass@1": 1,
+      "generation_time": 1.3868,
+      "test_time": 0.0086,
+      "total_runtime": 1.3954,
+      "error": null,
+      "raw_output": "def power(a, b):\n    return a ** b",
+      "generated_code": "def power(a, b):\n    return a ** b"
+    },
+    {
+      "task_id": "94",
+      "config": {
+        "model": "qwen3-coder",
+        "temperature": 0.2,
+        "top_p": 0.9,
+        "num_predict": 512,
+        "exec_timeout": 10
+      },
+      "passed": 0,
+      "pass@1": 0,
+      "generation_time": 3.4202,
+      "test_time": 0.0091,
+      "total_runtime": 3.4293,
+      "error": "NameError: name 'index_minimum' is not defined",
+      "raw_output": "def min_index_record(tuples_list):\n    if not tuples_list:\n        return None\n    \n    min_value = min(tuples_list, key=lambda x: x[0])\n    return tuples_list.index(min_value)",
+      "generated_code": "def min_index_record(tuples_list):\n    if not tuples_list:\n        return None\n    \n    min_value = min(tuples_list, key=lambda x: x[0])\n    return tuples_list.index(min_value)"
+    },
+    {
+      "task_id": "95",
+      "config": {
+        "model": "qwen3-coder",
+        "temperature": 0.2,
+        "top_p": 0.9,
+        "num_predict": 512,
+        "exec_timeout": 10
+      },
+      "passed": 0,
+      "pass@1": 0,
+      "generation_time": 2.5429,
+      "test_time": 0.0075,
+      "total_runtime": 2.5504,
+      "error": "NameError: name 'Find_Min_Length' is not defined",
+      "raw_output": "def min_sublist_length(lst):\n    if not lst:\n        return 0\n    return min(len(sublist) for sublist in lst)",
+      "generated_code": "def min_sublist_length(lst):\n    if not lst:\n        return 0\n    return min(len(sublist) for sublist in lst)"
+    },
+    {
+      "task_id": "96",
+      "config": {
+        "model": "qwen3-coder",
+        "temperature": 0.2,
+        "top_p": 0.9,
+        "num_predict": 512,
+        "exec_timeout": 10
+      },
+      "passed": 0,
+      "pass@1": 0,
+      "generation_time": 6.2733,
+      "test_time": 0.0077,
+      "total_runtime": 6.281,
+      "error": "NameError: name 'divisor' is not defined",
+      "raw_output": "def count_divisors(n):\n    if n <= 0:\n        return 0\n    \n    count = 0\n    for i in range(1, int(n**0.5) + 1):\n        if n % i == 0:\n            if i * i == n:\n                count += 1\n            else:\n                count += 2\n    \n    return count",
+      "generated_code": "def count_divisors(n):\n    if n <= 0:\n        return 0\n    \n    count = 0\n    for i in range(1, int(n**0.5) + 1):\n        if n % i == 0:\n            if i * i == n:\n                count += 1\n            else:\n                count += 2\n    \n    return count"
+    },
+    {
+      "task_id": "97",
+      "config": {
+        "model": "qwen3-coder",
+        "temperature": 0.2,
+        "top_p": 0.9,
+        "num_predict": 512,
+        "exec_timeout": 10
+      },
+      "passed": 0,
+      "pass@1": 0,
+      "generation_time": 4.3378,
+      "test_time": 0.0086,
+      "total_runtime": 4.3463,
+      "error": "NameError: name 'frequency_lists' is not defined",
+      "raw_output": "def frequency_count(list_of_lists):\n    frequency = {}\n    for sublist in list_of_lists:\n        for item in sublist:\n            if item in frequency:\n                frequency[item] += 1\n            else:\n                frequency[item] = 1\n    return frequency",
+      "generated_code": "def frequency_count(list_of_lists):\n    frequency = {}\n    for sublist in list_of_lists:\n        for item in sublist:\n            if item in frequency:\n                frequency[item] += 1\n            else:\n                frequency[item] = 1\n    return frequency"
+    },
+    {
+      "task_id": "98",
+      "config": {
+        "model": "qwen3-coder",
+        "temperature": 0.2,
+        "top_p": 0.9,
+        "num_predict": 512,
+        "exec_timeout": 10
+      },
+      "passed": 0,
+      "pass@1": 0,
+      "generation_time": 3.4142,
+      "test_time": 0.01,
+      "total_runtime": 3.4242,
+      "error": "NameError: name 'multiply_num' is not defined",
+      "raw_output": "def multiply_and_divide(numbers):\n    if not numbers:\n        return 0\n    \n    product = 1\n    for num in numbers:\n        product *= num\n    \n    return product / len(numbers)",
+      "generated_code": "def multiply_and_divide(numbers):\n    if not numbers:\n        return 0\n    \n    product = 1\n    for num in numbers:\n        product *= num\n    \n    return product / len(numbers)"
+    },
+    {
+      "task_id": "99",
+      "config": {
+        "model": "qwen3-coder",
+        "temperature": 0.2,
+        "top_p": 0.9,
+        "num_predict": 512,
+        "exec_timeout": 10
+      },
+      "passed": 1,
+      "pass@1": 1,
+      "generation_time": 6.9402,
+      "test_time": 0.0077,
+      "total_runtime": 6.9479,
+      "error": null,
+      "raw_output": "def decimal_to_binary(decimal_num):\n    if decimal_num == 0:\n        return \"0\"\n    \n    binary = \"\"\n    while decimal_num > 0:\n        remainder = decimal_num % 2\n        binary = str(remainder) + binary\n        decimal_num = decimal_num // 2\n    \n    return binary",
+      "generated_code": "def decimal_to_binary(decimal_num):\n    if decimal_num == 0:\n        return \"0\"\n    \n    binary = \"\"\n    while decimal_num > 0:\n        remainder = decimal_num % 2\n        binary = str(remainder) + binary\n        decimal_num = decimal_num // 2\n    \n    return binary"
+    },
+    {
+      "task_id": "100",
+      "config": {
+        "model": "qwen3-coder",
+        "temperature": 0.2,
+        "top_p": 0.9,
+        "num_predict": 512,
+        "exec_timeout": 10
+      },
+      "passed": 0,
+      "pass@1": 0,
+      "generation_time": 4.7744,
+      "test_time": 0.0059,
+      "total_runtime": 4.7803,
+      "error": "AssertionError: ",
+      "raw_output": "def next_smallest_palindrome(n):\n    def is_palindrome(num):\n        s = str(num)\n        return s == s[::-1]\n    \n    current = n - 1\n    while current >= 0:\n        if is_palindrome(current):\n            return current\n        current -= 1\n    \n    return None",
+      "generated_code": "def next_smallest_palindrome(n):\n    def is_palindrome(num):\n        s = str(num)\n        return s == s[::-1]\n    \n    current = n - 1\n    while current >= 0:\n        if is_palindrome(current):\n            return current\n        current -= 1\n    \n    return None"
+    }
+  ]
+}

@@ -1,0 +1,4 @@
+model_size,total,assertion_failure,function_name_case_mismatch,function_name_mismatch,import_error,nameerror_other,other_runtime_error,signature_or_type_error,syntax_error,timeout
+1.5b,4282,3370,57,127,,,156,292,276,4
+32b,1361,1188,,7,,,1,21,143,1
+7b,6233,5091,3,33,1,1,60,361,677,6

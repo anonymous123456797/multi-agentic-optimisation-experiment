@@ -1,0 +1,12 @@
+2026-03-26 10:10:21,232 [INFO] Run started. Model: gemini-2.5-flash, N_RUNS: 1
+2026-03-26 10:10:21,233 [INFO] Pricing: $0.1/1M input tokens | $0.4/1M output tokens
+2026-03-26 10:10:21,245 [INFO] Loaded 974 problems from ./MBPP/mbpp_formatted.jsonl
+2026-03-26 10:10:21,411 [INFO] Loaded 451 cached scores from checkpoint.
+2026-03-26 10:10:26,519 [INFO] [idx=451-run1] score=1 raw='1' in_tok=157 out_tok=1 cost=$0.000016 latency=5.08s
+2026-03-26 10:10:38,113 [INFO] [idx=452-run1] score=2 raw='2' in_tok=321 out_tok=1 cost=$0.000033 latency=11.48s
+2026-03-26 10:10:44,467 [INFO] [idx=453-run1] score=2 raw='2' in_tok=158 out_tok=1 cost=$0.000016 latency=6.25s
+2026-03-26 10:10:46,673 [INFO] [idx=454-run1] score=1 raw='1' in_tok=181 out_tok=1 cost=$0.000019 latency=2.10s
+2026-03-26 10:10:51,359 [INFO] [idx=455-run1] score=1 raw='1' in_tok=131 out_tok=1 cost=$0.000014 latency=4.57s
+2026-03-26 10:10:58,691 [INFO] [idx=456-run1] score=1 raw='1' in_tok=129 out_tok=1 cost=$0.000013 latency=7.23s
+2026-03-26 10:11:00,369 [INFO] [idx=457-run1] score=1 raw='1' in_tok=119 out_tok=1 cost=$0.000012 latency=1.57s
+2026-03-26 10:11:04,809 [INFO] [idx=458-run1] score=1 raw='1' in_tok=154 out_tok=1 cost=$0.000016 latency=4.34s

@@ -1,0 +1,9 @@
+category,count
+assertion_failure,4488
+syntax_error,583
+signature_or_type_error,282
+other_runtime_error,150
+function_name_mismatch,149
+function_name_case_mismatch,50
+timeout,9
+nameerror_other,1

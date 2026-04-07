@@ -1,0 +1,11 @@
+Overall pass@1 by difficulty:
+  easy: 0.822
+  medium: 0.594
+  hard: 0.341
+
+Drop easy→hard: 0.481
+
+Best config per difficulty:
+  easy: 05: 32b, q4_K_M, T=0.3, p=0.95, pred=192, ctx=1024, th=1 (0.903)
+  hard: 15: 7b, q4_K_M, T=0.3, p=0.9, pred=384, ctx=1024, th=1 (0.566)
+  medium: 05: 32b, q4_K_M, T=0.3, p=0.95, pred=192, ctx=1024, th=1 (0.776)
